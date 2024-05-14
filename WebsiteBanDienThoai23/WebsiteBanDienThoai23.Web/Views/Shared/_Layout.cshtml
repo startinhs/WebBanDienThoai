@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Bán Điện Thoại</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <div class="bg">
+                    <img src="~/img/logo-text.png" alt="" height="50px">
+                    <form action="">
+                        <div class="search">
+                            <input class="input1" type="text" name="SearchString" placeholder="Bạn cần gì..." size="30px">
+                            <button id="b"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="menu">
+                    <div class="menu-item">
+                        <div class="item">
+                            <a href="#" class="fas fa-mobile-alt size"><div class="txt">Điện thoại</div></a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item">
+                            <a href="#" class="fas fa-tablet-alt size"><div class="txt">Tablet</div></a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item">
+                            <a href="#" class="fas fa-laptop size"><div class="txt">Laptop</div></a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item">
+                            <a href="#" class="fas fa-headphones-alt size"><div class="txt">Phụ kiện</div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="menu-item">
+                        <div class="item">
+                            <a class="txt" href="#">Đăng nhập</a>
+                        </div>
+                    </div>
+                    <div class="menu-item carts">
+                        <ul>
+                            <li class="">
+                                <a href="#" class="fas fa-cart-plus size"><div class="txt">Giỏ hàng</div></a>
+                                <div class="carts-list">
+                                    <a href="#">aaaaa</a>
+                                    <a href="#">bbbb</a>
+                                    <a href="#">aaaaabbbb</a>
+                                    <a href="#">aaaaabbbb</a>
+                                    <a href="#">a</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            Copyright © 2024 - Cửa hàng điện thoại - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

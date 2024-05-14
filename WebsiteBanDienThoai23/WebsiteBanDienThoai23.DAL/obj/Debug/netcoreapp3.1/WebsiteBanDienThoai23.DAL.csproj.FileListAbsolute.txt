@@ -1,0 +1,17 @@
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.deps.json
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.runtimeconfig.json
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.runtimeconfig.dev.json
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.pdb
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.pdb
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.csproj.AssemblyReference.cache
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.AssemblyInfoInputs.cache
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.AssemblyInfo.cs
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.csproj.CoreCompileInputs.cache
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.sourcelink.json
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\obj\Debug\netcoreapp3.1\WebsiteB.19D4F26E.Up2Date
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.pdb
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.DAL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.genruntimeconfig.cache

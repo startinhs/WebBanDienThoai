@@ -1,61 +1,49 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+<!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Bán Điện Thoại</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Điện thoại</title>
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" href="~/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="~/css/TrangChu_style.css">
     <link rel="shortcut icon" href="~/favicon.ico" type="image/png">
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <div class="bg">
-                    <img src="~/img/logo-text.png" alt="" height="50px">
-                    <form action="">
-                        <div class="search">
-                            <input class="input1" type="text" name="SearchString" placeholder="Bạn cần gì..." size="30px">
-                            <button id="b"><i class="fa fa-search"></i></button>
-                        </div>
-                    </form>
+        <div class="header-list">
+            <div class="header-list--logo-and-search">
+                <div class="logo">
+                    <a href="index.html"><img src="~/img/logo-text.png" alt="" height="50px"></a>
                 </div>
-                <div class="menu">
-                    <div class="menu-item">
-                        <div class="item">
-                            <a href="#" class="fas fa-mobile-alt size"><div class="txt">Điện thoại</div></a>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item">
-                            <a href="#" class="fas fa-tablet-alt size"><div class="txt">Tablet</div></a>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item">
-                            <a href="#" class="fas fa-laptop size"><div class="txt">Laptop</div></a>
-                        </div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item">
-                            <a href="#" class="fas fa-headphones-alt size"><div class="txt">Phụ kiện</div></a>
-                        </div>
-                    </div>
+                <div class="search">
+                    <input type="text" placeholder="Bạn tìm gì">
+                    <i class="fas fa-search"></i>
                 </div>
-                <div class="user">
-                    <div class="menu-item">
-                        <div class="item">
-                            <a class="txt" href="#">Đăng nhập</a>
-                        </div>
-                    </div>
+            </div>
+            <i class="fas fa-bars"></i>
+            <div class="header-list--menu">
+                <ul>
+                    <li>
+                        <a href="DienThoai.html"><i class="icon icon_dien_thoai"></i><span>điện thoại</span></a>
+                    </li>
+                    <li><a href="Tablet.html"><i class="icon icon_tablet"></i><span>tablet</span></a></li>
+                    <li><a href="PhuKien.html"><i class="icon icon_phu_kien"></i><span>phụ kiện</span></a></li>
+                    <li><a href="CuGiaRe.html"><i class="icon icon_cu_gia_re">máy</i><span>cũ giá rẻ</span></a></li>
+                    <li><a href="DangNhap.html"><span>Đăng nhập</span></a></li>
                     <div class="menu-item carts">
                         <ul>
                             <li class="">
-                                <a href="#" class="fas fa-cart-plus size"><div class="txt">Giỏ hàng</div></a>
+                                <a href="#" class="fas fa-cart-plus size"><div>Giỏ hàng</div></a>
                                 <div class="carts-list">
                                     <a href="#">aaaaa</a>
                                     <a href="#">bbbb</a>
@@ -66,22 +54,128 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </ul>
             </div>
-        </nav>
+        </div>
     </header>
+
     <div>
         @RenderBody()
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            Copyright © 2024 - Cửa hàng điện thoại - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer>
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="list_about">
+                        <li><a href="#">Tìm hiểu về mua trả góp</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Giao hàng & Thanh toán</a></li>
+                        <li><a href="#">Xem thêm <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list_about">
+                        <li><a href="#">Giới thiệu công ty (mwg.vn)</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Gửi góp ý, khiếu nại</a></li>
+                        <li><a href="#">Tìm siêu thị (1889 shop)</a></li>
+                        <li><a href="#">Xem bản mobile</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list_about">
+                        <li>Gọi mua hàng <span>1800.1060</span> (7:30 - 22:00)</li>
+                        <li>Gọi khiếu nại <span>1800.1062</span> (8:00 - 21:30)</li>
+                        <li>Gọi bảo hành <span>1800.1064</span> (8:00 - 21:00)</li>
+                        <li>Hỗ trợ kĩ thuật <span>1800.1763</span> (7:30 - 22:00)</li>
+                        <li><a href="#"><i class="icon icon_notification"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="list_about">
+                        <li>
+                            <a href="#"><i class="icon icon_fb"></i>&nbsp;3.3tr</a> | <a href="#">
+                                <i class="icon icon_ytb"></i>&nbsp;616.1k
+                            </a>
+                        </li>
+                        <li>Website cùng tập đoàn:</li>
+                        <li><a href="#"><i class="icon icon_dmx"></i></a></li>
+                        <li><a href="#"><i class="icon icon_bhx"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+    <div class="container-fluid privacy">
+        <div class="row">
+            <div class="col-md-12 sub_privacy">
+                <p>
+                    &copy; 2019. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày
+                    02/01/2007. Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại:
+                    18001060. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Trần Nhật Linh. <a href="#">
+                        Xem
+                        chính sách sử dụng web
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+    <script src="~/js/slick.js"></script>
+    <script src="~/js/nav-mobile.js"></script>
+    <!-- InstanceBeginEditable name="EditRegion1" -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.demo').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                arrows: false,
+                asNavFor: '.title'
+            });
+            $('.title').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: false,
+                asNavFor: '.demo',
+                autoplay: true,
+                focusOnSelect: true
+            });
+            $('.demo_mobile').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                arrows: false,
+                asNavFor: '.title_mobile'
+            });
+            $('.title_mobile').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                autoplay: true,
+                asNavFor: '.demo',
+                focusOnSelect: true
+            });
+            $('.phone_weekend').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: true,
+                autoplay: true,
+            });
+            $('.phone_weekend_mobile').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: true,
+                autoplay: true,
+            });
+        });
+    </script>
+    <!-- InstanceEndEditable -->
 </body>
+
+<!-- InstanceEnd -->
+
 </html>

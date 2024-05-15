@@ -3,12 +3,38 @@
   "WorkspaceRootPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\wwwroot\\css\\trangchu_style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\wwwroot\\css\\trangchu_style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\wwwroot\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\wwwroot\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\backup\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\backup\\Project_Truoc_Dat_Sai_Ten\\MobilePhoneStore\\MobilePhoneStore.Web\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\wwwroot\\css\\slick-theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\wwwroot\\css\\slick-theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\wwwroot\\css\\slick.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\wwwroot\\css\\slick.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +44,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "package.json",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\wwwroot\\package.json",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\wwwroot\\package.json",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\wwwroot\\package.json",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\wwwroot\\package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-15T20:16:58.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "slick-theme.css",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\wwwroot\\css\\slick-theme.css",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\wwwroot\\css\\slick-theme.css",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\wwwroot\\css\\slick-theme.css",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\wwwroot\\css\\slick-theme.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-15T19:06:25.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "slick.css",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\wwwroot\\css\\slick.css",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\wwwroot\\css\\slick.css",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\wwwroot\\css\\slick.css",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\wwwroot\\css\\slick.css",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-15T19:06:21.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TrangChu_style.css",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\wwwroot\\css\\TrangChu_style.css",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\wwwroot\\css\\TrangChu_style.css",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\wwwroot\\css\\TrangChu_style.css",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\wwwroot\\css\\TrangChu_style.css",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAmwCQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-15T18:57:34.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA/AAAA",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAAAOwFAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-14T16:18:17.414Z",
+              "WhenOpened": "2024-05-15T18:51:14.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T18:04:05.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\SanPham\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\SanPham\\Index.cshtml",
-              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\SanPham\\Index.cshtml",
-              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\SanPham\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAANAAAA",
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\wwwroot\\index.html",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\wwwroot\\index.html",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\wwwroot\\index.html",
+              "ViewState": "AQIAACcAAAAAAAAAAAAuwD0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-15T18:02:12.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\backup\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\backup\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\backup\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\..\\backup\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEMAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-14T15:21:19.146Z"
+              "WhenOpened": "2024-05-15T19:41:20.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\backup\\Project_Truoc_Dat_Sai_Ten\\MobilePhoneStore\\MobilePhoneStore.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\..\\backup\\Project_Truoc_Dat_Sai_Ten\\MobilePhoneStore\\MobilePhoneStore.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\backup\\Project_Truoc_Dat_Sai_Ten\\MobilePhoneStore\\MobilePhoneStore.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\..\\backup\\Project_Truoc_Dat_Sai_Ten\\MobilePhoneStore\\MobilePhoneStore.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAmwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T19:40:16.235Z",
+              "EditorCaption": ""
             }
           ]
         }

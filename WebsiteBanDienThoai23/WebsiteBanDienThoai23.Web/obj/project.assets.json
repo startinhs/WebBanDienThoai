@@ -6104,19 +6104,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lemin\\.nuget\\packages\\": {}
+    "C:\\Users\\nguye\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj",
+      "projectUniqueName": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj",
       "projectName": "WebsiteBanDienThoai23.Web",
-      "projectPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj",
-      "packagesPath": "C:\\Users\\lemin\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\obj\\",
+      "projectPath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj",
+      "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
+      "outputPath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lemin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6130,11 +6130,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj": {
-              "projectPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj"
+            "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj": {
+              "projectPath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj"
             },
-            "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {
-              "projectPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj"
+            "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {
+              "projectPath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj"
             }
           }
         }
@@ -6143,11 +6143,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -6188,7 +6183,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

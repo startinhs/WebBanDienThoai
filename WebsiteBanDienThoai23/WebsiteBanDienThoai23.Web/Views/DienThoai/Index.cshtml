@@ -13,7 +13,6 @@
     <!-- InstanceEndEditable -->
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <!-- InstanceBeginEditable name="head" -->
@@ -65,16 +64,11 @@
                             <li>
                                 <a href="#">
                                     <div class="phone_dien_thoai">
-                                        <img src="~/Images/@item.Hinh1" alt="" class="img-responsive">
+                                        <img src="@item.Hinh1" alt="" class="img-responsive">
                                         <div class="sub_title">
                                             <h4><a href="#" class="name_phone">@item.TenSp</a></h4>
-                                            <p class="price">0đ
-                                                @* @{
-                                                    double price = (double)item.Gia;
-                                                }
-                                                @price.ToString("N0") VND *@
-                                            </p>
-                                            <p class="description">Cơ hội trúng 200 học bổng tổng trị giá đến 2 tỷ đồng.</p>
+                                            <p class="price">@item.Gia;<span>đ</span></p>
+                                            <p class="description">@item.MoTa</p>
                                         </div>
                                     </div>
                                 </a>

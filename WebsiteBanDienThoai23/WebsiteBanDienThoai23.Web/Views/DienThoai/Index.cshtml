@@ -1,0 +1,137 @@
+﻿@model IEnumerable<WebsiteBanDienThoai23.DAL.Models.SanPham>
+<!DOCTYPE html>
+<html lang="en">
+<!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Điện thoại</title>
+    <link rel="stylesheet" href="css/DienThoai_style.css">
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid section">
+            <div class="row type_dien_thoai">
+                <div class="col-md-12">
+                    <ul class="list_type_dien_thoai">
+                        <li><a href="#"><img src="images/88.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="#"><img src="images/89.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="#"><img src="images/90.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="#"><img src="images/91.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="#"><img src="images/92.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="#"><img src="images/93.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="#"><img src="images/94.jpg" alt="" class="img-responsive"></a></li>
+                        <li class="seemore_dien_thoai"><a href="#">Xem thêm</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row filter_dien_thoai">
+                <div class="col-md-12">
+                    <ul class="list_filter_dien_thoai">
+                        <li>Chọn mức giá: </li>
+                        <li><a href="#">Dưới 2 triệu</a></li>
+                        <li><a href="#">Từ 2 - 4 triệu</a></li>
+                        <li><a href="#">Từ 4 - 7 triệu</a></li>
+                        <li><a href="#">Từ 7 - 13 triệu</a></li>
+                        <li><a href="#">Trên 13 triệu</a></li>
+                        <li><input type="checkbox" name="new_dien_thoai"> Mới</li>
+                        <li><input type="checkbox" name="installment_dien_thoai"> Trả góp 0%</li>
+                        <li><input type="checkbox" name="only_sell_online_dien_thoai"> Chỉ bán online</li>
+                        <li><a href="#">Tính năng <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                        <li><a href="#">Sắp xếp <span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row phones_dien_thoai">
+                <div class="col-md-12 title_dien_thoai">
+                    <h3>điện thoại nổi bật nhất</h3>
+                </div>
+                <div class="col-md-12 main_list_dien_thoai">
+                    <ul class="list_dien_thoai">
+                        @foreach (var item in Model)
+                        {
+                            <li>
+                                <a href="#">
+                                    <div class="phone_dien_thoai">
+                                        <img src="~/Images/@item.Hinh1" alt="" class="img-responsive">
+                                        <div class="sub_title">
+                                            <h4><a href="#" class="name_phone">@item.TenSp</a></h4>
+                                            <p class="price">0đ
+                                                @* @{
+                                                    double price = (double)item.Gia;
+                                                }
+                                                @price.ToString("N0") VND *@
+                                            </p>
+                                            <p class="description">Cơ hội trúng 200 học bổng tổng trị giá đến 2 tỷ đồng.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        } 
+                    </ul>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button class="viewmore_dien_thoai">
+                        Xem thêm 125 điện thoại <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="row other_phones_dien_thoai">
+                <div class="col-md-12">
+                    <ul class="list_other_phones_dien_thoai">
+                        <li><a href="#">Giảm sốc online</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">iPhone Xs</a></li>
+                        <li><a href="#">iPhone Xs Max</a></li>
+                        <li><a href="#">Điện thoại Samsung</a></li>
+                        <li><a href="#">Samsung Galaxy Note 10</a></li>
+                        <li><a href="#">Samsung Galaxy A80</a></li>
+                        <li><a href="#">Điện thoại OPPO</a></li>
+                        <li><a href="#">Điện thoại Xiaomi</a></li>
+                        <li><a href="#">Điện thoại Nokia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid main_shipper_dien_thoai">
+            <div class="row" style="max-width: 1300px; margin: 0 auto;">
+                <div class="col-md-12">
+                    <ul class="list_shipper_dien_thoai">
+                        <li>
+                            <p>Giao hàng hoả tốc trong 1 giờ</p>
+                        </li>
+                        <li>
+                            <p>Thanh toán linh hoạt: tiền mặt, visa / master, trả góp</p>
+                        </li>
+                        <li>
+                            <p>Trải nghiệm sản phẩm tại nhà</p>
+                        </li>
+                        <li>
+                            <p>Lỗi đổi tại nhà trong 1 ngày</p>
+                        </li>
+                        <li>
+                            <p>Hỗ trợ suốt thời gian sử dụng. Hotline: <a href="#">1800.1763</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+<!-- InstanceEnd -->
+
+</html>

@@ -20,21 +20,10 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         }
 
         private readonly QLBanDienThoaiContext da = new QLBanDienThoaiContext();
-
-        public List<SanPham> SoLuongSP(int soluong)
+        public IActionResult Index()
         {
-            return da.SanPhams.Take(soluong).ToList();
-        }
-        public IActionResult Index(string SearchString)
-        {
-            var lstSanPham = SoLuongSP(9);
-
-            if (!string.IsNullOrEmpty(SearchString))
-            {
-                lstSanPham = da.SanPhams.Where(n => n.TenSp.Contains(SearchString)).ToList();
-
-            }
-            return View(lstSanPham);
+            List<SanPham> list = da.SanPhams.OrderBy(s => s.MaSp).ToList();
+            return View(list);
         }
         public IActionResult Privacy()
         {

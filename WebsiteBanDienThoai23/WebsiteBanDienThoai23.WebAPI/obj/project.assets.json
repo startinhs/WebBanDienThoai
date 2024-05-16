@@ -6104,19 +6104,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lemin\\.nuget\\packages\\": {}
+    "C:\\Users\\quoch\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.WebAPI\\WebsiteBanDienThoai23.WebAPI.csproj",
+      "projectUniqueName": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.WebAPI\\WebsiteBanDienThoai23.WebAPI.csproj",
       "projectName": "WebsiteBanDienThoai23.WebAPI",
-      "projectPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.WebAPI\\WebsiteBanDienThoai23.WebAPI.csproj",
-      "packagesPath": "C:\\Users\\lemin\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.WebAPI\\obj\\",
+      "projectPath": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.WebAPI\\WebsiteBanDienThoai23.WebAPI.csproj",
+      "packagesPath": "C:\\Users\\quoch\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lemin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\quoch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6130,11 +6130,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj": {
-              "projectPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj"
+            "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj": {
+              "projectPath": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj"
             },
-            "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {
-              "projectPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj"
+            "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {
+              "projectPath": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj"
             }
           }
         }

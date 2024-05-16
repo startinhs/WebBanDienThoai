@@ -21,7 +21,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public virtual DbSet<ChiTietBaoHanh> ChiTietBaoHanhs { get; set; }
         public virtual DbSet<ChiTietGioHang> ChiTietGioHangs { get; set; }
         public virtual DbSet<ChiTietHoaDon> ChiTietHoaDons { get; set; }
-        public virtual DbSet<DanhGia> DanhGia { get; set; }
+        public virtual DbSet<DanhGium> DanhGia { get; set; }
         public virtual DbSet<GioHang> GioHangs { get; set; }
         public virtual DbSet<HoaDon> HoaDons { get; set; }
         public virtual DbSet<NguoiDung> NguoiDungs { get; set; }
@@ -32,7 +32,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=QLBanDienThoai;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=EZIO\\SQLSERVER2022;Initial Catalog=QLBanDienThoai;Integrated Security=True");
             }
         }
 
@@ -149,7 +149,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
                     .HasConstraintName("FK_ChiTietHoaDon_SanPham");
             });
 
-            modelBuilder.Entity<DanhGia>(entity =>
+            modelBuilder.Entity<DanhGium>(entity =>
             {
                 entity.HasKey(e => new { e.MaSp, e.MaKh });
 

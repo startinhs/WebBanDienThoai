@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteBanDienThoai23.Web", "WebsiteBanDienThoai23.Web\WebsiteBanDienThoai23.Web.csproj", "{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebsiteBanDienThoai23.Web", "WebsiteBanDienThoai23.Web\WebsiteBanDienThoai23.Web.csproj", "{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteBanDienThoai23.DAL", "WebsiteBanDienThoai23.DAL\WebsiteBanDienThoai23.DAL.csproj", "{D0C1920F-746D-4ED3-8D25-80C1A4E9CB35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebsiteBanDienThoai23.DAL", "WebsiteBanDienThoai23.DAL\WebsiteBanDienThoai23.DAL.csproj", "{D0C1920F-746D-4ED3-8D25-80C1A4E9CB35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteBanDienThoai23.BLL", "WebsiteBanDienThoai23.BLL\WebsiteBanDienThoai23.BLL.csproj", "{A45F3944-15FD-4FA0-82A7-AAD37DD8103D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebsiteBanDienThoai23.BLL", "WebsiteBanDienThoai23.BLL\WebsiteBanDienThoai23.BLL.csproj", "{A45F3944-15FD-4FA0-82A7-AAD37DD8103D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteBanDienThoai23.Common", "WebsiteBanDienThoai23.Common\WebsiteBanDienThoai23.Common.csproj", "{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebsiteBanDienThoai23.Common", "WebsiteBanDienThoai23.Common\WebsiteBanDienThoai23.Common.csproj", "{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteBanDienThoai23.WebAPI", "WebsiteBanDienThoai23.WebAPI\WebsiteBanDienThoai23.WebAPI.csproj", "{F58175F1-9588-4315-8F38-3BC918A1E245}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebsiteBanDienThoai23.WebAPI", "WebsiteBanDienThoai23.WebAPI\WebsiteBanDienThoai23.WebAPI.csproj", "{F58175F1-9588-4315-8F38-3BC918A1E245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteBanDienThoai23.AdminWeb", "WebsiteBanDienThoai23.AdminWeb\WebsiteBanDienThoai23.AdminWeb.csproj", "{A900AB43-5116-4F7B-8B66-1610A2264520}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F58175F1-9588-4315-8F38-3BC918A1E245}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F58175F1-9588-4315-8F38-3BC918A1E245}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F58175F1-9588-4315-8F38-3BC918A1E245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A900AB43-5116-4F7B-8B66-1610A2264520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A900AB43-5116-4F7B-8B66-1610A2264520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A900AB43-5116-4F7B-8B66-1610A2264520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A900AB43-5116-4F7B-8B66-1610A2264520}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

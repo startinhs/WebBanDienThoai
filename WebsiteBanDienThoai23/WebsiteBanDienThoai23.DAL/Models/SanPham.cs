@@ -12,7 +12,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
             ChiTietBaoHanhs = new HashSet<ChiTietBaoHanh>();
             ChiTietGioHangs = new HashSet<ChiTietGioHang>();
             ChiTietHoaDons = new HashSet<ChiTietHoaDon>();
-            DanhGia = new HashSet<DanhGia>();
+            DanhGia = new HashSet<DanhGium>();
         }
 
         public string MaSp { get; set; }
@@ -42,6 +42,6 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public virtual ICollection<ChiTietBaoHanh> ChiTietBaoHanhs { get; set; }
         public virtual ICollection<ChiTietGioHang> ChiTietGioHangs { get; set; }
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; }
-        public virtual ICollection<DanhGia> DanhGia { get; set; }
+        public virtual ICollection<DanhGium> DanhGia { get; set; }
     }
 }

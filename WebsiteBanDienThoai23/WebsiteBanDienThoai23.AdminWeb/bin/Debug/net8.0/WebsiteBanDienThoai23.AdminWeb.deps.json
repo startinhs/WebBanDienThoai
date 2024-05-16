@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WebsiteBanDienThoai23.AdminWeb/1.0.0": {
+        "runtime": {
+          "WebsiteBanDienThoai23.AdminWeb.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebsiteBanDienThoai23.AdminWeb/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

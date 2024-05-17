@@ -38,7 +38,9 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public short? CameraTruoc { get; set; }
         public string Imel { get; set; }
         public decimal GiamGia { get; set; }
+        public string MaLoai { get; set; }
 
+        public virtual LoaiSp MaLoaiNavigation { get; set; }
         public virtual ICollection<ChiTietBaoHanh> ChiTietBaoHanhs { get; set; }
         public virtual ICollection<ChiTietGioHang> ChiTietGioHangs { get; set; }
         public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; }

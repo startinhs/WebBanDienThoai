@@ -15,15 +15,29 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         private readonly QLBanDienThoaiContext _context = new QLBanDienThoaiContext();
 
         // GET: DienThoai
-        public async Task<IActionResult> Index(string searchString, int page = 1)
+
+        public async Task<IActionResult> Index(int page = 1)
+        {
+            const int pageSize = 10;
+            var lstSanPham = _context.SanPhams.AsQueryable();
+            lstSanPham = lstSanPham.Where(n => n.MaLoai.Contains("PHONE"));
+            var totalItems = lstSanPham.Count();
+            var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+            var itemsOnCurrentPage = lstSanPham.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+            ViewBag.TotalPages = totalPages;
+            ViewBag.CurrentPage = page;
+            return View(itemsOnCurrentPage);
+        }
+
+        public async Task<IActionResult> TimTheoTen(string searchString, int page = 1)
         {
             const int pageSize = 10; // Số sản phẩm trên mỗi trang
-            var lstSanPham = _context.SanPhams.AsQueryable(); // Chuyển sang IQueryable
+            var lstSanPham = _context.SanPhams.AsQueryable();
 
             // Lọc sản phẩm nếu có từ khóa tìm kiếm
             if (!string.IsNullOrEmpty(searchString))
             {
-                lstSanPham = lstSanPham.Where(n => n.TenSp.Contains(searchString));
+                lstSanPham = lstSanPham.Where(n => n.TenSp.Contains(searchString) && n.MaLoai.Contains("PHONE"));
             }
 
             // Tính số trang và lấy danh sách sản phẩm cho trang hiện tại
@@ -41,9 +55,9 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         public async Task<IActionResult> TimTheoGia(decimal minPrice, decimal maxPrice, int page = 1)
         {
             const int pageSize = 10; // Số sản phẩm trên mỗi trang
-            var lstSanPham = _context.SanPhams.AsQueryable(); // Chuyển sang IQueryable
+            var lstSanPham = _context.SanPhams.AsQueryable();
             // Lọc sản phẩm theo khoảng giá
-            lstSanPham = lstSanPham.Where(n => n.Gia * (1 - (n.GiamGia / 100)) >= minPrice && n.Gia * (1 - (n.GiamGia / 100)) <= maxPrice);
+            lstSanPham = lstSanPham.Where(n => n.Gia * (1 - (n.GiamGia / 100)) >= minPrice && n.Gia * (1 - (n.GiamGia / 100)) <= maxPrice && n.MaLoai.Contains("PHONE"));
 
             // Tính số trang và lấy danh sách sản phẩm cho trang hiện tại
             var totalItems = lstSanPham.Count();

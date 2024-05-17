@@ -29,8 +29,8 @@ ul {
     overflow: hidden;
 }
 
-header {
-    background: #F6F7F1;
+#header {
+    background: #C5CBCE;
     margin-bottom: 10px;
 }
 
@@ -68,8 +68,9 @@ header {
     margin-left: 10px;
     font-size: 14px;
     padding: 10px;
-    border-radius: 5px 0 0 5px;
-    border: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
     outline: none;
 }
 
@@ -154,6 +155,26 @@ header {
     color: #000;
 }
 
+header.scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+@media (max-width: 768px) {
+    .header-list--menu {
+        display: none;
+    }
+
+        .header-list--menu.active {
+            display: block;
+        }
+}
+
+
 /*.carts {
     position: relative;
     z-index: 5;
@@ -237,9 +258,10 @@ header {
 
 
 
+
 /******************************************FOOTER******************************************/
 footer {
-    background: #F6F7F1;
+    background: #C5CBCE;
 }
 
 .footer {
@@ -295,38 +317,6 @@ footer {
     padding-top: 20px;
 }
 
-.icon_fb {
-    width: 13px;
-    height: 13px;
-    display: inline-block;
-    vertical-align: middle;
-    background-position: 0 -30px;
-}
-
-.icon_ytb {
-    width: 17px;
-    height: 13px;
-    display: inline-block;
-    vertical-align: middle;
-    background-position: -16px -30px;
-}
-
-.icon_dmx {
-    width: 100px;
-    height: 19px;
-    display: inline-block;
-    vertical-align: middle;
-    background-position: -36px -30px;
-}
-
-.icon_bhx {
-    background-image: url(../images/425.jpg);
-    background-repeat: no-repeat;
-    width: 85px;
-    height: 18px;
-    display: inline-block;
-    background-position: -221px 0;
-}
 
 .icon_notification {
     width: 98px;

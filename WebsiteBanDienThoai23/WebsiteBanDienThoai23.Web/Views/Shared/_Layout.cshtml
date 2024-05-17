@@ -1,31 +1,24 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- InstanceBeginEditable name="doctitle" -->
     <title>Mobile Phone Store</title>
-    <!-- InstanceEndEditable -->
-    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="~/css/head.css">
-    <!-- InstanceBeginEditable name="head" -->
-    <!-- InstanceEndEditable -->
 </head>
 <body>
     <header>
         <div class="header-list">
             <div class="header-list--logo-and-search">
                 <div class="logo">
-                    <a href="index.html"><img src="~/img/logotext1.png" alt="" height="50px"></a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="images/logotext1.png" alt="" height="50px"></a>
                 </div>
-                <form action="" method="get">
+                <form action="/DienThoai" method="get">
                     <div class="search">
                         <input type="text" name="SearchString" placeholder="Bạn tìm gì">
-                        <button>
+                        <button style="border:none">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
@@ -50,14 +43,14 @@
     <div>
         @RenderBody()
     </div>
-
+    <a style="display: scroll; position: fixed; bottom: 3px; right: 7px;" title="Back to Top" href="#"><img src="~/images/up-arrow.png" alt="" /></a>
     <footer>
         <div class="container-fluid footer">
             <div class="row">
                 <div class="col-md-3">
                     <ul class="list_about">
                         <div class="logo">
-                            <a href="index.html"><img src="https://th.bing.com/th/id/OIP.XiHiqIYf_ZAyyoxJq867DAHaFj?rs=1&pid=ImgDetMain" alt="" height="100%" width="100%"></a>
+                            <a asp-area="" asp-controller="Home" asp-action="Index"><img src="https://th.bing.com/th/id/OIP.XiHiqIYf_ZAyyoxJq867DAHaFj?rs=1&pid=ImgDetMain" alt="" height="100%" width="100%"></a>
                         </div>
                     </ul>
                 </div>
@@ -79,7 +72,7 @@
                 <div class="col-md-3">
                     <ul class="list_about">
                         <div class="logo">
-                            <a href="index.html"><img src="~/img/logotext1.png" alt="" height="100%" width="100%"></a>
+                            <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logotext1.png" alt="" height="100%" width="100%"></a>
                         </div>
                     </ul>
                 </div>
@@ -99,7 +92,6 @@
     <script src="~/js/bootstrap.js"></script>
     <script src="~/js/slick.js"></script>
     <script src="~/js/nav-mobile.js"></script>
-    <!-- InstanceBeginEditable name="EditRegion1" -->
     <script type="text/javascript">
         $(document).ready(function () {
             $('.demo').slick({
@@ -146,9 +138,5 @@
             });
         });
     </script>
-    <!-- InstanceEndEditable -->
 </body>
-
-<!-- InstanceEnd -->
-
 </html>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebsiteBanDienThoai23.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14947e897c1a60a96a761a50c8574413f596a282")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6721268f03117009734d8375e45ce0017e9b79d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebsiteBanDienThoai23.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebsiteBanDienThoai23.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

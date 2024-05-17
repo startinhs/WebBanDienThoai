@@ -274,41 +274,35 @@ namespace WebsiteBanDienThoai23.DAL.Models
                     .HasColumnName("MaSP")
                     .IsFixedLength(true);
 
-                entity.Property(e => e.Cpu)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
+                entity.Property(e => e.Cpu).HasMaxLength(20);
 
-                entity.Property(e => e.Gia).HasColumnType("money");
-
-                entity.Property(e => e.HeDieuHanh)
-                    .HasMaxLength(10)
-                    .IsUnicode(false);
+                entity.Property(e => e.HeDieuHanh).HasMaxLength(20);
 
                 entity.Property(e => e.Hinh1)
-                    .HasMaxLength(30)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Hinh2)
-                    .HasMaxLength(30)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Hinh3)
-                    .HasMaxLength(30)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Imel)
+                    .IsRequired()
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
                 entity.Property(e => e.TenSp)
+                    .IsRequired()
                     .HasMaxLength(50)
                     .HasColumnName("TenSP");
 
-                entity.Property(e => e.ThoiGianBh)
-                    .HasColumnType("date")
-                    .HasColumnName("ThoiGianBH");
+                entity.Property(e => e.ThoiGianBh).HasColumnName("ThoiGianBH");
 
-                entity.Property(e => e._5g).HasColumnName("5G");
+                entity.Property(e => e._5g).HasColumnName("_5G");
             });
 
             OnModelCreatingPartial(modelBuilder);

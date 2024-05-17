@@ -21,23 +21,23 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public string Hinh2 { get; set; }
         public string Hinh3 { get; set; }
         public string MoTa { get; set; }
-        public bool? TonKho { get; set; }
-        public int? SoLuong { get; set; }
-        public decimal? Gia { get; set; }
-        public DateTime? ThoiGianBh { get; set; }
-        public bool? _5g { get; set; }
+        public bool TonKho { get; set; }
+        public short SoLuong { get; set; }
+        public decimal Gia { get; set; }
+        public byte? ThoiGianBh { get; set; }
+        public int? _5g { get; set; }
         public string Cpu { get; set; }
-        public int? Pin { get; set; }
-        public int? SacNhanh { get; set; }
-        public int? Ram { get; set; }
-        public int? Rom { get; set; }
-        public float? ManHinh { get; set; }
-        public int? Fps { get; set; }
+        public short? Pin { get; set; }
+        public short? SacNhanh { get; set; }
+        public short? Ram { get; set; }
+        public short? Rom { get; set; }
+        public double? ManHinh { get; set; }
+        public short? Fps { get; set; }
         public string HeDieuHanh { get; set; }
-        public int? CameraSau { get; set; }
-        public int? CameraTruoc { get; set; }
+        public short? CameraSau { get; set; }
+        public short? CameraTruoc { get; set; }
         public string Imel { get; set; }
-        public float? GiamGia { get; set; }
+        public decimal GiamGia { get; set; }
 
         public virtual ICollection<ChiTietBaoHanh> ChiTietBaoHanhs { get; set; }
         public virtual ICollection<ChiTietGioHang> ChiTietGioHangs { get; set; }

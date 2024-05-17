@@ -1,0 +1,150 @@
+﻿@model WebsiteBanDienThoai23.DAL.Models.SanPham
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SanPham</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenSp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TenSp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Hinh1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Hinh1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Hinh2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Hinh2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Hinh3)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Hinh3)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MoTa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TonKho)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TonKho)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ThoiGianBh)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianBh)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model._5g)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model._5g)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpu)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cpu)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SacNhanh)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SacNhanh)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ram)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ram)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rom)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rom)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ManHinh)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ManHinh)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fps)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fps)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HeDieuHanh)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HeDieuHanh)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CameraSau)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CameraSau)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CameraTruoc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CameraTruoc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Imel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Imel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GiamGia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GiamGia)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.MaSp">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

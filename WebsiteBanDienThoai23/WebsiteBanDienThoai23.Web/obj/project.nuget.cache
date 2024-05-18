@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TsEB+rFZ0SqDpm3y2g7zdDn2GAlGBhaFBWVJkze6zEAy1e69BThWKa83QbK5MnNRMZrO1vlJIds9iqkltqKSAQ==",
+  "dgSpecHash": "HvM4ZJSSLTOii0tMI+3ISEmv9bntPyZwzx+BrB5j9CG8usJuq5yaUYJrTrN6QKxJxrbN5ZY54XJMPCcp9TIQjA==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj",
+  "projectFilePath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lemin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lemin\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

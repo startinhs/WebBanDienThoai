@@ -61,8 +61,6 @@
                     <ul class="list_dien_thoai">
                         @foreach (var item in Model)
                         {
-                            decimal giaDaGiam = @Math.Round(item.Gia * (1 - (item.GiamGia / 100)));
-                            decimal reHon = item.Gia - giaDaGiam;
                             <li>
                                 <a asp-action="Details" asp-route-id="@item.MaSp">
                                     <div class="phone_dien_thoai">
@@ -71,9 +69,13 @@
                                             <h4>
                                                 <a href="@Url.Action("Details", "DetailsProduct", new { id = item.MaSp })">@item.TenSp</a>
                                             </h4>
-                                            <p class="price">@giaDaGiam.ToString("N0")<span>₫</span>
-                                            <p>Giá máy mới: @item.Gia.ToString("N0")</p>
-                                            <p>Rẻ hơn: @reHon.ToString("NO")</p>
+                                            @{
+                                                var giaDaGiam = Math.Round(item.Gia * (1 - (item.GiamGia / 100)));
+                                                var reHon = item.Gia - giaDaGiam;
+                                            }
+                                            <p class="price">@giaDaGiam.ToString("N0")<span>₫</span></p>
+                                            <p>Giá máy mới: @item.Gia.ToString("N0")<span>₫</span></p>
+                                            <p>Rẻ hơn: @reHon.ToString("N0")<span>₫</span></p>
                                         </div>
                                     </div>
                                 </a>
@@ -83,7 +85,7 @@
                 </div>
             </div>
             <div class="col-md-12 text-center">
-                <a href="/DienThoai" class="btn btn-primary viewmore_dien_thoai">
+                <a href="/MayCu" class="btn btn-primary viewmore_dien_thoai">
                     Xem thêm máy cũ <span class="glyphicon glyphicon-triangle-bottom"></span>
                 </a>
             </div>

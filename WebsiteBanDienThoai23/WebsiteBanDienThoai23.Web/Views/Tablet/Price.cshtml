@@ -68,8 +68,8 @@
                                             <h4>
                                                 <a href="@Url.Action("Details", "DetailsProduct", new { id = item.MaSp })">@item.TenSp</a>
                                             </h4>
-                                            <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span>
-                                            <p class="old_price">@item.Gia.ToString("N0")</p>
+                                            <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
+                                            <p class="old_price">@item.Gia.ToString("N0")<span>₫</span></p>
                                         </div>
                                     </div>
                                 </a>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/uCbw0ptvyYkTOeNuhRo3uW8LZTxoC1R2ThuU0b7kvhABdLIUeMFgQN6K9G+HDgXDzgUNVT9/+Mec8jsUDvc6g==",
+  "dgSpecHash": "3z73wFd1IvxZowBx3yiBsG+/qcgvSw05L/QRG/kcd1aBUzxFaG3hpLb6A19ykXw8o7OkLTtyxoyX6jPFG9exVA==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj",
+  "projectFilePath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lemin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lemin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

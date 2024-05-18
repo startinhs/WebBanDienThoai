@@ -6067,11 +6067,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj",
+      "projectUniqueName": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj",
       "projectName": "WebsiteBanDienThoai23.DAL",
-      "projectPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj",
+      "projectPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj",
       "packagesPath": "C:\\Users\\lemin\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\obj\\",
+      "outputPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lemin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6088,8 +6088,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {
-              "projectPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj"
+            "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {
+              "projectPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj"
             }
           }
         }

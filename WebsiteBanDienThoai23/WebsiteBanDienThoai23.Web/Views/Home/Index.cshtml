@@ -1,31 +1,24 @@
 ﻿@model IEnumerable<WebsiteBanDienThoai23.DAL.Models.SanPham>
 <!DOCTYPE html>
 <html lang="en">
-<!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
-
 <head>
-    <!-- InstanceEndEditable -->
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/Home_style.css">
-    <!-- InstanceBeginEditable name="head" -->
-    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
-    
-    <!-- InstanceBeginEditable name="EditRegion2" -->
     <section>
         <div class="container-fluid section">
             <div class="row slide_and_main_news">
                 <div class="slide_bar">
                     <div class="demo hidden-xs hidden-sm">
-                        <div><a href="#"><img class="img-responsive" src="img/banner1.webp" alt=""></a></div>
-                        <div><a href="#"><img class="img-responsive" src="img/banner2.webp" alt=""></a></div>
-                        <div><a href="#"><img class="img-responsive" src="img/banner3.webp" alt=""></a></div>
-                        <div><a href="#"><img class="img-responsive" src="img/banner4.webp" alt=""></a></div>
+                        <div><a href="#"><img class="img-responsive" src="images/banner1.webp" alt=""></a></div>
+                        <div><a href="#"><img class="img-responsive" src="images/banner2.webp" alt=""></a></div>
+                        <div><a href="#"><img class="img-responsive" src="images/banner3.webp" alt=""></a></div>
+                        <div><a href="#"><img class="img-responsive" src="images/banner4.webp" alt=""></a></div>
                     </div>
                     <div class="title hidden-xs hidden-sm" style="text-align: center;">
                         <div style="border-right: 1px solid silver;">
@@ -51,10 +44,10 @@
                         </div>
                     </div>
                     <div class="demo_mobile visible-xs visible-sm">
-                        <div><a href="#"><img class="img-responsive" src="img/banner1.webp" alt=""></a></div>
-                        <div><a href="#"><img class="img-responsive" src="img/banner2.webp" alt=""></a></div>
-                        <div><a href="#"><img class="img-responsive" src="img/banner3.webp" alt=""></a></div>
-                        <div><a href="#"><img class="img-responsive" src="img/banner4.webp" alt=""></a></div>
+                        <div><a href="#"><img class="img-responsive" src="images/banner1.webp" alt=""></a></div>
+                        <div><a href="#"><img class="img-responsive" src="images/banner2.webp" alt=""></a></div>
+                        <div><a href="#"><img class="img-responsive" src="images/banner3.webp" alt=""></a></div>
+                        <div><a href="#"><img class="img-responsive" src="images/banner4.webp" alt=""></a></div>
                     </div>
                     <div class="title_mobile visible-xs visible-sm" style="text-align: center;">
                         <div style="border-right: 1px solid silver;">
@@ -83,26 +76,33 @@
                 
                 <div class="row ads_banner_2">
                     <div class="col-xs-12">
-                        <a href="#"><img src="images/11.jpg" alt="" class="img-responsive"></a>
+                        <a href="/DienThoai"><img src="images/bannerf.jpg" alt="" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="row main_slide_phone_weekend">
                     <div class="col-md-12 slide_phone_weekend">
                         <div class="phone_weekend hidden-xs hidden-sm">
-                            @foreach (var item in Model)
+                            @{
+                                var random = new Random();
+                                var spModel = Model.OrderBy(x => random.Next()).ToList();
+                            }
+                            @foreach (var item in spModel)
                             {
-                                if(item.GiamGia > 1){
+                                if (item.GiamGia > 1)
+                                {
+                                    decimal giaDaGiam = Math.Round(item.Gia * (1 - (item.GiamGia / 100)));
                                     <div>
-                                        <a href="#"><img class="img-responsive" src="~/Images/@item.Hinh1" alt=""></a>
+                                        <p class="price" style="color: orange">Giảm ngay <span>@item.GiamGia</span>%</p>
+                                        <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt=""></a>
                                         <div class="sub_title">
-                                            <h4><a href="" @Url.Action("Details", "DetailsProduct", new { id = item.MaSp })"">@item.TenSp)</a></h4>
-                                            <p class="price">@item.Gia<span>đ</span></p>
-                                            <p class="description">
-                                                @item.MoTa
-                                            </p>
+                                            <h4>
+                                                <a href="@Url.Action("Details", "DetailsProduct", new { id = item.MaSp })">@item.TenSp</a>
+                                            </h4>
+                                            <p class="price">@giaDaGiam.ToString("N0")<span>₫</span>    
+                                            <p class="old_price">@item.Gia.ToString("N0")</p>
                                         </div>
                                     </div>
-                                } 
+                                }
                             }
                         </div>
                     </div>
@@ -110,20 +110,18 @@
                 <div class="row phone_most_prominent">
                     <div class="col-md-12">
                         <ul class="list_phone_most_prominent">
-                            <li>điện thoại mới về</li>
-                            <li><a href="#">Xem tất cả điện thoại</a></li>
+                            <li>Điện thoại nổi bật</li>
+                            <li><a asp-area="" asp-controller="DienThoai" asp-action="Index">Xem tất cả điện thoại</a></li>
                         </ul>
                     </div>
                     <div class="col-md-12 phones">
                         <div class="row">
-                            
                                 <div class="col-sm-6 col-md-4">
-
-                                    <a href="#"><img class="img-responsive" src="~/Images/@Model.FirstOrDefault().Hinh1" alt="" style="width: 100%;"></a>
+                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@Model.FirstOrDefault().MaSp"><img class="img-responsive" src="imgProduct/@Model.FirstOrDefault().Hinh1" alt="" style="width: 100%;"></a>
                                     <div class="sub_title">
                                         <h4><a href="#">@Model.FirstOrDefault().TenSp</a></h4>
-                                        <p class="price">@Model.FirstOrDefault().Gia<span>đ</span></p>
-                                        <p class="description">@Model.FirstOrDefault().MoTa</p>
+                                        <p class="price">@Math.Round(Model.FirstOrDefault().Gia * (1 - (Model.FirstOrDefault().GiamGia / 100))).ToString("N0")<span>₫</span></p>
+                                        <p class="old_price">@Model.FirstOrDefault().Gia.ToString("N0")</p>
                                     </div>
                                 </div>
                              
@@ -136,13 +134,11 @@
                                         if (item != null)
                                         {
                                             <div class="col-md-4 col-sm-4">
-                                                <a href="#"><img class="img-responsive" src="~/Images/@item.Hinh1" alt="" class="img-responsive"></a>
+                                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt="" class="img-responsive"></a>
                                                 <div class="sub_title">
                                                     <h4><a href="#">@item.TenSp</a></h4>
-                                                    <p class="price">
-                                                        @item.Gia<span>đ</span>
-                                                    </p>
-                                                    <p class="description">@item.MoTa</p>
+                                                    <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
+                                                    <p class="old_price">@item.Gia.ToString("N0")</p>
                                                 </div>
                                             </div>
                                         }
@@ -154,11 +150,11 @@
                     <div class="col-md-12 phones">
                         <div class="row">
                             <div class="col-sm-6 col-md-4">
-                                <a href="#"><img src="~/Images/@Model.Skip(4).FirstOrDefault().Hinh1" alt="" class="img-responsive" style="width: 100%;"></a>
+                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@Model.Skip(4).FirstOrDefault().MaSp"><img src="imgProduct/@Model.Skip(4).FirstOrDefault().Hinh1" alt="" class="img-responsive" style="width: 100%;"></a>
                                 <div class="sub_title">
                                     <h4><a href="#">@Model.Skip(4).FirstOrDefault().TenSp</a></h4>
-                                    <p class="price">@Model.Skip(4).FirstOrDefault().Gia<span>đ</span></p>
-                                    <p class="description">@Model.Skip(4).FirstOrDefault().MoTa</p>
+                                    <p class="price">@Math.Round(Model.Skip(4).FirstOrDefault().Gia * (1 - (Model.Skip(4).FirstOrDefault().GiamGia / 100))).ToString("N0")<span>₫</span></p>
+                                    <p class="old_price">@Model.Skip(4).FirstOrDefault().Gia.ToString("N0")</p>
                                 </div>
                             </div>
                             <div class="col-md-8">
@@ -169,13 +165,11 @@
                                         if (item != null)
                                         {
                                             <div class="col-md-4 col-sm-4">
-                                                <a href="#"><img class="img-responsive" src="~/Images/@item.Hinh1" alt="" class="img-responsive"></a>
+                                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt="" class="img-responsive"></a>
                                                 <div class="sub_title">
                                                     <h4><a href="#">@item.TenSp</a></h4>
-                                                    <p class="price">
-                                                        @item.Gia<span>đ</span>
-                                                    </p>
-                                                    <p class="description">@item.MoTa</p>
+                                                    <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
+                                                    <p class="old_price">@item.Gia.ToString("N0")</p>
                                                 </div>
                                             </div>
                                         }
@@ -203,11 +197,11 @@
                             {
                                 var item = iosProducts[index];
                                 <div class="col-md-3 col-sm-3">
-                                    <a href="#"><img class="img-responsive" src="~/Images/@item.Hinh1" alt=""></a>
+                                    <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt=""></a>
                                     <div class="sub_title">
                                         <h4><a href="#">@item.TenSp</a></h4>
-                                        <p class="price">@item.Gia<span>đ</span></p>
-                                        <p class="description">@item.MoTa</p>
+                                        <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
+                                        <p class="old_price">@item.Gia.ToString("N0")</p>
                                     </div>
                                 </div>
                             }
@@ -232,11 +226,11 @@
                             {
                                 var item = adrProducts[index];
                                 <div class="col-md-3 col-sm-3">
-                                    <a href="#"><img class="img-responsive" src="~/Images/@item.Hinh1" alt=""></a>
+                                    <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt=""></a>
                                     <div class="sub_title">
                                         <h4><a href="#">@item.TenSp</a></h4>
-                                        <p class="price">@item.Gia<span>đ</span></p>
-                                        <p class="description">@item.MoTa</p>
+                                        <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
+                                        <p class="old_price">@item.Gia.ToString("N0")</p>
                                     </div>
                                 </div>
                             }
@@ -261,11 +255,11 @@
                             {
                                 var item = oProducts[index];
                                 <div class="col-md-3 col-sm-3">
-                                    <a href="#"><img class="img-responsive" src="~/Images/@item.Hinh1" alt=""></a>
+                                    <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt=""></a>
                                     <div class="sub_title">
                                         <h4><a href="#">@item.TenSp</a></h4>
-                                        <p class="price">@item.Gia<span>đ</span></p>
-                                        <p class="description">@item.MoTa</p>
+                                        <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
+                                        <p class="old_price">@item.Gia.ToString("N0")</p>
                                     </div>
                                 </div>
                             }
@@ -275,10 +269,5 @@
             </div>
         </div>
     </section>
-    
-    <!-- InstanceEndEditable -->
 </body>
-
-<!-- InstanceEnd -->
-
 </html>

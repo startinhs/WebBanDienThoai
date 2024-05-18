@@ -29,49 +29,26 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             return View(itemsOnCurrentPage);
         }
 
-        public async Task<IActionResult> TimTheoTen(string searchString, int page = 1)
+        public async Task<IActionResult> Name(string key)
         {
-            const int pageSize = 10; // Số sản phẩm trên mỗi trang
             var lstSanPham = _context.SanPhams.AsQueryable();
-
-            // Lọc sản phẩm nếu có từ khóa tìm kiếm
-            if (!string.IsNullOrEmpty(searchString))
+            if (!string.IsNullOrEmpty(key))
             {
-                lstSanPham = lstSanPham.Where(n => n.TenSp.Contains(searchString) && n.MaLoai.Contains("PHONE"));
+                lstSanPham = lstSanPham.Where(n => n.TenSp.Contains(key) && n.MaLoai.Contains("PHONE"));
             }
-
-            // Tính số trang và lấy danh sách sản phẩm cho trang hiện tại
-            var totalItems = lstSanPham.Count();
-            var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
-            var itemsOnCurrentPage = lstSanPham.Skip((page - 1) * pageSize).Take(pageSize).ToList();
-
-            // Truyền dữ liệu cần thiết đến view
-            ViewBag.TotalPages = totalPages;
-            ViewBag.CurrentPage = page;
-            ViewBag.SearchString = searchString;
-
-            return View(itemsOnCurrentPage);
+            var items = await lstSanPham.ToListAsync();
+            ViewBag.TotalItems = items.Count;
+            return View(items);
         }
-        public async Task<IActionResult> TimTheoGia(decimal minPrice, decimal maxPrice, int page = 1)
+        public async Task<IActionResult> Price(decimal min, decimal max)
         {
-            const int pageSize = 10; // Số sản phẩm trên mỗi trang
             var lstSanPham = _context.SanPhams.AsQueryable();
-            // Lọc sản phẩm theo khoảng giá
-            lstSanPham = lstSanPham.Where(n => n.Gia * (1 - (n.GiamGia / 100)) >= minPrice && n.Gia * (1 - (n.GiamGia / 100)) <= maxPrice && n.MaLoai.Contains("PHONE"));
-
-            // Tính số trang và lấy danh sách sản phẩm cho trang hiện tại
-            var totalItems = lstSanPham.Count();
-            var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
-            var itemsOnCurrentPage = lstSanPham.Skip((page - 1) * pageSize).Take(pageSize).ToList();
-
-            // Truyền dữ liệu cần thiết đến view
-            ViewBag.TotalPages = totalPages;
-            ViewBag.CurrentPage = page;
-            ViewBag.MinPrice = minPrice;
-            ViewBag.MaxPrice = maxPrice;
-
-            return View(itemsOnCurrentPage);
+            lstSanPham = lstSanPham.Where(n => n.Gia * (1 - (n.GiamGia / 100)) >= min && n.Gia * (1 - (n.GiamGia / 100)) <= max && n.MaLoai.Contains("PHONE"));
+            var items = await lstSanPham.ToListAsync();
+            ViewBag.TotalItems = items.Count;
+            return View(items);
         }
+
         // GET: DienThoai/Details/5
         public async Task<IActionResult> Details(string id)
         {

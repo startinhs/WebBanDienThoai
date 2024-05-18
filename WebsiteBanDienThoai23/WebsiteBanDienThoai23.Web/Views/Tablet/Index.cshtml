@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/DienThoai_style.css">
-    <link rel="stylesheet" href="css/Home_style.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="~/css/product.css">
+    <link rel="stylesheet" href="~/css/home.css">
+    <link rel="stylesheet" href="~/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/slick.css">
+    <link rel="stylesheet" href="~/css/slick-theme.css">
 </head>
 
 <body>
@@ -16,15 +16,14 @@
             <div class="row type_dien_thoai">
                 <div class="col-md-12">
                     <ul class="list_type_dien_thoai">
-                        <li><a href="/Tablet/TimTheoTen?SearchString=iphone"><img src="images/88.jpg" alt="" class="img-responsive"></a></li>
-                        <li><a href="/Tablet/TimTheoTen?SearchString=samsung"><img src="images/89.jpg" alt="" class="img-responsive"></a></li>
-                        <li><a href="/Tablet/TimTheoTen?SearchString=oppo"><img src="images/90.jpg" alt="" class="img-responsive"></a></li>
-                        <li><a href="/Tablet/TimTheoTen?SearchString=xiaomi"><img src="images/91.jpg" alt="" class="img-responsive"></a></li>
-                        <li><a href="/Tablet/TimTheoTen?SearchString=vivo"><img src="images/92.jpg" alt="" class="img-responsive"></a></li>
-                        <li><a href="/Tablet/TimTheoTen?SearchString=huawei"><img src="images/93.jpg" alt="" class="img-responsive"></a></li>
-                        <li><a href="/Tablet/TimTheoTen?SearchString=realme"><img src="images/94.jpg" alt="" class="img-responsive"></a></li>
-                        <li><a href="/Tablet/TimTheoTen?SearchString=oneplus"><img src="images/oneplus.png" alt="" class="img-responsive"></a></li>
-                        <li><a href="/Tablet/TimTheoTen?SearchString=poco"><img src="images/poco.png" alt="" class="img-responsive"></a></li>
+                        <li><a href="/Tablet/Name?key=ipad"><img src="~/images/144.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="/Tablet/Name?key=samsung"><img src="~/images/89.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="/Tablet/Name?key=oppo"><img src="~/images/90.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="/Tablet/Name?key=xiaomi"><img src="~/images/91.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="/Tablet/Name?key=vivo"><img src="~/images/92.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="/Tablet/Name?key=huawei"><img src="~/images/146.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="/Tablet/Name?key=realme"><img src="~/images/94.jpg" alt="" class="img-responsive"></a></li>
+                        <li><a href="/Tablet/Name?key=lenovo"><img src="~/images/147.jpg" alt="" class="img-responsive"></a></li>
                         <li class="seemore_dien_thoai"><a href="/Tablet">Xem thêm</a></li>
                     </ul>
                 </div>
@@ -33,18 +32,18 @@
                 <div class="col-md-12">
                     <ul class="list_filter_dien_thoai">
                         <li>Chọn mức giá: </li>
-                        <li><a href="/Tablet/TimTheoGia?minPrice=0&maxPrice=12000000">Dưới 12 triệu</a></li>
-                        <li><a href="/Tablet/TimTheoGia?minPrice=12000000&maxPrice=14000000">Từ 12 - 14 triệu</a></li>
-                        <li><a href="/Tablet/TimTheoGia?minPrice=14000000&maxPrice=17000000">Từ 14 - 17 triệu</a></li>
-                        <li><a href="/Tablet/TimTheoGia?minPrice=17000000&maxPrice=23000000">Từ 17 - 23 triệu</a></li>
-                        <li><a href="/Tablet/TimTheoGia?minPrice=23000000&maxPrice=50000000">Trên 23 triệu</a></li>
+                        <li><a href="/Tablet/Price?min=0&max=12000000">Dưới 12 triệu</a></li>
+                        <li><a href="/Tablet/Price?min=12000000&max=14000000">Từ 12 - 14 triệu</a></li>
+                        <li><a href="/Tablet/Price?min=14000000&max=17000000">Từ 14 - 17 triệu</a></li>
+                        <li><a href="/Tablet/Price?min=17000000&max=23000000">Từ 17 - 23 triệu</a></li>
+                        <li><a href="/Tablet/Price?min=23000000&max=50000000">Trên 23 triệu</a></li>
                         <li><a href="#"></a></li>
                     </ul>
                 </div>
             </div>
             <div class="row phones_dien_thoai">
                 <div class="col-md-12 title_dien_thoai">
-                    <h3>danh sách điện thoại</h3>
+                    <h3>danh sách tablet</h3>
                 </div>
                 <div class="row filter_dien_thoai">
                     <div class="col-md-12">
@@ -64,7 +63,7 @@
                             <li>
                                 <a asp-action="Details" asp-route-id="@item.MaSp">
                                     <div class="phone_dien_thoai">
-                                        <img src="imgProduct/@item.Hinh1" alt="" class="img-responsive">
+                                        <img src="~/imgProduct/@item.Hinh1" alt="" class="img-responsive">
                                         <div class="sub_title">
                                             <h4>
                                                 <a href="@Url.Action("Details", "DetailsProduct", new { id = item.MaSp })">@item.TenSp</a>
@@ -78,25 +77,27 @@
                         }
                     </ul>
                 </div>
-                <div style="text-align:center; font-family:Consolas">
-                    @{
-                        if (ViewBag.TotalPages > 1)
+            </div>
+            <div style="text-align:center; font-family:Consolas">
+                @{
+                    if (ViewBag.TotalPages > 1)
+                    {
+                        for (int i = 1; i <= ViewBag.TotalPages; i++)
                         {
-                            for (int i = 1; i <= ViewBag.TotalPages; i++)
+                            if (i == ViewBag.CurrentPage)
                             {
-                                if (i == ViewBag.CurrentPage)
-                                {
-                                    <span>@i</span>
-                                }
-                                else
-                                {
-                                    <a style="font-size: 17px" href="/Tablet?page=@i">@i</a>
-                                }
+                                <span>@i</span>
+                            }
+                            else
+                            {
+                                <a style="font-size: 17px" href="/Tablet?page=@i">@i</a>
                             }
                         }
                     }
-                </div>
-
+                }
+            </div>
+            <div class="col-md-12 text-center">
+                <br />
             </div>
         </div>
         <div class="container-fluid main_shipper_dien_thoai">

@@ -34,3 +34,5 @@ D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\obj\De
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.BLL.dll
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.BLL.pdb
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.BLL.genruntimeconfig.cache
+D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.dll
+D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.pdb

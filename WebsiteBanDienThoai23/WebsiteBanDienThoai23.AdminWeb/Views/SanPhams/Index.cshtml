@@ -1,0 +1,167 @@
+﻿@model IEnumerable<WebsiteBanDienThoai23.DAL.Models.SanPham>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TenSp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hinh1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hinh2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hinh3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MoTa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TonKho)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoLuong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ThoiGianBh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._5g)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cpu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SacNhanh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ram)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManHinh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fps)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HeDieuHanh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CameraSau)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CameraTruoc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Imel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GiamGia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaLoaiNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenSp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hinh1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hinh2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hinh3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MoTa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TonKho)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThoiGianBh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item._5g)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cpu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SacNhanh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ram)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManHinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fps)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HeDieuHanh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CameraSau)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CameraTruoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Imel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiamGia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaLoaiNavigation.MaLoai)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaSp">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MaSp">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaSp">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

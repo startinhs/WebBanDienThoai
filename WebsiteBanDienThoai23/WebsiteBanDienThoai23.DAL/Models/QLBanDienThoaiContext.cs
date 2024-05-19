@@ -21,7 +21,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public virtual DbSet<ChiTietBaoHanh> ChiTietBaoHanhs { get; set; }
         public virtual DbSet<ChiTietGioHang> ChiTietGioHangs { get; set; }
         public virtual DbSet<ChiTietHoaDon> ChiTietHoaDons { get; set; }
-        public virtual DbSet<DanhGium> DanhGia { get; set; }
+        public virtual DbSet<DanhGia> DanhGia { get; set; }
         public virtual DbSet<GioHang> GioHangs { get; set; }
         public virtual DbSet<HoaDon> HoaDons { get; set; }
         public virtual DbSet<LoaiSp> LoaiSps { get; set; }
@@ -150,7 +150,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
                     .HasConstraintName("FK_ChiTietHoaDon_SanPham");
             });
 
-            modelBuilder.Entity<DanhGium>(entity =>
+            modelBuilder.Entity<DanhGia>(entity =>
             {
                 entity.HasKey(e => new { e.MaSp, e.MaKh });
 

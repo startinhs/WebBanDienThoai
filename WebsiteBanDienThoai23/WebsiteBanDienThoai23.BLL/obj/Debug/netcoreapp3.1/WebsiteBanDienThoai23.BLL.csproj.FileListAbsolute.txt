@@ -23,9 +23,7 @@ D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\bin\De
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.BLL.dll
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.BLL.pdb
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.dll
-D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.dll
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.pdb
-D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.pdb
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.BLL.csproj.AssemblyReference.cache
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.BLL.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.BLL\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.BLL.AssemblyInfoInputs.cache

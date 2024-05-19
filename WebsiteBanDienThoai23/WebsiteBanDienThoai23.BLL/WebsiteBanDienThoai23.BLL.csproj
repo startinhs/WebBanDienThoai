@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebsiteBanDienThoai23.Common\WebsiteBanDienThoai23.Common.csproj" />
-    <ProjectReference Include="..\WebsiteBanDienThoai23.DAL\WebsiteBanDienThoai23.DAL.csproj" />
   </ItemGroup>
 
 </Project>

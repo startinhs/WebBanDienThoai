@@ -38,6 +38,7 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.5",
           "WebsiteBanDienThoai23.BLL": "1.0.0",
           "WebsiteBanDienThoai23.Common": "1.0.0",
+          "WebsiteBanDienThoai23.DAL": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -2437,8 +2438,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.10",
-          "WebsiteBanDienThoai23.Common": "1.0.0",
-          "WebsiteBanDienThoai23.DAL": "1.0.0"
+          "WebsiteBanDienThoai23.Common": "1.0.0"
         },
         "runtime": {
           "WebsiteBanDienThoai23.BLL.dll": {}

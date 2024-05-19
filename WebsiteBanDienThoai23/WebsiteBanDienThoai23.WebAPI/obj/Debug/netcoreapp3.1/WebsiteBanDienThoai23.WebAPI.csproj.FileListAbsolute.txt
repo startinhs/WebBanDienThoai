@@ -51,10 +51,8 @@ D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\bin
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.BLL.dll
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.dll
-D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.dll
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.BLL.pdb
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.pdb
-D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.pdb
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.WebAPI.csproj.AssemblyReference.cache
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.WebAPI.AssemblyInfoInputs.cache
@@ -73,3 +71,5 @@ D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\obj
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.WebAPI.dll
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.WebAPI.pdb
 D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.WebAPI.genruntimeconfig.cache
+D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.dll
+D:\GitHub\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.WebAPI\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.DAL.pdb

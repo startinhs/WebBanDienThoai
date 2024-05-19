@@ -10,7 +10,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public NguoiDung()
         {
             BaoHanhs = new HashSet<BaoHanh>();
-            DanhGia = new HashSet<DanhGium>();
+            DanhGia = new HashSet<DanhGia>();
             GioHangs = new HashSet<GioHang>();
             HoaDonMaKhNavigations = new HashSet<HoaDon>();
             HoaDonMaNvNavigations = new HashSet<HoaDon>();
@@ -26,7 +26,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public bool? IsAdmin { get; set; }
 
         public virtual ICollection<BaoHanh> BaoHanhs { get; set; }
-        public virtual ICollection<DanhGium> DanhGia { get; set; }
+        public virtual ICollection<DanhGia> DanhGia { get; set; }
         public virtual ICollection<GioHang> GioHangs { get; set; }
         public virtual ICollection<HoaDon> HoaDonMaKhNavigations { get; set; }
         public virtual ICollection<HoaDon> HoaDonMaNvNavigations { get; set; }

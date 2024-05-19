@@ -11,8 +11,7 @@
           "Microsoft.EntityFrameworkCore": "5.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.10",
-          "WebsiteBanDienThoai23.Common": "1.0.0",
-          "WebsiteBanDienThoai23.DAL": "1.0.0"
+          "WebsiteBanDienThoai23.Common": "1.0.0"
         },
         "runtime": {
           "WebsiteBanDienThoai23.BLL.dll": {}
@@ -1092,16 +1091,6 @@
         "runtime": {
           "WebsiteBanDienThoai23.Common.dll": {}
         }
-      },
-      "WebsiteBanDienThoai23.DAL/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.10",
-          "WebsiteBanDienThoai23.Common": "1.0.0"
-        },
-        "runtime": {
-          "WebsiteBanDienThoai23.DAL.dll": {}
-        }
       }
     }
   },
@@ -1791,11 +1780,6 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "WebsiteBanDienThoai23.Common/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "WebsiteBanDienThoai23.DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

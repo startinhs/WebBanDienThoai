@@ -1778,21 +1778,6 @@
         "runtime": {
           "bin/placeholder/WebsiteBanDienThoai23.Common.dll": {}
         }
-      },
-      "WebsiteBanDienThoai23.DAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.10",
-          "WebsiteBanDienThoai23.Common": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/WebsiteBanDienThoai23.DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/WebsiteBanDienThoai23.DAL.dll": {}
-        }
       }
     }
   },
@@ -6066,11 +6051,6 @@
       "type": "project",
       "path": "../WebsiteBanDienThoai23.Common/WebsiteBanDienThoai23.Common.csproj",
       "msbuildProject": "../WebsiteBanDienThoai23.Common/WebsiteBanDienThoai23.Common.csproj"
-    },
-    "WebsiteBanDienThoai23.DAL/1.0.0": {
-      "type": "project",
-      "path": "../WebsiteBanDienThoai23.DAL/WebsiteBanDienThoai23.DAL.csproj",
-      "msbuildProject": "../WebsiteBanDienThoai23.DAL/WebsiteBanDienThoai23.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6078,8 +6058,7 @@
       "Microsoft.EntityFrameworkCore >= 5.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.10",
-      "WebsiteBanDienThoai23.Common >= 1.0.0",
-      "WebsiteBanDienThoai23.DAL >= 1.0.0"
+      "WebsiteBanDienThoai23.Common >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6111,9 +6090,6 @@
           "projectReferences": {
             "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {
               "projectPath": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj"
-            },
-            "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj": {
-              "projectPath": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj"
             }
           }
         }

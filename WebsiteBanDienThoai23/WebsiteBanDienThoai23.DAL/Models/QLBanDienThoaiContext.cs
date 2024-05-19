@@ -24,6 +24,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public virtual DbSet<DanhGium> DanhGia { get; set; }
         public virtual DbSet<GioHang> GioHangs { get; set; }
         public virtual DbSet<HoaDon> HoaDons { get; set; }
+        public virtual DbSet<LoaiSp> LoaiSps { get; set; }
         public virtual DbSet<NguoiDung> NguoiDungs { get; set; }
         public virtual DbSet<SanPham> SanPhams { get; set; }
 
@@ -231,6 +232,20 @@ namespace WebsiteBanDienThoai23.DAL.Models
                     .HasConstraintName("FK_HoaDon_NguoiDung");
             });
 
+            modelBuilder.Entity<LoaiSp>(entity =>
+            {
+                entity.HasKey(e => e.MaLoai);
+
+                entity.ToTable("LoaiSP");
+
+                entity.Property(e => e.MaLoai)
+                    .HasMaxLength(10)
+                    .IsUnicode(false)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.TenLoai).HasMaxLength(30);
+            });
+
             modelBuilder.Entity<NguoiDung>(entity =>
             {
                 entity.HasKey(e => e.UserId)
@@ -249,7 +264,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
                 entity.Property(e => e.HoTen).HasMaxLength(30);
 
                 entity.Property(e => e.MatKhau)
-                    .HasMaxLength(20)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Sdt)
@@ -274,41 +289,49 @@ namespace WebsiteBanDienThoai23.DAL.Models
                     .HasColumnName("MaSP")
                     .IsFixedLength(true);
 
-                entity.Property(e => e.Cpu)
-                    .HasMaxLength(20)
-                    .IsUnicode(false);
+                entity.Property(e => e.Cpu).HasMaxLength(20);
 
-                entity.Property(e => e.Gia).HasColumnType("money");
+                entity.Property(e => e.Gia).HasColumnType("decimal(18, 0)");
 
-                entity.Property(e => e.HeDieuHanh)
-                    .HasMaxLength(10)
-                    .IsUnicode(false);
+                entity.Property(e => e.GiamGia).HasColumnType("decimal(18, 0)");
+
+                entity.Property(e => e.HeDieuHanh).HasMaxLength(20);
 
                 entity.Property(e => e.Hinh1)
-                    .HasMaxLength(30)
+                    .HasMaxLength(150)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Hinh2)
-                    .HasMaxLength(30)
+                    .HasMaxLength(150)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Hinh3)
-                    .HasMaxLength(30)
+                    .HasMaxLength(150)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Imel)
+                    .IsRequired()
                     .HasMaxLength(20)
                     .IsUnicode(false);
 
+                entity.Property(e => e.MaLoai)
+                    .HasMaxLength(10)
+                    .IsUnicode(false)
+                    .IsFixedLength(true);
+
                 entity.Property(e => e.TenSp)
+                    .IsRequired()
                     .HasMaxLength(50)
                     .HasColumnName("TenSP");
 
-                entity.Property(e => e.ThoiGianBh)
-                    .HasColumnType("date")
-                    .HasColumnName("ThoiGianBH");
+                entity.Property(e => e.ThoiGianBh).HasColumnName("ThoiGianBH");
 
-                entity.Property(e => e._5g).HasColumnName("5G");
+                entity.Property(e => e._5g).HasColumnName("_5G");
+
+                entity.HasOne(d => d.MaLoaiNavigation)
+                    .WithMany(p => p.SanPhams)
+                    .HasForeignKey(d => d.MaLoai)
+                    .HasConstraintName("FK_SanPham_LoaiSP");
             });
 
             OnModelCreatingPartial(modelBuilder);

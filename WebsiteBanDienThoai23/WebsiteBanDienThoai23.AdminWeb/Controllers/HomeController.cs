@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using WebsiteBanDienThoai23.AdminWeb.Models;
+using WebsiteBanDienThoai23.DAL.Models;
 
 namespace WebsiteBanDienThoai23.AdminWeb.Controllers
 {
@@ -17,11 +18,13 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
 		{
 			_logger = logger;
 		}
+        private readonly QLBanDienThoaiContext da = new QLBanDienThoaiContext();
 
-		public IActionResult Index()
+        public IActionResult Index()
 		{
-			return View();
-		}
+
+            return View();
+        }
 
 		public IActionResult Privacy()
 		{

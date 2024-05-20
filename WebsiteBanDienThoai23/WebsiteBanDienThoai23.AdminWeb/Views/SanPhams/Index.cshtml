@@ -1,0 +1,66 @@
+﻿@model IEnumerable<WebsiteBanDienThoai23.DAL.Models.SanPham>
+
+@{
+    ViewData["Title"] = "Danh sách điện thoại";
+}
+
+<h1>Danh sách điện thoại</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tên điện thoại
+            </th>           
+            <th>
+                Giá bán
+            </th>                             
+            <th>
+                Bộ nhớ Ram
+            </th>
+            <th>
+                Bộ nhớ Rom
+            </th>
+            <th>
+                Hệ điều hành
+            </th>
+            <th>
+                Giảm giá(%)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenSp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ram)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rom)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.HeDieuHanh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiamGia)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaSp">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.MaSp">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaSp">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

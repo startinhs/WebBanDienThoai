@@ -104,7 +104,7 @@ namespace WebsiteBanDienThoai23.AdminWeb
 				{
 					endpoints.MapControllerRoute(
 						name: "default",
-						pattern: "{controller=Home}/{action=Index}/{id?}");
+						pattern: "{controller=SanPhams}/{action=Index}/{id?}");
 				});
 			}
 		}

@@ -101,9 +101,22 @@ namespace WebsiteBanDienThoai23.BLL
 			return res;
 		}
 
-		public SingleRsp SearchProduct(TimSanPhamReq)
+		public SingleRsp SearchProduct(TimSanPhamReq s)
 		{
 			var res = new SingleRsp();
+
+			var product = sanPhamRep_Admin.SearchProduct(s.keyWord);
+			int pCount, totalPages,offset;
+			offset = s.size * (s.page - 1);
+			pCount = product.Count;
+			totalPages = (pCount % s.size) == 0 ? pCount / s.size : 1 + (pCount / s.size);
+			var p = new
+			{
+				Data = product.Skip(offset).Take(s.size).ToList(),
+				page = s.page,
+				size = s.size
+			};
+			res.Data = p;
 			return res;
 		}
 		//public SingleRsp UpdateProduct(ProductReq productReq)

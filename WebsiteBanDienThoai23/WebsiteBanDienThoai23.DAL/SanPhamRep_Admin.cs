@@ -67,7 +67,11 @@ namespace WebsiteBanDienThoai23.DAL
 			}
 			return res;
 		}
-
+		public List<SanPham> SearchProduct(string keyWord)
+		{
+			
+			return All.Where(x => x.TenSp.Contains(keyWord)).ToList();
+		}
 
 	}
 }

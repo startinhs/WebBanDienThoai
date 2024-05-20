@@ -7,13 +7,14 @@
     <title>Mobile Phone Store</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="~/css/head.css">
+    <link rel="stylesheet" href="~/css/details.css">
 </head>
 <body>
     <header>
         <div class="header-list">
             <div class="header-list--logo-and-search">
                 <div class="logo">
-                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logotext1.png" alt="" height="50px"></a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logotext1.png" alt="" style="height:50px"></a>
                 </div>
                 <form action="/DienThoai/Name" method="get">
                     <div class="search">
@@ -42,51 +43,10 @@
     <div>
         @RenderBody()
     </div>
-    <a style="display: scroll; position: fixed; bottom: 3px; right: 7px;" title="Back to Top" href="#"><img src="~/images/up-arrow.png" alt="" /></a>
-    <footer>
-        <div class="container-fluid footer">
-            <div class="row">
-                <div class="col-md-3">
-                    <ul class="list_about">
-                        <div class="logo">
-                            <a asp-area="" asp-controller="Home" asp-action="Index"><img src="https://th.bing.com/th/id/OIP.XiHiqIYf_ZAyyoxJq867DAHaFj?rs=1&pid=ImgDetMain" alt="" height="100%" width="100%"></a>
-                        </div>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="list_about">
-                        <li><span>CN Q5: </span>9999 Nguyễn Tri Phương, P8, Q5, TPHCM</li>
-                        <li><span>CN Q6: </span>1000 Hậu Giang, P6, Q6, TPHCM</li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="list_about">
-                        <li>Gọi mua hàng <span>1800.1000</span> (7:30 - 22:00)</li>
-                        <li>Gọi khiếu nại <span>1800.1001</span> (8:00 - 21:30)</li>
-                        <li>Gọi bảo hành <span>1800.1002</span> (8:00 - 21:00)</li>
-                        <li>Hỗ trợ kĩ thuật <span>1800.1003</span> (7:30 - 22:00)</li>
-                        <li><a href="#"><i class="icon icon_notification"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="list_about">
-                        <div class="logo">
-                            <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logotext1.png" alt="" height="100%" width="100%"></a>
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <div class="container-fluid privacy">
-        <div class="row">
-            <div class="col-md-12 sub_privacy">
-                <p style="text-align: center;">
-                    &copy; 2024. Cửa hàng Mobile Phone Store. Email: abc@Ou.edu.vn. Chịu trách nhiệm nội dung: Lê Minh Tính, Nguyễn Thái Quốc, Nguyễn Ích Trường.
-                </p>
-            </div>
-        </div>
-    </div>
+    
+    <a style="display: scroll; position: fixed; bottom: 100px; right: 7px;" title="Back to Top" href="#"><img src="~/images/up-arrow.png" alt="" /></a>
+    
+    
     <script src="~/js/jquery.js"></script>
     <script src="~/js/bootstrap.js"></script>
     <script src="~/js/slick.js"></script>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -151,6 +152,55 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
         private bool SanPhamExists(string id)
         {
             return _context.SanPhams.Any(e => e.MaSp == id);
+        }
+        public async Task<IActionResult> EditImage(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var sanPham = await _context.SanPhams.FindAsync(id);
+            if (sanPham == null)
+            {
+                return NotFound();
+            }
+            ViewBag.MaSp = id;
+            
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditImage(string id, IFormFile fileAnh)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var sanPham = await _context.SanPhams.FindAsync(id);
+            if (sanPham == null)
+            {
+                return NotFound();
+            }
+            if (fileAnh == null)
+            {
+                ViewBag.error = "Chưa chọn file";
+                ViewBag.MaSp = id;
+                return View();
+
+            }
+            if (fileAnh.Length == 0)
+            {
+                ViewBag.error = "File không có nội dung";
+                ViewBag.MaSp = id;
+                return View();
+
+            }
+            
+
+
+            return View();
         }
     }
 }

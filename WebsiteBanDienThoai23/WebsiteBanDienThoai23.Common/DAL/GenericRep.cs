@@ -61,11 +61,15 @@ namespace WebsiteBanDienThoai23.Common.DAL
 			return null;
 		}
 
-		/// <summary>
-		/// Update the model
-		/// </summary>
-		/// <param name="m">The model</param>
-		public void Update(T m)
+        public virtual T Read()
+        {
+            return null;
+        }
+        /// <summary>
+        /// Update the model
+        /// </summary>
+        /// <param name="m">The model</param>
+        public void Update(T m)
 		{
 			_context.Set<T>().Update(m);
 			_context.SaveChanges();

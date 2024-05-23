@@ -24,13 +24,43 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
 			res = sanPhamSvc_Admin.CreateProduct(sanPhamReq);
 			return Ok(res);
 		}
-		[HttpPost("Search-SanPham")]
-		public IActionResult SearchSanPham([FromBody] TimSanPhamReq timSanPhamReq)
-		{
+		[HttpGet("PhanTrang-SanPham")]
+        
+        public IActionResult PhanTrangSanPham(int pageIndex, int pageSize)
+        {
+            var res = new SingleRsp();
+                res = sanPhamSvc_Admin.PhanTrangSanPham(pageIndex, pageSize);
+            return Ok(res);
+        }
+        [HttpGet("Get-All-SanPham")]
+        public IActionResult GetAllSanPham()
+        {
+            var res = sanPhamSvc_Admin.GetAllProducts();
+            return Ok(res);
+        }
+
+        [HttpGet("Get-SanPham-By-MaSp")]
+        public IActionResult GetSanPhamByMaSp([FromQuery] string maSp)
+        {
+            var res = new SingleRsp();
+            res = sanPhamSvc_Admin.GetSanPhamByMaSp(maSp);
+            return Ok(res);
+        }
+        [HttpDelete("Remove-SanPham-By-MaSp")]
+        public IActionResult RemoveSanPham([FromBody] SimpleReq simpleReq)
+        {
 			var res = new SingleRsp();
-			res = sanPhamSvc_Admin.SearchProduct(timSanPhamReq);
-			return Ok(res);
-		}
-	}
+            res = sanPhamSvc_Admin.RemoveProduct(simpleReq.Keyword);
+            return Ok(res);
+        }
+
+        [HttpPut("Update-SanPham-By-MaSp")]
+        public IActionResult UpdateSanPham([FromBody] SanPhamReq sanPhamReq)
+        {
+            var res = new SingleRsp();
+            res = sanPhamSvc_Admin.UpdateProduct(sanPhamReq);
+            return Ok(res);
+        }
+    }
 	
 }

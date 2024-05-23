@@ -15,18 +15,18 @@ namespace WebsiteBanDienThoai23.Common.Req
 		public bool TonKho { get; set; }
 		public short SoLuong { get; set; }
 		public decimal Gia { get; set; }
-		public byte? ThoiGianBh { get; set; }
-		public int? _5g { get; set; }
+		public byte ThoiGianBh { get; set; }
+		public int _5g { get; set; }
 		public string Cpu { get; set; }
-		public short? Pin { get; set; }
-		public short? SacNhanh { get; set; }
-		public short? Ram { get; set; }
-		public short? Rom { get; set; }
-		public double? ManHinh { get; set; }
-		public short? Fps { get; set; }
+		public short Pin { get; set; }
+		public short SacNhanh { get; set; }
+		public short Ram { get; set; }
+		public short Rom { get; set; }
+		public double ManHinh { get; set; }
+		public short Fps { get; set; }
 		public string HeDieuHanh { get; set; }
-		public short? CameraSau { get; set; }
-		public short? CameraTruoc { get; set; }
+		public short CameraSau { get; set; }
+		public short CameraTruoc { get; set; }
 		public string Imel { get; set; }
 		public decimal GiamGia { get; set; }
 		public string MaLoai { get; set; }

@@ -23,7 +23,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public string Sdt { get; set; }
         public string TenTaiKhoan { get; set; }
         public string MatKhau { get; set; }
-        public bool? IsAdmin { get; set; }
+        public bool IsAdmin { get; set; }
 
         public virtual ICollection<BaoHanh> BaoHanhs { get; set; }
         public virtual ICollection<DanhGia> DanhGia { get; set; }

@@ -3,36 +3,80 @@
   "WorkspaceRootPath": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.dal\\sanphamrep_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|solutionrelative:websitebandienthoai23.dal\\sanphamrep_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\controllers\\nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\controllers\\nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45F3944-15FD-4FA0-82A7-AAD37DD8103D}|WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.bll\\nguoidungsvc_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45F3944-15FD-4FA0-82A7-AAD37DD8103D}|WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj|solutionrelative:websitebandienthoai23.bll\\nguoidungsvc_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.dal\\nguoidungrep_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|solutionrelative:websitebandienthoai23.dal\\nguoidungrep_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A45F3944-15FD-4FA0-82A7-AAD37DD8103D}|WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.bll\\sanphamsvc_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A45F3944-15FD-4FA0-82A7-AAD37DD8103D}|WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj|solutionrelative:websitebandienthoai23.bll\\sanphamsvc_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.dal\\sanphamrep_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|solutionrelative:websitebandienthoai23.dal\\sanphamrep_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.dal\\loaisprep_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|solutionrelative:websitebandienthoai23.dal\\loaisprep_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A45F3944-15FD-4FA0-82A7-AAD37DD8103D}|WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.bll\\loaispsvc_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A45F3944-15FD-4FA0-82A7-AAD37DD8103D}|WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj|solutionrelative:websitebandienthoai23.bll\\loaispsvc_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.dal\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|solutionrelative:websitebandienthoai23.dal\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\controllers\\loaispcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\controllers\\loaispcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\dienthoai\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\dienthoai\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\dienthoai\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\dienthoai\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.common\\req\\nguoidungreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|solutionrelative:websitebandienthoai23.common\\req\\nguoidungreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.common\\req\\sanphamreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|solutionrelative:websitebandienthoai23.common\\req\\sanphamreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.common\\req\\simplereq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|solutionrelative:websitebandienthoai23.common\\req\\simplereq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.common\\req\\timsanphamreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|solutionrelative:websitebandienthoai23.common\\req\\timsanphamreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.dal\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|solutionrelative:websitebandienthoai23.dal\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A45F3944-15FD-4FA0-82A7-AAD37DD8103D}|WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.bll\\loaispsvc_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A45F3944-15FD-4FA0-82A7-AAD37DD8103D}|WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj|solutionrelative:websitebandienthoai23.bll\\loaispsvc_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.common\\req\\simplereq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|solutionrelative:websitebandienthoai23.common\\req\\simplereq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.common\\req\\basereq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,24 +87,12 @@
       "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\views\\sanphams\\editimage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.dal\\models\\qlbandienthoaicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|solutionrelative:websitebandienthoai23.dal\\models\\qlbandienthoaicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.dal\\loaisprep_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D82F0F74-E7F0-4B8B-9C0C-7BEEEA9533FE}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|solutionrelative:websitebandienthoai23.dal\\loaisprep_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.common\\dal\\genericrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|solutionrelative:websitebandienthoai23.common\\dal\\genericrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -68,10 +100,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\views\\sanphams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\views\\sanphams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\controllers\\loaispcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\controllers\\loaispcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC9840F8-5091-42D6-9E3E-A9C3285A37FC}|WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.common\\bll\\genericsvc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -124,14 +152,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\dienthoai\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\dienthoai\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\dienthoai\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\dienthoai\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\dienthoai\\price.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -200,10 +220,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E7C9ECF8-6D5B-4530-8D22-646D316F2E00}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F58175F1-9588-4315-8F38-3BC918A1E245}|WebsiteBanDienThoai23.WebAPI\\WebsiteBanDienThoai23.WebAPI.csproj|d:\\github\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.webapi\\websitebandienthoai23.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -277,11 +293,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\Details.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\Details.cshtml",
@@ -294,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "EditImage.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\EditImage.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\EditImage.cshtml",
@@ -303,8 +319,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-21T05:43:24.985Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -316,94 +331,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SanPhamSvc_Admin.cs",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\SanPhamSvc_Admin.cs",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.BLL\\SanPhamSvc_Admin.cs",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\SanPhamSvc_Admin.cs",
-              "RelativeToolTip": "WebsiteBanDienThoai23.BLL\\SanPhamSvc_Admin.cs",
-              "ViewState": "AQIAAAYBAAAAAAAAAAAAAAoBAABFAAAA",
+              "DocumentIndex": 3,
+              "Title": "NguoiDungSvc_Admin.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\NguoiDungSvc_Admin.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.BLL\\NguoiDungSvc_Admin.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\NguoiDungSvc_Admin.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.BLL\\NguoiDungSvc_Admin.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACwAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T14:20:34.13Z",
+              "WhenOpened": "2024-05-24T04:47:46.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SimpleReq.cs",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\SimpleReq.cs",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Req\\SimpleReq.cs",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\SimpleReq.cs",
-              "RelativeToolTip": "WebsiteBanDienThoai23.Common\\Req\\SimpleReq.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T13:04:14.823Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SanPhamController.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\SanPhamController.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\SanPhamController.cs",
               "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\SanPhamController.cs",
               "RelativeToolTip": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\SanPhamController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAtwEIAAAAAAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAA3wCkAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T14:19:48.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SanPhamReq.cs",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\SanPhamReq.cs",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Req\\SanPhamReq.cs",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\SanPhamReq.cs",
-              "RelativeToolTip": "WebsiteBanDienThoai23.Common\\Req\\SanPhamReq.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAA0wB4AAAACAAAA",
+              "DocumentIndex": 1,
+              "Title": "NguoiDungController.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\NguoiDungController.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\NguoiDungController.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\NguoiDungController.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\NguoiDungController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwC0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T15:06:50.876Z",
+              "WhenOpened": "2024-05-24T04:47:11.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SanPhamRep_Admin.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\SanPhamRep_Admin.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.DAL\\SanPhamRep_Admin.cs",
               "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\SanPhamRep_Admin.cs",
               "RelativeToolTip": "WebsiteBanDienThoai23.DAL\\SanPhamRep_Admin.cs",
-              "ViewState": "AQIAANAAAAAAAAAAAAAtwOEAAAAbAAAA",
+              "ViewState": "AQIAAHIAAAAAAAAAAADwv3YAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T14:21:38.969Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TimSanPhamReq.cs",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\TimSanPhamReq.cs",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Req\\TimSanPhamReq.cs",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\TimSanPhamReq.cs",
-              "RelativeToolTip": "WebsiteBanDienThoai23.Common\\Req\\TimSanPhamReq.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "DocumentIndex": 4,
+              "Title": "NguoiDungRep_Admin.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\NguoiDungRep_Admin.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.DAL\\NguoiDungRep_Admin.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\NguoiDungRep_Admin.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.DAL\\NguoiDungRep_Admin.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T15:16:04.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T04:48:18.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SanPhamSvc_Admin.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\SanPhamSvc_Admin.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.BLL\\SanPhamSvc_Admin.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\SanPhamSvc_Admin.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.BLL\\SanPhamSvc_Admin.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAAAGsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:20:34.13Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "SanPham.cs",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\Models\\SanPham.cs",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.DAL\\Models\\SanPham.cs",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\Models\\SanPham.cs",
-              "RelativeToolTip": "WebsiteBanDienThoai23.DAL\\Models\\SanPham.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAsAAAA",
+              "Title": "LoaiSpRep_Admin.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\LoaiSpRep_Admin.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.DAL\\LoaiSpRep_Admin.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\LoaiSpRep_Admin.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.DAL\\LoaiSpRep_Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T14:30:05.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T13:19:45.916Z"
             },
             {
               "$type": "Document",
@@ -415,21 +427,31 @@
               "RelativeToolTip": "WebsiteBanDienThoai23.BLL\\LoaiSpSvc_Admin.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAiwBEAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T13:19:05.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T13:19:05.105Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "BaseReq.cs",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\BaseReq.cs",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Req\\BaseReq.cs",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\BaseReq.cs",
-              "RelativeToolTip": "WebsiteBanDienThoai23.Common\\Req\\BaseReq.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwCAAAAADAAAA",
+              "Title": "NguoiDung.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\Models\\NguoiDung.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.DAL\\Models\\NguoiDung.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\Models\\NguoiDung.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.DAL\\Models\\NguoiDung.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAEwBIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T13:03:27.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T04:44:28.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCUAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T12:33:57.62Z"
             },
             {
               "$type": "Document",
@@ -439,14 +461,121 @@
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\SanPhamsController.cs",
               "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\SanPhamsController.cs",
               "RelativeToolTip": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\SanPhamsController.cs",
-              "ViewState": "AQIAAK0AAAAAAAAAAAAuwK0AAABHAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAwwK0AAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T03:44:51.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T03:44:51.636Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "LoaiSpController.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\LoaiSpController.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\LoaiSpController.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\LoaiSpController.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\LoaiSpController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:21:26.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAAAAoBAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T11:51:45.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Details.cshtml",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Details.cshtml",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-19T12:40:26.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Index.cshtml",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Index.cshtml",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Index.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEMAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-20T03:49:05.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SanPhamReq.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\SanPhamReq.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Req\\SanPhamReq.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\SanPhamReq.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Common\\Req\\SanPhamReq.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA1wAsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T15:06:50.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NguoiDungReq.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\NguoiDungReq.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Req\\NguoiDungReq.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\NguoiDungReq.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Common\\Req\\NguoiDungReq.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T04:54:41.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\Models\\SanPham.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.DAL\\Models\\SanPham.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\Models\\SanPham.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.DAL\\Models\\SanPham.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAA4wCQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T14:30:05.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SimpleReq.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\SimpleReq.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Req\\SimpleReq.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\SimpleReq.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Common\\Req\\SimpleReq.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:04:14.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BaseReq.cs",
+              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\BaseReq.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Req\\BaseReq.cs",
+              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\BaseReq.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Common\\Req\\BaseReq.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T13:03:27.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "QLBanDienThoaiContext.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\Models\\QLBanDienThoaiContext.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.DAL\\Models\\QLBanDienThoaiContext.cs",
@@ -454,25 +583,11 @@
               "RelativeToolTip": "WebsiteBanDienThoai23.DAL\\Models\\QLBanDienThoaiContext.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAA4wCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T12:39:25.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T12:39:25.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LoaiSpRep_Admin.cs",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\LoaiSpRep_Admin.cs",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.DAL\\LoaiSpRep_Admin.cs",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\LoaiSpRep_Admin.cs",
-              "RelativeToolTip": "WebsiteBanDienThoai23.DAL\\LoaiSpRep_Admin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T13:19:45.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "GenericRep.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\DAL\\GenericRep.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\DAL\\GenericRep.cs",
@@ -484,19 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAMwCUAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T12:33:57.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "Microsoft.NET.EolTargetFrameworks.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
@@ -506,19 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "LoaiSpController.cs",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\LoaiSpController.cs",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\LoaiSpController.cs",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\LoaiSpController.cs",
-              "RelativeToolTip": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\LoaiSpController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAA4AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T13:21:26.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "GenericSvc.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\BLL\\GenericSvc.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\BLL\\GenericSvc.cs",
@@ -530,7 +621,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "IGenericRep.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\DAL\\IGenericRep.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\DAL\\IGenericRep.cs",
@@ -542,7 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "BaseModel.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Req\\BaseModel.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Req\\BaseModel.cs",
@@ -554,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "IGenericSvc.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\BLL\\IGenericSvc.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\BLL\\IGenericSvc.cs",
@@ -566,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "WebsiteBanDienThoai23.BLL.csproj",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj",
@@ -578,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "WebsiteBanDienThoai23.Common.csproj",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj",
@@ -590,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\Edit.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\Edit.cshtml",
@@ -602,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\Create.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\Create.cshtml",
@@ -614,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\Delete.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\Delete.cshtml",
@@ -626,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -638,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\Shared\\_Layout.cshtml",
@@ -650,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Models\\ErrorViewModel.cs",
@@ -662,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\Home\\Index.cshtml",
@@ -674,19 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Details.cshtml",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Details.cshtml",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Details.cshtml",
-              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Details.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAEIAAABoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-19T12:40:26.144Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "Price.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Price.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Price.cshtml",
@@ -698,7 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "Name.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Name.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Name.cshtml",
@@ -710,19 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Index.cshtml",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Index.cshtml",
-              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\DienThoai\\Index.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAEMAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-20T03:49:05.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Controllers\\HomeController.cs",
@@ -734,7 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "DienThoaiController.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Controllers\\DienThoaiController.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Controllers\\DienThoaiController.cs",
@@ -746,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\MayCu\\Details.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\MayCu\\Details.cshtml",
@@ -758,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 43,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\Index.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\SanPhams\\Index.cshtml",
@@ -770,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 44,
               "Title": "Startup.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Startup.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Startup.cs",
@@ -782,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 45,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\appsettings.json",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\appsettings.json",
@@ -794,7 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 46,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
@@ -806,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 49,
               "Title": "bootstrap.min.css",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\wwwroot\\css\\bootstrap.min.css",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\wwwroot\\css\\bootstrap.min.css",
@@ -818,7 +885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 47,
               "Title": "TabletController.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Controllers\\TabletController.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Controllers\\TabletController.cs",
@@ -830,7 +897,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 48,
               "Title": "style.css",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\wwwroot\\css\\style.css",
@@ -842,7 +909,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 50,
               "Title": "site.css",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\wwwroot\\css\\site.css",
@@ -854,7 +921,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 51,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Program.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Program.cs",
@@ -866,7 +933,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 52,
               "Title": "index.html",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\wwwroot\\index.html",
@@ -878,7 +945,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 53,
               "Title": "MayCuController.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Controllers\\MayCuController.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Controllers\\MayCuController.cs",
@@ -890,7 +957,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 54,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\Home\\Privacy.cshtml",
@@ -902,19 +969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAAAAoBAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-19T11:51:45.251Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 55,
               "Title": "WebsiteBanDienThoai23.WebAPI.csproj",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.WebAPI\\WebsiteBanDienThoai23.WebAPI.csproj",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.WebAPI\\WebsiteBanDienThoai23.WebAPI.csproj",
@@ -926,7 +981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 59,
               "Title": "Error.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\Shared\\Error.cshtml",
@@ -938,7 +993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 56,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\MayCu\\Index.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\MayCu\\Index.cshtml",
@@ -950,7 +1005,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 58,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\_ViewStart.cshtml",
@@ -962,7 +1017,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 57,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\appsettings.Development.json",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\appsettings.Development.json",
@@ -974,7 +1029,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 60,
               "Title": "Name.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\MayCu\\Name.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\MayCu\\Name.cshtml",
@@ -986,7 +1041,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 61,
               "Title": "WebsiteBanDienThoai23.Web.csproj",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj",
@@ -998,7 +1053,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 63,
               "Title": "user.jpg",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\wwwroot\\img\\user.jpg",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\wwwroot\\img\\user.jpg",
@@ -1009,7 +1064,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 64,
               "Title": "testimonial-2.jpg",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\wwwroot\\img\\testimonial-2.jpg",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\wwwroot\\img\\testimonial-2.jpg",
@@ -1020,7 +1075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 62,
               "Title": "testimonial-1.jpg",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\wwwroot\\img\\testimonial-1.jpg",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\wwwroot\\img\\testimonial-1.jpg",
@@ -1031,7 +1086,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 65,
               "Title": "WebsiteBanDienThoai23.AdminWeb.csproj",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj",
@@ -1043,7 +1098,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 67,
               "Title": "LoaiSp.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\Models\\LoaiSp.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.DAL\\Models\\LoaiSp.cs",
@@ -1055,7 +1110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 66,
               "Title": "SingleRsp.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Rsp\\SingleRsp.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Rsp\\SingleRsp.cs",
@@ -1067,7 +1122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 68,
               "Title": "MultipleRsp.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Rsp\\MultipleRsp.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Rsp\\MultipleRsp.cs",
@@ -1079,7 +1134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 69,
               "Title": "BaseRsp.cs",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\Rsp\\BaseRsp.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Common\\Rsp\\BaseRsp.cs",
@@ -1091,7 +1146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 70,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\GitHub\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Tablet\\Details.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\Tablet\\Details.cshtml",

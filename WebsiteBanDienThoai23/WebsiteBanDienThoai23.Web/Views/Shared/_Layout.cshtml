@@ -7,13 +7,14 @@
     <title>Mobile Phone Store</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="~/css/head.css">
+    <link rel="stylesheet" href="~/css/details.css">
 </head>
 <body>
     <header>
         <div class="header-list">
             <div class="header-list--logo-and-search">
                 <div class="logo">
-                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logotext1.png" alt="" height="50px"></a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logotext1.png" alt="" style="height:50px"></a>
                 </div>
                 <form action="/DienThoai/Name" method="get">
                     <div class="search">
@@ -28,12 +29,11 @@
             <i class="fas fa-bars"></i>
             <div class="header-list--menu">
                 <ul>
-                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><i class="icon icon_dien_thoai"></i><span>điện thoại</span></a></li>
-                    <li><a asp-area="" asp-controller="Tablet" asp-action="Index"><i class="icon icon_tablet"></i><span>tablet</span></a></li>
-                    <li><a asp-area="" asp-controller="MayCu" asp-action="Index"><i class="icon icon_cu_gia_re">máy</i><span>cũ giá rẻ</span></a></li>
-                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><span>Đăng nhập</span></a></li>
-                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><span>Đăng ký</span></a></li>
-                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><i class="fas fa-cart-plus size"></i><span> Giỏ hàng</span></a></li>
+                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><i class="icon icon_dien_thoai" style="font-size: 12px;"></i><span style="font-size: 12px;">điện thoại</span></a></li>
+                    <li><a asp-area="" asp-controller="MayCu" asp-action="Index"><i class="icon icon_cu_gia_re" style="font-size: 12px;">máy</i><span style="font-size: 12px;">cũ giá rẻ</span></a></li>
+                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><span style="font-size: 12px;">Đăng nhập</span></a></li>
+                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><span style="font-size: 12px;">Đăng ký</span></a></li>
+                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><i class="fas fa-cart-plus size" style="font-size: 12px;"></i><span style="font-size: 12px;"> Giỏ hàng</span></a></li>
                 </ul>
             </div>
         </div>
@@ -42,7 +42,7 @@
     <div>
         @RenderBody()
     </div>
-    <a style="display: scroll; position: fixed; bottom: 3px; right: 7px;" title="Back to Top" href="#"><img src="~/images/up-arrow.png" alt="" /></a>
+    
     <footer>
         <div class="container-fluid footer">
             <div class="row">
@@ -65,7 +65,6 @@
                         <li>Gọi khiếu nại <span>1800.1001</span> (8:00 - 21:30)</li>
                         <li>Gọi bảo hành <span>1800.1002</span> (8:00 - 21:00)</li>
                         <li>Hỗ trợ kĩ thuật <span>1800.1003</span> (7:30 - 22:00)</li>
-                        <li><a href="#"><i class="icon icon_notification"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -73,20 +72,12 @@
                         <div class="logo">
                             <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logotext1.png" alt="" height="100%" width="100%"></a>
                         </div>
-                    </ul>
                 </div>
             </div>
         </div>
+        </div><p style="text-align: center;"><span style="font-size:12px;">&copy; 2024. Cửa hàng Mobile Phone Store. Email: abc@Ou.edu.vn. Chịu trách nhiệm nội dung: Lê Minh Tính, Nguyễn Thái Quốc, Nguyễn Ích Trường.</span></p>
     </footer>
-    <div class="container-fluid privacy">
-        <div class="row">
-            <div class="col-md-12 sub_privacy">
-                <p style="text-align: center;">
-                    &copy; 2024. Cửa hàng Mobile Phone Store. Email: abc@Ou.edu.vn. Chịu trách nhiệm nội dung: Lê Minh Tính, Nguyễn Thái Quốc, Nguyễn Ích Trường.
-                </p>
-            </div>
-        </div>
-    </div>
+    <a style="display: scroll; position: fixed; bottom: 20px; right: 7px;" title="Back to Top" href="#"><img src="~/images/up-arrow.png" alt="" /></a>
     <script src="~/js/jquery.js"></script>
     <script src="~/js/bootstrap.js"></script>
     <script src="~/js/slick.js"></script>

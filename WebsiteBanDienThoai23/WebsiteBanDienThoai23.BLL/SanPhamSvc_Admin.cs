@@ -33,9 +33,7 @@ namespace WebsiteBanDienThoai23.BLL
             {
                 MaSp = productReq.MaSp,
                 TenSp = productReq.TenSp,
-                Hinh1 = productReq.Hinh1,
-                Hinh2 = productReq.Hinh2,
-                Hinh3 = productReq.Hinh3,
+                Hinh = productReq.Hinh,
                 MoTa = productReq.MoTa,
                 TonKho = productReq.TonKho,
                 SoLuong = productReq.SoLuong,
@@ -147,9 +145,8 @@ namespace WebsiteBanDienThoai23.BLL
             else
             {
                 product.TenSp = productReq.TenSp;
-                product.Hinh1 = productReq.Hinh1;
-                product.Hinh2 = productReq.Hinh2;
-                product.Hinh3 = productReq.Hinh3;
+                product.Hinh = productReq.Hinh;
+                
                 product.MoTa = productReq.MoTa;
                 product.TonKho = productReq.TonKho;
                 product.SoLuong = productReq.SoLuong;

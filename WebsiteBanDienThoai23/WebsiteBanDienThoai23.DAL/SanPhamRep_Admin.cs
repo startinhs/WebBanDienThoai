@@ -40,9 +40,8 @@ namespace WebsiteBanDienThoai23.DAL
                             {
                                 MaSp = reader["MaSp"].ToString(),
                                 TenSp = reader["TenSp"].ToString(),
-                                Hinh1 = reader["Hinh1"].ToString(),
-                                Hinh2 = reader["Hinh2"].ToString(),
-                                Hinh3 = reader["Hinh3"].ToString(),
+                                Hinh = reader["Hinh1"].ToString(),
+                                
                                 MoTa = reader["MoTa"].ToString(),
                                 TonKho = (bool)reader["TonKho"],
                                 SoLuong = (short)reader["SoLuong"],

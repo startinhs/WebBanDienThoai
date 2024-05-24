@@ -17,9 +17,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
 
         public string MaSp { get; set; }
         public string TenSp { get; set; }
-        public string Hinh1 { get; set; }
-        public string Hinh2 { get; set; }
-        public string Hinh3 { get; set; }
+        public string Hinh { get; set; }
         public string MoTa { get; set; }
         public bool TonKho { get; set; }
         public short SoLuong { get; set; }
@@ -39,6 +37,8 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public string Imel { get; set; }
         public decimal GiamGia { get; set; }
         public string MaLoai { get; set; }
+        public bool? MayCu { get; set; }
+        public string Color { get; set; }
 
         public virtual LoaiSp MaLoaiNavigation { get; set; }
         public virtual ICollection<ChiTietBaoHanh> ChiTietBaoHanhs { get; set; }

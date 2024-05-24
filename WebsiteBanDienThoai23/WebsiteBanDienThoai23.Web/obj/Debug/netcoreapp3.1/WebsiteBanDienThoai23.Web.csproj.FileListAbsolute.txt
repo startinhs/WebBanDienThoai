@@ -190,17 +190,7 @@ D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai2
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
-D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\DienThoai\Details.cshtml.g.cs
-D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Tablet\Details.cshtml.g.cs
-D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Tablet\Index.cshtml.g.cs
-D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\DienThoai\Price.cshtml.g.cs
-D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\DienThoai\Name.cshtml.g.cs
-D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Tablet\Name.cshtml.g.cs
-D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Tablet\Price.cshtml.g.cs
-D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\MayCu\Details.cshtml.g.cs
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\MayCu\Index.cshtml.g.cs
-D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\MayCu\Name.cshtml.g.cs
-D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\MayCu\Price.cshtml.g.cs
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Web.exe
@@ -403,3 +393,4 @@ D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\WebsiteBanDienThoai23\WebsiteBanDienThoa
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Web.dll
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Web.pdb
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Web.genruntimeconfig.cache
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\DienThoai\Details.cshtml.g.cs

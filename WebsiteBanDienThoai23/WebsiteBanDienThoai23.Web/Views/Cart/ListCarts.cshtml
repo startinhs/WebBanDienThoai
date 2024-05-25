@@ -71,15 +71,15 @@
 								@* <button type="button" class="btn btn-primary btn-lg btn-block">Thanh Toán</button> *@
 								@if (User.Identity.IsAuthenticated)
 								{
-									<!-- Nếu đã đăng nhập, cho phép người dùng thanh toán trực tiếp -->
-									<a href="@Url.Action("Checkout", "Cart")" class="btn btn-primary btn-lg btn-block">Thanh toán</a>
+									<!-- Nút để chuyển hướng đến trang Checkout -->
+									<a href="@Url.Action("Checkout", "Cart")" class="btn btn-primary">Thanh toán</a>
 								}
 								else
 								{
-									<!-- Nếu chưa đăng nhập, yêu cầu người dùng đăng nhập trước khi thanh toán -->
-									<a href="@Url.Action("Login", "Account", new { returnUrl = Url.Action("Checkout", "Cart") })" class="btn btn-primary btn-lg btn-block">Đăng nhập để thanh toán</a>
+									<!-- Nút để chuyển hướng đến trang đăng nhập -->
+									<a href="@Url.Action("DangNhap", "Account", new { ReturnUrl = Url.Action("ListCarts", "Cart") })" class="btn btn-primary">Đăng nhập để thanh toán</a>
 								}
-							<br /> <br />
+								<br /> <br />
 						</div>
 					</div>
 				</div>

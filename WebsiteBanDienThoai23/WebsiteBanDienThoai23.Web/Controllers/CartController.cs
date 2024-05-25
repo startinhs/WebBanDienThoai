@@ -84,9 +84,22 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 			}
 			return RedirectToAction("ListCarts");
 		}
-		[Authorize]
-		public ActionResult Checkout()
-		{
+
+        public string GenerateMaHd()
+        {
+            // Tạo một chuỗi ngẫu nhiên độ dài 6 ký tự
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            var random = new Random();
+            var result = new string(
+                Enumerable.Repeat(chars, 6)
+                          .Select(s => s[random.Next(s.Length)])
+                          .ToArray());
+            return result;
+        }
+
+        [Authorize]
+        public ActionResult Checkout()
+        {
             if (!User.Identity.IsAuthenticated)
             {
                 // Ghi nhớ URL hiện tại trước khi chuyển hướng đến trang đăng nhập
@@ -98,48 +111,51 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             // Lấy danh sách các sản phẩm trong giỏ hàng từ session
             List<CartModel> carts = GetListCarts();
 
-			// Lấy user ID từ session hoặc qua một phương thức
-			int? userId = GetUserId();
+            // Lấy user ID từ session hoặc qua một phương thức
+            int? userId = GetUserId();
 
-			if (carts != null && carts.Count > 0 && userId.HasValue)
-			{
-				// Tạo một Giỏ Hàng mới
-				var cart = new GioHang
-				{
-					MaKh = userId.Value
-				};
+            if (carts != null && carts.Count > 0 && userId.HasValue)
+            {
+                var order = new HoaDon
+                {
+                    MaHd = GenerateMaHd(),
+                    MaKh = userId.Value,
+                    NgayDatHang = DateTime.Now,
+                };
 
-				_context.GioHangs.Add(cart);
 
-				// Lưu các thay đổi vào cơ sở dữ liệu để nhận được giá trị MaGh tự động tạo
-				_context.SaveChanges();
+                // Thêm đơn hàng vào cơ sở dữ liệu
+                _context.HoaDons.Add(order);
+                _context.SaveChanges(); // Lưu thay đổi để có thể lấy được MaHd tự động tạo
 
-				// Thêm từng sản phẩm trong giỏ vào Chi tiết giỏ hàng
-				foreach (var item in carts)
-				{
-					var cartDetail = new ChiTietGioHang
-					{
-						MaGh = cart.MaGh, // Sử dụng MaGh đã được tạo tự động
-						MaSp = item.MaSp,
-						SoLuong = item.SoLuong
-					};
+                // Thêm từng sản phẩm trong giỏ vào Chi tiết đơn hàng
+                foreach (var item in carts)
+                {
+                    var orderDetail = new ChiTietHoaDon
+                    {
+                        MaHd = order.MaHd, // Sử dụng MaHd đã được tạo tự động
+                        MaSp = item.MaSp,
+                        SoLuongDatHang = item.SoLuong
+                    };
 
-					_context.ChiTietGioHangs.Add(cartDetail);
-				}
+                    // Thêm chi tiết đơn hàng vào cơ sở dữ liệu
+                    _context.ChiTietHoaDons.Add(orderDetail);
+                }
 
-				// Lưu các thay đổi vào cơ sở dữ liệu
-				_context.SaveChanges();
+                // Lưu thay đổi vào cơ sở dữ liệu
+                _context.SaveChanges();
 
-				// Xóa session giỏ hàng
-				HttpContext.Session.Remove("CartModel");
+                // Xóa session giỏ hàng sau khi đã thanh toán
+                HttpContext.Session.Remove("CartModel");
 
-				return RedirectToAction("CheckoutSuccess");
-			}
+                return RedirectToAction("CheckoutSuccess");
+            }
 
-			return RedirectToAction("ListCarts");
-		}
+            return RedirectToAction("ListCarts");
+        }
 
-		private int? GetUserId()
+
+        private int? GetUserId()
 		{
 			// Lấy user ID từ session
 			var userIdString = HttpContext.Session.GetString("UserId");

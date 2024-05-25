@@ -38,7 +38,7 @@ namespace WebsiteBanDienThoai23.Web
 			services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
 				.AddCookie(options =>
 				{
-					options.LoginPath = "/Account/Login"; // Đường dẫn đến trang đăng nhập
+					options.LoginPath = "/Account/DangNhap"; // Đường dẫn đến trang đăng nhập
 				});
 
 			services.AddDbContext<QLBanDienThoaiContext>(options =>

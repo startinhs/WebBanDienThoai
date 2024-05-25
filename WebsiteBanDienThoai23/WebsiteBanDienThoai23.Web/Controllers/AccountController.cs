@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using WebsiteBanDienThoai23.DAL.Models;
 using WebsiteBanDienThoai23.Web.Models;
 using System.Linq;
+using WebsiteBanDienThoai23.Web.ViewModels;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace WebsiteBanDienThoai23.Web.Controllers
 {
@@ -25,126 +27,144 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 		{
 			_context = context;
 		}
-
 		[HttpGet]
-		public IActionResult Login()
+        public IActionResult DangKy()
+        {
+            return View();
+        }
+		[HttpPost]
+        public IActionResult Dangky(DangKy model)
+        {
+            if (ModelState.IsValid)
+            {
+                var checkEmail = _context.NguoiDungs.FirstOrDefault(x => x.Email == model.Email);
+                var checkTenTK = _context.NguoiDungs.FirstOrDefault(x => x.TenTaiKhoan == model.TenTaiKhoan);
+                var checkSDT = _context.NguoiDungs.FirstOrDefault(x => x.Sdt == model.Sdt);
+                if (checkEmail != null && checkTenTK == null && checkSDT == null)
+                {
+                    ViewBag.EmailError = "Email đã tồn tại!";
+                    return View();
+                }
+                else if (checkEmail == null && checkTenTK != null && checkSDT == null)
+                {
+                    ViewBag.TenTKError = "Tên tài khoản đã tồn tại!";
+                    return View();
+                }
+                else if (checkEmail == null && checkTenTK == null && checkSDT != null)
+                {
+                    ViewBag.SDTError = "Số điện thoại đã tồn tại!";
+                    return View();
+                }
+                else if (checkEmail != null && checkTenTK != null && checkSDT == null)
+                {
+                    ViewBag.EmailError = "Email đã tồn tại!";
+                    ViewBag.TenTKError = "Tên tài khoản đã tồn tại!";
+                    return View();
+                }
+                else if (checkEmail == null && checkTenTK != null && checkSDT != null)
+                {
+                    ViewBag.SDTError = "Số điện thoại đã tồn tại!";
+                    ViewBag.TenTKError = "Tên tài khoản đã tồn tại!";
+                    return View();
+                }
+                else if (checkEmail != null && checkTenTK == null && checkSDT != null)
+                {
+                    ViewBag.SDTError = "Số điện thoại đã tồn tại!";
+                    ViewBag.EmailError = "Email đã tồn tại!";
+                    return View();
+                }
+                else if (checkEmail != null && checkTenTK != null && checkSDT != null)
+                {
+                    ViewBag.EmailError = "Email đã tồn tại!";
+                    ViewBag.SDTError = "Số điện thoại đã tồn tại!";
+                    ViewBag.TenTKError = "Tên tài khoản đã tồn tại!";
+                    return View();
+                }
+                else
+                {
+                    model.IsAdmin = false;
+                    NguoiDung nd = new NguoiDung();
+                    nd.HoTen = model.HoTen;
+                    nd.Email = model.Email;
+                    nd.DiaChi = model.DiaChi;
+                    nd.Sdt = model.Sdt;
+                    nd.TenTaiKhoan = model.TenTaiKhoan;
+                    string salt = BCrypt.Net.BCrypt.GenerateSalt();
+                    string mk_hash = BCrypt.Net.BCrypt.HashPassword(model.MatKhau, salt);
+                    nd.MatKhau = mk_hash;
+                    _context.Add(nd);
+                    _context.SaveChanges();
+                    return RedirectToAction("DangNhap", "Account");
+                }
+            }
+            return View();
+        }
+        [HttpGet]
+		public IActionResult DangNhap(string? ReturnUrl)
 		{
-			return View();
+            ViewBag.ReturnUrl = ReturnUrl;
+            return View();
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Login(LoginModel model)
+		public async Task<IActionResult> DangNhap(DangNhap model, string? ReturnUrl)
 		{
-			if (ModelState.IsValid)
+            ViewBag.ReturnUrl = ReturnUrl;
+            if (ModelState.IsValid)
 			{
-				var user = _context.NguoiDungs
-					.FirstOrDefault(u => u.TenTaiKhoan == model.TenDangNhap && u.MatKhau == model.MatKhau);
+                var nd = _context.NguoiDungs.SingleOrDefault(kh => kh.TenTaiKhoan == model.TenTaiKhoan);
+                if (nd != null)
+                {
+                    bool passwordMatch = BCrypt.Net.BCrypt.Verify(model.MatKhau, nd.MatKhau);
+                    if (passwordMatch)
+                    {
+                        var claims = new List<Claim>
+                        {
+                            new Claim(ClaimTypes.Name, nd.TenTaiKhoan),
+                            new Claim("UserId", nd.UserId.ToString())
+                        };
+                        var claimsIdentity = new ClaimsIdentity(
+                        claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
-				if (user != null)
-				{
-					var claims = new List<Claim>
-				{
-					new Claim(ClaimTypes.Name, user.TenTaiKhoan),
-					new Claim("UserId", user.UserId.ToString())
-				};
+                        await HttpContext.SignInAsync(
+                            CookieAuthenticationDefaults.AuthenticationScheme,
+                            new ClaimsPrincipal(claimsIdentity),
+                            new AuthenticationProperties
+                            {
+                                IsPersistent = true
+                            });
 
-					var claimsIdentity = new ClaimsIdentity(
-						claims, CookieAuthenticationDefaults.AuthenticationScheme);
-
-					await HttpContext.SignInAsync(
-						CookieAuthenticationDefaults.AuthenticationScheme,
-						new ClaimsPrincipal(claimsIdentity),
-						new AuthenticationProperties
-						{
-							IsPersistent = true
-						});
-
-					HttpContext.Session.SetString("UserId", user.UserId.ToString());
-
-					return RedirectToAction("Index", "Home");
-				}
-
-				ModelState.AddModelError(string.Empty, "Tên đăng nhập hoặc mật khẩu không đúng.");
-			}
-
-			return View(model);
+                        HttpContext.Session.SetString("UserId", nd.UserId.ToString());
+                        if (Url.IsLocalUrl(ReturnUrl))
+                        {
+                            return Redirect(ReturnUrl);
+                        }
+                        else
+                        {
+                            return RedirectToAction("Index", "Home");
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.UserPassError = "Sai mật khẩu!";
+                        return View();
+                    }
+                }
+                else
+                {
+                    ViewBag.UserNameError = "Tên tài khoản chưa được đăng ký!";
+                    return View();
+                }
+            }
+            return RedirectToAction("DangNhap", "Account");
 		}
 
 		[HttpGet]
-		public async Task<IActionResult> Logout()
+		public async Task<IActionResult> DangXuat()
 		{
 			await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 			HttpContext.Session.Remove("UserId");
 			return RedirectToAction("Index", "Home");
-		}
-
-		// GET: AccountController/Details/5
-		public ActionResult Details(int id)
-		{
-			return View();
-		}
-
-		// GET: AccountController/Create
-		public ActionResult Create()
-		{
-			return View();
-		}
-
-		// POST: AccountController/Create
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public ActionResult Create(IFormCollection collection)
-		{
-			try
-			{
-				return RedirectToAction(nameof(Index));
-			}
-			catch
-			{
-				return View();
-			}
-		}
-
-		// GET: AccountController/Edit/5
-		public ActionResult Edit(int id)
-		{
-			return View();
-		}
-
-		// POST: AccountController/Edit/5
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public ActionResult Edit(int id, IFormCollection collection)
-		{
-			try
-			{
-				return RedirectToAction(nameof(Index));
-			}
-			catch
-			{
-				return View();
-			}
-		}
-
-		// GET: AccountController/Delete/5
-		public ActionResult Delete(int id)
-		{
-			return View();
-		}
-
-		// POST: AccountController/Delete/5
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public ActionResult Delete(int id, IFormCollection collection)
-		{
-			try
-			{
-				return RedirectToAction(nameof(Index));
-			}
-			catch
-			{
-				return View();
-			}
 		}
 	}
 }

@@ -48,6 +48,10 @@ namespace WebsiteBanDienThoai23.BLL
             {
                 res.SetError("Không tìm thấy mã người dùng");
             }
+            else
+            {
+                res.Data = user;
+            }    
             
             return res;
         }

@@ -41,7 +41,8 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
         [HttpGet("Get-All-NguoiDung")]
         public IActionResult GetAllNguoiDung()
         {
-            var res = nguoiDungSvc_Admin.GetAllUsers();
+            var res = new SingleRsp();
+            res = nguoiDungSvc_Admin.GetAllUsers();
             return Ok(res);
         }
         [HttpGet("Get-NguoiDung-By-UserID")]

@@ -31,8 +31,31 @@
                 <ul>
                     <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><i class="icon icon_dien_thoai" style="font-size: 12px;"></i><span style="font-size: 12px;">điện thoại</span></a></li>
                     <li><a asp-area="" asp-controller="MayCu" asp-action="Index"><i class="icon icon_cu_gia_re" style="font-size: 12px;">máy</i><span style="font-size: 12px;">cũ giá rẻ</span></a></li>
-                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><span style="font-size: 12px;">Đăng nhập</span></a></li>
-                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><span style="font-size: 12px;">Đăng ký</span></a></li>
+
+                    @{
+                        var isAuthenticated = User.Identity.IsAuthenticated;
+                        var userName = isAuthenticated ? User.Identity.Name : "Guest";
+                    }
+                    @if (isAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <span class="nav-link">Xin chào, @userName</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Logout", "Account")">Đăng xuất</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Login", "Account")">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Register", "Account")">Đăng ký</a>
+                        </li>
+                    }
+                    @* <li><a asp-area="" asp-controller="Account" asp-action="Login"><span style="font-size: 12px;">Đăng nhập</span></a></li>
+                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><span style="font-size: 12px;">Đăng ký</span></a></li> *@
                     <li><a asp-area="" asp-controller="Cart" asp-action="ListCarts"><i class="fas fa-cart-plus size" style="font-size: 12px;"></i><span style="font-size: 12px;"> Giỏ hàng</span></a></li>
                 </ul>
             </div>

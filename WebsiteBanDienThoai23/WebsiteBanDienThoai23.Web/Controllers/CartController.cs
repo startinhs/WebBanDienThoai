@@ -84,51 +84,72 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 			}
 			return RedirectToAction("ListCarts");
 		}
-		private int? GetUserId()
-		{
-			var userIdString = HttpContext.Session.GetString("UserId");
-
-			if (int.TryParse(userIdString, out int userId))
-			{
-				var user = _context.NguoiDungs.FirstOrDefault(u => u.UserId == userId);
-				if (user != null)
-				{
-					return userId;
-				}
-			}
-			return null;
-		}
 		[Authorize]
 		public ActionResult Checkout()
 		{
-			List<CartModel> carts = GetListCarts();
+            if (!User.Identity.IsAuthenticated)
+            {
+                // Ghi nhớ URL hiện tại trước khi chuyển hướng đến trang đăng nhập
+                string returnUrl = Url.Action("Checkout", "Cart");
+
+                return RedirectToAction("Login", "Account", new { returnUrl });
+            }
+
+            // Lấy danh sách các sản phẩm trong giỏ hàng từ session
+            List<CartModel> carts = GetListCarts();
+
+			// Lấy user ID từ session hoặc qua một phương thức
 			int? userId = GetUserId();
 
 			if (carts != null && carts.Count > 0 && userId.HasValue)
 			{
+				// Tạo một Giỏ Hàng mới
 				var cart = new GioHang
 				{
 					MaKh = userId.Value
 				};
 
 				_context.GioHangs.Add(cart);
+
+				// Lưu các thay đổi vào cơ sở dữ liệu để nhận được giá trị MaGh tự động tạo
 				_context.SaveChanges();
+
+				// Thêm từng sản phẩm trong giỏ vào Chi tiết giỏ hàng
 				foreach (var item in carts)
 				{
 					var cartDetail = new ChiTietGioHang
 					{
-						MaGh = cart.MaGh,
+						MaGh = cart.MaGh, // Sử dụng MaGh đã được tạo tự động
 						MaSp = item.MaSp,
 						SoLuong = item.SoLuong
 					};
+
 					_context.ChiTietGioHangs.Add(cartDetail);
 				}
+
+				// Lưu các thay đổi vào cơ sở dữ liệu
 				_context.SaveChanges();
+
+				// Xóa session giỏ hàng
 				HttpContext.Session.Remove("CartModel");
+
 				return RedirectToAction("CheckoutSuccess");
 			}
 
 			return RedirectToAction("ListCarts");
+		}
+
+		private int? GetUserId()
+		{
+			// Lấy user ID từ session
+			var userIdString = HttpContext.Session.GetString("UserId");
+
+			if (int.TryParse(userIdString, out int userId))
+			{
+				return userId;
+			}
+
+			return null;
 		}
 		public ActionResult CheckoutSuccess()
 		{

@@ -69,7 +69,16 @@
 							<div class="summary-item"><span class="text">Tổng thành tiền: </span><span class="price">@ViewBag.Total.ToString("N0")<span>₫</span></span></div>
 							<br /> <br />
 								@* <button type="button" class="btn btn-primary btn-lg btn-block">Thanh Toán</button> *@
-								<a href="@Url.Action("Checkout", "Cart")" class="btn btn-primary btn-lg btn-block">Thanh toán</a>
+								@if (User.Identity.IsAuthenticated)
+								{
+									<!-- Nếu đã đăng nhập, cho phép người dùng thanh toán trực tiếp -->
+									<a href="@Url.Action("Checkout", "Cart")" class="btn btn-primary btn-lg btn-block">Thanh toán</a>
+								}
+								else
+								{
+									<!-- Nếu chưa đăng nhập, yêu cầu người dùng đăng nhập trước khi thanh toán -->
+									<a href="@Url.Action("Login", "Account", new { returnUrl = Url.Action("Checkout", "Cart") })" class="btn btn-primary btn-lg btn-block">Đăng nhập để thanh toán</a>
+								}
 							<br /> <br />
 						</div>
 					</div>

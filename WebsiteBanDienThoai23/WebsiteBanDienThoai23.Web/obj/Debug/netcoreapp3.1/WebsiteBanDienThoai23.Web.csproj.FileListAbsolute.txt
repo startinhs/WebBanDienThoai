@@ -394,3 +394,4 @@ D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\WebsiteBanDienThoai23\WebsiteBanDienThoa
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Web.pdb
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Web.genruntimeconfig.cache
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\DienThoai\Details.cshtml.g.cs
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Cart\ListCarts.cshtml.g.cs

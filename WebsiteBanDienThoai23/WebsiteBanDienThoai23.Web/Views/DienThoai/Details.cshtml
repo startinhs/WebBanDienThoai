@@ -39,7 +39,7 @@
                                                 </div>
                                                 <div class="span6 product_view_main">
                                                     <div class="product-main-info">
-                                                        <form action="/Cart" method="post" class="cm-disable-empty-files">
+                                                <form action="@Url.Action("AddToCart", "Cart", new { id = Model.MaSp })" method="post" class="cm-disable-empty-files">
                                                             <div class="main_info_content clearfix">
                                                                 <div class="main_info_left">
                                                                     <div class="prices-container price-wrap clearfix product-detail-price">
@@ -73,8 +73,7 @@
                                                                         </ul>
                                                                     </div>
                                                                     <div class="buttons-container">
-                                                                         <a href="@Url.Action("Details", "DetailsProduct", new { id = Model.MaSp })"></a>
-                                                                        <button class="btn-add-to-cart">Mua Ngay <span>Giao hàng tận nơi hoặc lấy tại cửa hàng</span></button>
+                                                                        <button class="btn-add-to-cart" type="submit">Mua Ngay <span>Giao hàng tận nơi hoặc lấy tại cửa hàng</span></button>
                                                                     </div>
                                                                 </div>
                                                             </div>

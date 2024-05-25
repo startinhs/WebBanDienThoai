@@ -15,10 +15,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         // GET: CartController
         public ActionResult Index()
         {
-            List<CartModel> carts = GetListCarts();
-            ViewBag.CountProduct = carts.Sum(s => s.SoLuong);
-            ViewBag.Total = carts.Sum(s => s.Gia);
-            return View(carts);
+            return View();
         }
 
         public List<CartModel> GetListCarts()
@@ -34,37 +31,61 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             }
             return carts;
         }
+
         public ActionResult ListCarts()
         {
             List<CartModel> carts = GetListCarts();
             ViewBag.CountProduct = carts.Sum(s => s.SoLuong);
-            ViewBag.Total = carts.Sum(s => s.Gia);
-            return View(carts);
-        }
-        public ActionResult AddToCart(string id)
-        {
-            //Tao moi gio hang
-            List<CartModel> carts = GetListCarts();
-            //neu Co, lấy về dssp trong gio hang, kiem tra SP co chưa
-            CartModel c = carts.Find(s => s.MaSp == id);
-            //Co tăng sl
-            if (c != null)
-            {
-                c.SoLuong++;
-            }
-            //Chua co add vao gio hang
-            else
-            {
-                //Tao moi 1 sp trong gio hang
-                c = new Models.CartModel(id);
-                carts.Add(c);
-            }
-            //Hien thi dssp trong gio hang
-            return RedirectToAction("ListCarts");
+            decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
+            ViewBag.SubTotal = subTotal;
+			decimal discount = 0;
+			foreach (var cart in carts)
+			{
+				// Giả sử thuộc tính GiamGia của sản phẩm là phần trăm giảm giá
+				discount += (cart.GiamGia / 100.0m) * (cart.Gia * cart.SoLuong);
+			}
+			// Gán tổng giá trị sản phẩm vào ViewBag
+			ViewBag.Discount = discount;
+            ViewBag.Total = subTotal - discount;
+			return View(carts);
         }
 
-        // GET: CartController/Details/5
-        public ActionResult Details(int id)
+		public ActionResult AddToCart(string id)
+		{
+			var product = _context.SanPhams.FirstOrDefault(s => s.MaSp == id);
+
+			if (product != null)
+			{
+				List<CartModel> carts = GetListCarts();
+				CartModel existingProduct = carts.FirstOrDefault(s => s.MaSp == id);
+
+				if (existingProduct != null)
+				{
+					existingProduct.SoLuong++;
+				}
+				else
+				{
+					CartModel newProduct = new CartModel();
+					newProduct.MaSp = product.MaSp;
+					newProduct.TenSp = product.TenSp;
+					newProduct.Gia = product.Gia;
+					newProduct.SoLuong = 1;
+					newProduct.Hinh = product.Hinh;
+					newProduct.Ram = product.Ram;
+					newProduct.Rom = product.Rom;
+					newProduct.ManHinh = product.ManHinh;
+					newProduct.GiamGia = product.GiamGia;
+					carts.Add(newProduct);
+				}
+
+				HttpContext.Session.SetObjectAsJson("CartModel", carts);
+			}
+			return RedirectToAction("ListCarts");
+		}
+
+
+		// GET: CartController/Details/5
+		public ActionResult Details(int id)
         {
             return View();
         }

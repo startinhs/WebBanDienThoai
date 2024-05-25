@@ -21,8 +21,4 @@
     <ProjectReference Include="..\WebsiteBanDienThoai23.Common\WebsiteBanDienThoai23.Common.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Cart\" />
-  </ItemGroup>
-
 </Project>

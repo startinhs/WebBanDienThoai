@@ -100,15 +100,17 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             return View();
         }
         [HttpGet]
-		public IActionResult DangNhap()
+		public IActionResult DangNhap(string? ReturnUrl)
 		{
-			return View();
+            ViewBag.ReturnUrl = ReturnUrl;
+            return View();
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> DangNhap(DangNhap model)
+		public async Task<IActionResult> DangNhap(DangNhap model, string? ReturnUrl)
 		{
-			if (ModelState.IsValid)
+            ViewBag.ReturnUrl = ReturnUrl;
+            if (ModelState.IsValid)
 			{
                 var nd = _context.NguoiDungs.SingleOrDefault(kh => kh.TenTaiKhoan == model.TenTaiKhoan);
                 if (nd != null)
@@ -133,7 +135,14 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                             });
 
                         HttpContext.Session.SetString("UserId", nd.UserId.ToString());
-                        return RedirectToAction("Index", "Home");
+                        if (Url.IsLocalUrl(ReturnUrl))
+                        {
+                            return Redirect(ReturnUrl);
+                        }
+                        else
+                        {
+                            return RedirectToAction("Index", "Home");
+                        }
                     }
                     else
                     {

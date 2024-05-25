@@ -29,7 +29,8 @@
                                         <h5 class="card-title text-center pb-0 fs-4">Đăng nhập</h5>
                                         <p class="text-center small">Đăng nhập bằng tài khoản của bạn đã đăng ký</p>
                                     </div>
-                                    @using (Html.BeginForm("DangNhap", "Account", FormMethod.Post, new { @class = "row g-3 needs-validation", @novalidate = "novalidate" }))
+                                @using (Html.BeginForm("DangNhap", "Account", new { returnurl = ViewBag.ReturnUrl }, FormMethod.Post, false, new { @class = "row g-3 needs-validation", @novalidate = "novalidate" }))
+                                    @* @using (Html.BeginForm("DangNhap", "Account", FormMethod.Post, new { @class = "row g-3 needs-validation", @novalidate = "novalidate" })) *@
                                     {
                                         <div class="col-12">
                                             @Html.Label("Tên tài khoản:", null, new { @class = "form-label" })

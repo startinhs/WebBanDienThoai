@@ -43,51 +43,62 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 			decimal discount = 0;
 			foreach (var cart in carts)
 			{
-				// Giả sử thuộc tính GiamGia của sản phẩm là phần trăm giảm giá
 				discount += (cart.GiamGia / 100.0m) * (cart.Gia * cart.SoLuong);
 			}
-			// Gán tổng giá trị sản phẩm vào ViewBag
+
 			ViewBag.Discount = discount;
             ViewBag.Total = subTotal - discount;
 			return View(carts);
         }
 
-		public ActionResult AddToCart(string id)
-		{
-			var product = _context.SanPhams.FirstOrDefault(s => s.MaSp == id);
+        public ActionResult AddToCart(string id, int quantity)
+        {
+            var product = _context.SanPhams.FirstOrDefault(s => s.MaSp == id);
 
-			if (product != null)
-			{
-				List<CartModel> carts = GetListCarts();
-				CartModel existingProduct = carts.FirstOrDefault(s => s.MaSp == id);
+            if (product != null && quantity > 0)
+            {
+                List<CartModel> carts = GetListCarts();
+                CartModel existingProduct = carts.FirstOrDefault(s => s.MaSp == id);
 
-				if (existingProduct != null)
-				{
-					existingProduct.SoLuong++;
-				}
-				else
-				{
-					CartModel newProduct = new CartModel();
-					newProduct.MaSp = product.MaSp;
-					newProduct.TenSp = product.TenSp;
-					newProduct.Gia = product.Gia;
-					newProduct.SoLuong = 1;
-					newProduct.Hinh = product.Hinh;
-					newProduct.Ram = product.Ram;
-					newProduct.Rom = product.Rom;
-					newProduct.ManHinh = product.ManHinh;
-					newProduct.GiamGia = product.GiamGia;
-					carts.Add(newProduct);
-				}
+                if (existingProduct != null)
+                {
+                    existingProduct.SoLuong += quantity;
+                }
+                else
+                {
+                    CartModel newProduct = new CartModel();
+                    newProduct.MaSp = product.MaSp;
+                    newProduct.TenSp = product.TenSp;
+                    newProduct.Gia = product.Gia;
+                    newProduct.SoLuong = quantity; 
+                    newProduct.Hinh = product.Hinh;
+                    newProduct.Ram = product.Ram;
+                    newProduct.Rom = product.Rom;
+                    newProduct.ManHinh = product.ManHinh;
+                    newProduct.GiamGia = product.GiamGia;
+                    carts.Add(newProduct);
+                }
 
-				HttpContext.Session.SetObjectAsJson("CartModel", carts);
-			}
-			return RedirectToAction("ListCarts");
-		}
+                HttpContext.Session.SetObjectAsJson("CartModel", carts);
+            }
+            return RedirectToAction("ListCarts");
+        }
 
+        private int? GetUserId()
+        {
+            // Lấy user ID từ session
+            var userIdString = HttpContext.Session.GetString("UserId");
+
+            if (int.TryParse(userIdString, out int userId))
+            {
+                return userId;
+            }
+
+            return null;
+        }
         public string GenerateMaHd()
         {
-            // Tạo một chuỗi ngẫu nhiên độ dài 6 ký tự
+
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             var random = new Random();
             var result = new string(
@@ -96,56 +107,91 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                           .ToArray());
             return result;
         }
-
         [Authorize]
+        public ActionResult CheckoutConfirmation(string DiaChiGiaoHang)
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+
+                string returnUrl = Url.Action("CheckoutConfirmation", "Cart");
+                return RedirectToAction("DangNhap", "Account", new { returnUrl });
+            }
+
+            int? userId = GetUserId();
+            var nguoiDung = _context.NguoiDungs.FirstOrDefault(u => u.UserId == userId);
+
+            List<CartModel> carts = GetListCarts();
+
+            decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
+            decimal discount = carts.Sum(s => (s.GiamGia / 100.0m) * (s.Gia * s.SoLuong));
+            decimal total = subTotal - discount;
+
+            ViewBag.HoTen = nguoiDung != null ? nguoiDung.HoTen : "";
+            ViewBag.DiaChi = nguoiDung != null ? nguoiDung.DiaChi : "";
+            ViewBag.SDT = nguoiDung != null ? nguoiDung.Sdt : "";
+            ViewBag.Email = nguoiDung != null ? nguoiDung.Email : "";
+            ViewBag.DiaChi = nguoiDung != null ? nguoiDung.DiaChi : "";
+
+            ViewBag.CountProduct = carts.Sum(s => s.SoLuong);
+            ViewBag.SubTotal = subTotal;
+            ViewBag.Discount = discount;
+            ViewBag.Total = total;
+
+            
+
+            return View(carts);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Checkout()
         {
             if (!User.Identity.IsAuthenticated)
             {
-                // Ghi nhớ URL hiện tại trước khi chuyển hướng đến trang đăng nhập
                 string returnUrl = Url.Action("Checkout", "Cart");
 
-                return RedirectToAction("Login", "Account", new { returnUrl });
+                return RedirectToAction("DangNhap", "Account", new { returnUrl });
             }
 
             // Lấy danh sách các sản phẩm trong giỏ hàng từ session
             List<CartModel> carts = GetListCarts();
 
-            // Lấy user ID từ session hoặc qua một phương thức
+            // Lấy user ID từ session
             int? userId = GetUserId();
-
+            
+            decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
+            decimal discount = carts.Sum(s => (s.GiamGia / 100.0m) * (s.Gia * s.SoLuong));
+            decimal total = subTotal - discount;
             if (carts != null && carts.Count > 0 && userId.HasValue)
             {
+                var khachHang = _context.NguoiDungs.FirstOrDefault(u => u.UserId == userId);
                 var order = new HoaDon
                 {
                     MaHd = GenerateMaHd(),
                     MaKh = userId.Value,
                     NgayDatHang = DateTime.Now,
+                    TongGiaTri = total,
+                    DiaChiGiaoHang = khachHang.DiaChi
                 };
 
-
-                // Thêm đơn hàng vào cơ sở dữ liệu
                 _context.HoaDons.Add(order);
-                _context.SaveChanges(); // Lưu thay đổi để có thể lấy được MaHd tự động tạo
+                _context.SaveChanges(); 
 
-                // Thêm từng sản phẩm trong giỏ vào Chi tiết đơn hàng
                 foreach (var item in carts)
                 {
                     var orderDetail = new ChiTietHoaDon
                     {
-                        MaHd = order.MaHd, // Sử dụng MaHd đã được tạo tự động
+                        MaHd = order.MaHd, 
                         MaSp = item.MaSp,
-                        SoLuongDatHang = item.SoLuong
+                        SoLuongDatHang = item.SoLuong,
+                        DonGia = item.Gia
                     };
-
-                    // Thêm chi tiết đơn hàng vào cơ sở dữ liệu
                     _context.ChiTietHoaDons.Add(orderDetail);
                 }
 
-                // Lưu thay đổi vào cơ sở dữ liệu
                 _context.SaveChanges();
 
-                // Xóa session giỏ hàng sau khi đã thanh toán
+                // Xóa session gio hang
                 HttpContext.Session.Remove("CartModel");
 
                 return RedirectToAction("CheckoutSuccess");
@@ -155,18 +201,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         }
 
 
-        private int? GetUserId()
-		{
-			// Lấy user ID từ session
-			var userIdString = HttpContext.Session.GetString("UserId");
-
-			if (int.TryParse(userIdString, out int userId))
-			{
-				return userId;
-			}
-
-			return null;
-		}
+        
 		public ActionResult CheckoutSuccess()
 		{
 			return View();

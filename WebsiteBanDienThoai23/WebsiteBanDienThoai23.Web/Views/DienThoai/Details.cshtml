@@ -52,7 +52,7 @@
                                                                                         </span>
                                                                                     </span>
                                                                                 </span>
-                                                                                <span class="detail_list_price">@Model.Gia<span>đ</span></span>
+                                                                                <span class="detail_list_price">@Model.Gia.ToString("N0")<span>đ</span></span>
                                                                                 <strong class="detail_list_discount_prc">- @Model.GiamGia<span>%</span></strong>                                                                                                <span class="lab_tragop_o">Trả góp 0%</span>
                                                                             </div>
                                                                             <p class="nt-prepaid-installment">Mua Trả trước: <strong></strong>. <a href="tel:0999999999">Liên hệ tư vấn qua điện thoại</a></p>
@@ -60,10 +60,31 @@
                                                                     </div>
                                                                     <div class="product-note">
                                                                         <ul>
-                                                                            <li>@Model.TenSp<span> tại Mobile Phone Store là mới 100% fullbox nguyên seal. Máy phiên bản chính hãng thị trường Việt Nam, bảo hành 12 tháng Apple.</span></li>
+                                                                            <li>@Model.TenSp<span> tại Mobile Phone Store là máy phiên bản chính hãng thị trường Việt Nam.</span></li>
                                                                             <li>Giá luôn rẻ hơn thị trường, shop sẵn hàng đủ màu, có hỗ trợ trả góp 0%, ship COD.</li>
                                                                         </ul>
                                                                     </div>
+                                                            @*         <div class="control-group product-list-field clearfix  lab-option-color ">
+                                                                        <label class="option_title  ">
+                                                                            Sản phẩm này có
+                                                                            <strong>Màu @Model.Color</strong>
+                                                                            :&nbsp;
+                                                                        </label>
+                                                                        <ul class="option-radio-group">
+                                                                            <li class="hidden"><input type="hidden"/></li>
+
+                                                                            <li>
+                                                                                <label class="option-items option_color selected_variant_option" style="background: ">
+                                                                                    <input type="radio" class="radio"  checked="checked" />
+                                                                                    <i class="icon-ok"></i>                               
+                                                                                    <em>  Màu @Model.Color </em>
+                                                                          
+
+                                                                                </label>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div> *@
+
                                                                     <div class="box-info-body">
                                                                         <ul>
                                                                             <li class="icon-info-auth">Bảo hành<strong> 12 tháng</strong>&nbsp;chính hãng.</li>
@@ -72,9 +93,17 @@
                                                                             <li class="icon-info-installment"><strong>Trả trước 30%</strong> liên hệ qua <a class="link_tragop" rel="nofollow">điện thoại để được tư vấn</a>. Thủ tục chỉ cần CCCD + GPLX;</li>
                                                                         </ul>
                                                                     </div>
-                                                                    <div class="buttons-container">
-                                                                        <button class="btn-add-to-cart" type="submit">Mua Ngay <span>Giao hàng tận nơi hoặc lấy tại cửa hàng</span></button>
-                                                                    </div>
+                                                            
+                                                                <input type="hidden" name="MaSp" value="@Model.MaSp" />
+                                                                <div class="form-group" style="text-align: center;">
+                                                                    <label for="SoLuong">Số lượng:</label>
+                                                                    <input type="number" id="Quantity" name="Quantity" value="1" min="1" />
+                                                                    <button class="btn btn-primary" type="submit">Mua ngay</button>
+                                                                </div>
+                                                            
+                                                       
+                                                                    
+                                                                  
                                                                 </div>
                                                             </div>
                                                         </form>
@@ -114,17 +143,11 @@
                                                                 <label>Bộ nhớ trong ( Rom):</label>
                                                                 <div class="feature-value"><ul class="no-markers no-margin">@Model.Rom <span> GB</span></li></ul></div>
                                                             </div>
-
                                                             <p class="subheader">Thông tin pin</p>
-
                                                             <div class="control-group">
                                                                 <label>Dung lượng pin:</label>
-
-
                                                                 <div class="feature-value">@Model.Pin <span> mah</span></div>
                                                             </div>
-
-
                                                         </div>
                                                     </ul>
 
@@ -154,125 +177,57 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                @using (Html.BeginForm("SubmitReview", "Product", FormMethod.Post))
+                                {
+                                    <div class="form-group">
+                                        <label for="rating">Đánh giá:</label>
+                                        <select name="rating" id="rating">
+                                            <option value="1">1 sao</option>
+                                            <option value="2">2 sao</option>
+                                            <option value="3">3 sao</option>
+                                            <option value="4">4 sao</option>
+                                            <option value="5">5 sao</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comment">Bình luận:</label>
+                                        <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+                                    </div>
+                                    <button type="submit">Gửi</button>
+                                }
+
+
                                         <div class=" mtop20">
                                             <div class="view-product-face"><h3><span>Bình luận và đánh giá </span></h3></div>
                                             <div class="discussion-block left" id="content_discussion">
-
-
                                                 <div class="clearfix discussion-stars">
                                                     <div class="clearfix discussion-stars-left">
                                                         <div class="discussion_title_name">Đánh giá <strong>iPhone 12 128GB Chính Hãng VN/A</strong></div>
                                                         <span class="text-rated">0.0</span> <span class="per-number">/5</span>
                                                         <p class="nowrap stars">
-
                                                             <i class="icon-star-empty"></i>
                                                             <i class="icon-star-empty"></i>
                                                             <i class="icon-star-empty"></i>
                                                             <i class="icon-star-empty"></i>
                                                             <i class="icon-star-empty"></i>
-
                                                         </p>
-
                                                         <span class="number-review">1 đánh giá</span>
                                                     </div>
-
                                                     <div class="clearfix discussion-stars-right">
-
                                                         <div class="row-rate">
-
                                                             <p class="nowrap stars">
-
                                                                 <i class="icon-star"></i>
                                                                 <i class="icon-star"></i>
                                                                 <i class="icon-star"></i>
                                                                 <i class="icon-star"></i>
                                                                 <i class="icon-star"></i>
-
-
-
                                                             </p>
-
                                                             <div class="progress progress-rate">
                                                                 <div class="progress-bar-orrange" style="width: 0%"></div>
                                                             </div>
                                                             <span class="num-review">0</span>
-                                                        </div>
-                                                        <div class="row-rate">
-
-                                                            <p class="nowrap stars">
-
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-
-
-                                                                <i class="icon-star-empty"></i>
-
-                                                            </p>
-
-                                                            <div class="progress progress-rate">
-                                                                <div class="progress-bar-orrange" style="width: 0%"></div>
-                                                            </div>
-                                                            <span class="num-review">0</span>
-                                                        </div>
-                                                        <div class="row-rate">
-
-                                                            <p class="nowrap stars">
-
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-
-
-                                                                <i class="icon-star-empty"></i>
-                                                                <i class="icon-star-empty"></i>
-
-                                                            </p>
-
-                                                            <div class="progress progress-rate">
-                                                                <div class="progress-bar-orrange" style="width: 0%"></div>
-                                                            </div>
-                                                            <span class="num-review">0</span>
-                                                        </div>
-                                                        <div class="row-rate">
-
-                                                            <p class="nowrap stars">
-
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-
-
-                                                                <i class="icon-star-empty"></i>
-                                                                <i class="icon-star-empty"></i>
-                                                                <i class="icon-star-empty"></i>
-
-                                                            </p>
-
-                                                            <div class="progress progress-rate">
-                                                                <div class="progress-bar-orrange" style="width: 0%"></div>
-                                                            </div>
-                                                            <span class="num-review">0</span>
-                                                        </div>
-                                                        <div class="row-rate">
-
-                                                            <p class="nowrap stars">
-
-                                                                <i class="icon-star"></i>
-
-
-                                                                <i class="icon-star-empty"></i>
-                                                                <i class="icon-star-empty"></i>
-                                                                <i class="icon-star-empty"></i>
-                                                                <i class="icon-star-empty"></i>
-
-                                                            </p>
-
-                                                            <div class="progress progress-rate">
-                                                                <div class="progress-bar-orrange" style="width: 0%"></div>
-                                                            </div>
-                                                            <span class="num-review">0</span>
-                                                        </div>
+                                                        </div>                     
                                                     </div>
                                                 </div>
 

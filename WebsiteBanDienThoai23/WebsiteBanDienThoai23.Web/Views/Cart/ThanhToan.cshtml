@@ -1,0 +1,31 @@
+﻿@model WebsiteBanDienThoai23.Web.Models.ThanhToanModel
+
+@{
+    ViewBag.Title = "Thanh toán";
+}
+
+<h2>Thanh toán</h2>
+
+<!-- Form để nhập thông tin khách hàng và chọn phương thức thanh toán -->
+    <div>
+        <!-- Hiển thị thông tin khách hàng -->
+        <h3>Thông tin khách hàng</h3>
+        <!-- Hiển thị các trường thông tin khách hàng -->
+    </div>
+
+    <div>
+        <!-- Hiển thị tổng đơn hàng -->
+        <h3>Thông tin đơn hàng</h3>
+        <!-- Hiển thị các thông tin về đơn hàng -->
+    </div>
+
+    <div>
+        <!-- Cho người dùng chọn phương thức thanh toán -->
+        <h3>Chọn phương thức thanh toán</h3>
+        <label><input type="radio" name="PhuongThucThanhToan" value="visa"> Visa</label><br>
+        <label><input type="radio" name="PhuongThucThanhToan" value="mastercard"> MasterCard</label><br>
+        <!-- Thêm các phương thức thanh toán khác nếu cần -->
+
+    <!-- Nút để xác nhận thanh toán -->
+    <a href="@Url.Action("ThanhToan", "Cart")" class="btn btn-primary">Thanh toán</a>
+}

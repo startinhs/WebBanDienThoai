@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -135,5 +136,37 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
             return View(sanPham);
         }
-    }
+
+		private int? GetUserId()
+		{
+			// Lấy user ID từ session
+			var userIdString = HttpContext.Session.GetString("UserId");
+
+			if (int.TryParse(userIdString, out int userId))
+			{
+				return userId;
+			}
+
+			return null;
+		}
+
+		[HttpPost]
+		public ActionResult SubmitReview(string id, int rating, string comment)
+		{
+			// Lưu bình luận và đánh giá vào cơ sở dữ liệu
+			// Ví dụ:
+			var review = new DanhGia
+			{
+				MaSp = id,
+				MaKh = (int)GetUserId(), // Lấy ID của người dùng hiện tại
+				SoSao = rating,
+				BinhLuan = comment
+			};
+			_context.DanhGia.Add(review);
+			_context.SaveChanges();
+
+			// Chuyển hướng hoặc hiển thị thông báo thành công
+			return RedirectToAction("Details", new { id = review.MaSp });
+		}
+	}
 }

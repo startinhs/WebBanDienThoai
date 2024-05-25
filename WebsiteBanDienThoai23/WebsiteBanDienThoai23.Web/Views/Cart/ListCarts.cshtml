@@ -68,18 +68,15 @@
 							<div class="summary-item"><span class="text">Phí vận chuyển: </span><span class="price">0<span>₫</span></span></div>
 							<div class="summary-item"><span class="text">Tổng thành tiền: </span><span class="price">@ViewBag.Total.ToString("N0")<span>₫</span></span></div>
 							<br /> <br />
-								@* <button type="button" class="btn btn-primary btn-lg btn-block">Thanh Toán</button> *@
 								@if (User.Identity.IsAuthenticated)
 								{
-									<!-- Nút để chuyển hướng đến trang Checkout -->
-									<a href="@Url.Action("Checkout", "Cart")" class="btn btn-primary">Thanh toán</a>
+									<a href="@Url.Action("CheckoutConfirmation", "Cart")" class="btn btn-primary">Mua hàng</a>
 								}
 								else
 								{
-									<!-- Nút để chuyển hướng đến trang đăng nhập -->
-									<a href="@Url.Action("DangNhap", "Account", new { ReturnUrl = Url.Action("ListCarts", "Cart") })" class="btn btn-primary">Đăng nhập để thanh toán</a>
+									<a href="@Url.Action("DangNhap", "Account", new { ReturnUrl = Url.Action("ListCarts", "Cart") })" class="btn btn-primary">Đăng nhập để mua hàng</a>
 								}
-								<br /> <br />
+							<br /> <br />
 						</div>
 					</div>
 				</div>

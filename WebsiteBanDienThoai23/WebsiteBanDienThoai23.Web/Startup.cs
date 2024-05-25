@@ -23,10 +23,23 @@ namespace WebsiteBanDienThoai23.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+<<<<<<< Updated upstream
             services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+=======
+            services.AddSession();
+            services.AddControllersWithViews();
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // Thời gian timeout cho session
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+        }
+>>>>>>> Stashed changes
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

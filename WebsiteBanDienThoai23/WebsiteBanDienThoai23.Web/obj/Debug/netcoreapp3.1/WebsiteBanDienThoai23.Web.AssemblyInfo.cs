@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebsiteBanDienThoai23.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bf46e12399ff9b08b1ec54c03462079bad39dd0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4ee3df7d79573be58bdb8a4bfa49032bba3b16d")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("WebsiteBanDienThoai23.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebsiteBanDienThoai23.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

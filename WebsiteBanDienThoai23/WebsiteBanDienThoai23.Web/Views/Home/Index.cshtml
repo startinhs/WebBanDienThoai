@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebsiteBanDienThoai23.DAL.Models.SanPham>
+﻿@model WebsiteBanDienThoai23.Web.Models.SanPhamModel
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,7 +84,7 @@
                         <div class="phone_weekend hidden-xs hidden-sm">
                             @{
                                 var random = new Random();
-                                var spModel = Model.OrderBy(x => random.Next()).ToList();
+                                var spModel = Model.Items.OrderBy(x => random.Next()).ToList();
                             }
                             @foreach (var item in spModel)
                             {
@@ -93,13 +93,13 @@
                                     decimal giaDaGiam = Math.Round(item.Gia * (1 - (item.GiamGia / 100)));
                                     <div>
                                         <p class="price" style="color: orange">Giảm ngay <span>@item.GiamGia</span>%</p>
-                                        <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt=""></a>
+                                        <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh" alt=""></a>
                                         <div class="sub_title">
                                             <h4>
                                                 <a href="@Url.Action("Details", "DetailsProduct", new { id = item.MaSp })">@item.TenSp</a>
                                             </h4>
-                                            <p class="price">@giaDaGiam.ToString("N0")<span>₫</span>    
-                                            <p class="old_price">@item.Gia.ToString("N0")</p>
+                                            <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
+                                            <p class="old_price">@item.Gia.ToString("N0")<span>₫</span></p>
                                         </div>
                                     </div>
                                 }
@@ -117,11 +117,11 @@
                     <div class="col-md-12 phones">
                         <div class="row">
                                 <div class="col-sm-6 col-md-4">
-                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@Model.FirstOrDefault().MaSp"><img class="img-responsive" src="imgProduct/@Model.FirstOrDefault().Hinh1" alt="" style="width: 100%;"></a>
+                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@Model.Items.FirstOrDefault().MaSp"><img class="img-responsive" src="imgProduct/@Model.Items.FirstOrDefault().Hinh" alt="" style="width: 100%;"></a>
                                     <div class="sub_title">
-                                        <h4><a href="#">@Model.FirstOrDefault().TenSp</a></h4>
-                                        <p class="price">@Math.Round(Model.FirstOrDefault().Gia * (1 - (Model.FirstOrDefault().GiamGia / 100))).ToString("N0")<span>₫</span></p>
-                                        <p class="old_price">@Model.FirstOrDefault().Gia.ToString("N0")</p>
+                                    <h4><a href="#">@Model.Items.FirstOrDefault().TenSp</a></h4>
+                                    <p class="price">@Math.Round(Model.Items.FirstOrDefault().Gia * (1 - (Model.Items.FirstOrDefault().GiamGia / 100))).ToString("N0")<span>₫</span></p>
+                                    <p class="old_price">@Model.Items.FirstOrDefault().Gia.ToString("N0")<span>₫</span></p>
                                     </div>
                                 </div>
                              
@@ -130,15 +130,15 @@
                                 <div class="row">
                                     @for (int i = 1; i <= 3; i++)
                                     {
-                                        var item = Model.ElementAtOrDefault(i);
+                                        var item = Model.Items.ElementAtOrDefault(i);
                                         if (item != null)
                                         {
                                             <div class="col-md-4 col-sm-4">
-                                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt="" class="img-responsive"></a>
+                                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh" alt="" class="img-responsive"></a>
                                                 <div class="sub_title">
                                                     <h4><a href="#">@item.TenSp</a></h4>
                                                     <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
-                                                    <p class="old_price">@item.Gia.ToString("N0")</p>
+                                                    <p class="old_price">@item.Gia.ToString("N0")<span>₫</span></p>
                                                 </div>
                                             </div>
                                         }
@@ -150,26 +150,26 @@
                     <div class="col-md-12 phones">
                         <div class="row">
                             <div class="col-sm-6 col-md-4">
-                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@Model.Skip(4).FirstOrDefault().MaSp"><img src="imgProduct/@Model.Skip(4).FirstOrDefault().Hinh1" alt="" class="img-responsive" style="width: 100%;"></a>
+                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@Model.Items.Skip(4).FirstOrDefault().MaSp"><img src="imgProduct/@Model.Items.Skip(4).FirstOrDefault().Hinh" alt="" class="img-responsive" style="width: 100%;"></a>
                                 <div class="sub_title">
-                                    <h4><a href="#">@Model.Skip(4).FirstOrDefault().TenSp</a></h4>
-                                    <p class="price">@Math.Round(Model.Skip(4).FirstOrDefault().Gia * (1 - (Model.Skip(4).FirstOrDefault().GiamGia / 100))).ToString("N0")<span>₫</span></p>
-                                    <p class="old_price">@Model.Skip(4).FirstOrDefault().Gia.ToString("N0")</p>
+                                    <h4><a href="#">@Model.Items.Skip(4).FirstOrDefault().TenSp</a></h4>
+                                    <p class="price">@Math.Round(Model.Items.Skip(4).FirstOrDefault().Gia * (1 - (Model.Items.Skip(4).FirstOrDefault().GiamGia / 100))).ToString("N0")<span>₫</span></p>
+                                    <p class="old_price">@Model.Items.Skip(4).FirstOrDefault().Gia.ToString("N0")<span>₫</span></p>
                                 </div>
                             </div>
                             <div class="col-md-8">
                                 <div class="row">
                                     @for (int i = 5; i <= 7; i++)
                                     {
-                                        var item = Model.ElementAtOrDefault(i);
+                                        var item = Model.Items.ElementAtOrDefault(i);
                                         if (item != null)
                                         {
                                             <div class="col-md-4 col-sm-4">
-                                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt="" class="img-responsive"></a>
+                                                <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh" alt="" class="img-responsive"></a>
                                                 <div class="sub_title">
                                                     <h4><a href="#">@item.TenSp</a></h4>
                                                     <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
-                                                    <p class="old_price">@item.Gia.ToString("N0")</p>
+                                                    <p class="old_price">@item.Gia.ToString("N0")<span>₫</span></p>
                                                 </div>
                                             </div>
                                         }
@@ -189,7 +189,7 @@
                     <div class="col-md-12 phones">
                         <div class="row">
                             @{
-                                var iosProducts = Model.Where(item => item.HeDieuHanh.Contains("Ios")).ToList();
+                                var iosProducts = Model.Items.Where(item => item.HeDieuHanh.Contains("Ios")).ToList();
                                 var random1 = new Random();
                                 var randomIndices1 = Enumerable.Range(0, iosProducts.Count).OrderBy(x => random1.Next()).Take(4).ToList();
                             }
@@ -197,11 +197,11 @@
                             {
                                 var item = iosProducts[index];
                                 <div class="col-md-3 col-sm-3">
-                                    <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt=""></a>
+                                    <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh" alt=""></a>
                                     <div class="sub_title">
                                         <h4><a href="#">@item.TenSp</a></h4>
                                         <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
-                                        <p class="old_price">@item.Gia.ToString("N0")</p>
+                                        <p class="old_price">@item.Gia.ToString("N0")<span>₫</span></p>
                                     </div>
                                 </div>
                             }
@@ -218,7 +218,7 @@
                     <div class="col-md-12 phones">
                         <div class="row">
                             @{
-                                var adrProducts = Model.Where(item => item.HeDieuHanh.Contains("Android")).ToList();
+                                var adrProducts = Model.Items.Where(item => item.HeDieuHanh.Contains("Android")).ToList();
                                 var random2 = new Random();
                                 var randomIndices2 = Enumerable.Range(0, adrProducts.Count).OrderBy(x => random2.Next()).Take(4).ToList();
                             }
@@ -226,11 +226,11 @@
                             {
                                 var item = adrProducts[index];
                                 <div class="col-md-3 col-sm-3">
-                                    <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt=""></a>
+                                    <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh" alt=""></a>
                                     <div class="sub_title">
                                         <h4><a href="#">@item.TenSp</a></h4>
                                         <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
-                                        <p class="old_price">@item.Gia.ToString("N0")</p>
+                                        <p class="old_price">@item.Gia.ToString("N0")<span>₫</span></p>
                                     </div>
                                 </div>
                             }
@@ -247,7 +247,7 @@
                     <div class="col-md-12 phones">
                         <div class="row">
                             @{
-                                var oProducts = Model.Where(item => item.HeDieuHanh.Contains("Other")).ToList();
+                                var oProducts = Model.Items.Where(item => item.HeDieuHanh.Contains("Other")).ToList();
                                 var random3 = new Random();
                                 var randomIndices3 = Enumerable.Range(0, oProducts.Count).OrderBy(x => random3.Next()).Take(4).ToList();
                             }
@@ -255,11 +255,11 @@
                             {
                                 var item = oProducts[index];
                                 <div class="col-md-3 col-sm-3">
-                                    <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh1" alt=""></a>
+                                    <a asp-controller="DienThoai" asp-action="Details" asp-route-id="@item.MaSp"><img class="img-responsive" src="imgProduct/@item.Hinh" alt=""></a>
                                     <div class="sub_title">
                                         <h4><a href="#">@item.TenSp</a></h4>
                                         <p class="price">@Math.Round(item.Gia * (1 - (item.GiamGia / 100))).ToString("N0")<span>₫</span></p>
-                                        <p class="old_price">@item.Gia.ToString("N0")</p>
+                                        <p class="old_price">@item.Gia.ToString("N0")<span>₫</span></p>
                                     </div>
                                 </div>
                             }
@@ -269,5 +269,6 @@
             </div>
         </div>
     </section>
+    
 </body>
 </html>

@@ -1,4 +1,4 @@
-body {
+﻿body {
     background: #fff;
 }
 
@@ -196,3 +196,23 @@ img {
     border-top: 1px solid #d0dfd2;
     border-bottom: 1px solid #d0dfd2;
 }
+
+#filterButton {
+    background-color: #007bff; 
+    color: #ffffff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+    #filterButton:hover {
+        background-color: #0056b3;
+        border-color: #0056b3; 
+    }
+
+    #filterButton:active {
+        background-color: #003366; 
+        border-color: #003366; 
+    }

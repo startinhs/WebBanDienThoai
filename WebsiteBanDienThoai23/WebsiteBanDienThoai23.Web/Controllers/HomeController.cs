@@ -23,7 +23,12 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         public IActionResult Index()
         {
             List<SanPham> list = da.SanPhams.OrderBy(s => s.MaSp).ToList();
-            return View(list);
+            var viewModel = new SanPhamModel
+            {
+                Items = list,
+                TotalItems = list.Count
+            };
+            return View(viewModel);
         }
         public IActionResult Privacy()
         {

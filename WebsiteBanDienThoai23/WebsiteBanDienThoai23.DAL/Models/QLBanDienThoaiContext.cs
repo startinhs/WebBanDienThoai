@@ -243,6 +243,10 @@ namespace WebsiteBanDienThoai23.DAL.Models
                     .IsUnicode(false)
                     .IsFixedLength(true);
 
+                entity.Property(e => e.Hinh)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
                 entity.Property(e => e.TenLoai).HasMaxLength(30);
             });
 
@@ -289,6 +293,8 @@ namespace WebsiteBanDienThoai23.DAL.Models
                     .HasColumnName("MaSP")
                     .IsFixedLength(true);
 
+                entity.Property(e => e.Color).HasMaxLength(10);
+
                 entity.Property(e => e.Cpu).HasMaxLength(20);
 
                 entity.Property(e => e.Gia).HasColumnType("decimal(18, 0)");
@@ -297,15 +303,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
 
                 entity.Property(e => e.HeDieuHanh).HasMaxLength(20);
 
-                entity.Property(e => e.Hinh1)
-                    .HasMaxLength(150)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Hinh2)
-                    .HasMaxLength(150)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Hinh3)
+                entity.Property(e => e.Hinh)
                     .HasMaxLength(150)
                     .IsUnicode(false);
 

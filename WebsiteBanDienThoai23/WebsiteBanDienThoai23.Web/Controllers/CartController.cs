@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Session;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using WebsiteBanDienThoai23.DAL.Models;
@@ -81,6 +83,56 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 				HttpContext.Session.SetObjectAsJson("CartModel", carts);
 			}
 			return RedirectToAction("ListCarts");
+		}
+		private int? GetUserId()
+		{
+			var userIdString = HttpContext.Session.GetString("UserId");
+
+			if (int.TryParse(userIdString, out int userId))
+			{
+				var user = _context.NguoiDungs.FirstOrDefault(u => u.UserId == userId);
+				if (user != null)
+				{
+					return userId;
+				}
+			}
+			return null;
+		}
+		[Authorize]
+		public ActionResult Checkout()
+		{
+			List<CartModel> carts = GetListCarts();
+			int? userId = GetUserId();
+
+			if (carts != null && carts.Count > 0 && userId.HasValue)
+			{
+				var cart = new GioHang
+				{
+					MaKh = userId.Value
+				};
+
+				_context.GioHangs.Add(cart);
+				_context.SaveChanges();
+				foreach (var item in carts)
+				{
+					var cartDetail = new ChiTietGioHang
+					{
+						MaGh = cart.MaGh,
+						MaSp = item.MaSp,
+						SoLuong = item.SoLuong
+					};
+					_context.ChiTietGioHangs.Add(cartDetail);
+				}
+				_context.SaveChanges();
+				HttpContext.Session.Remove("CartModel");
+				return RedirectToAction("CheckoutSuccess");
+			}
+
+			return RedirectToAction("ListCarts");
+		}
+		public ActionResult CheckoutSuccess()
+		{
+			return View();
 		}
 
 

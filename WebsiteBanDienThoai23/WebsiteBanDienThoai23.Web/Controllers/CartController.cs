@@ -189,6 +189,18 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                         DonGia = item.Gia
                     };
                     _context.ChiTietHoaDons.Add(orderDetail);
+
+                    // Giảm số lượng sản phẩm trong cơ sở dữ liệu
+                    var product = _context.SanPhams.FirstOrDefault(p => p.MaSp == item.MaSp);
+                    if (product != null)
+                    {
+                        product.SoLuong -= (short)item.SoLuong;
+                        if (product.SoLuong < 0)
+                        {
+                            // Xử lý khi số lượng âm (ví dụ: đặt số lượng là 0)
+                            product.SoLuong = 0;
+                        }
+                    }
                 }
 
                 _context.SaveChanges();

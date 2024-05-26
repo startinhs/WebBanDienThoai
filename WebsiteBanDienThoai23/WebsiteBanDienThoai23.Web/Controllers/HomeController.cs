@@ -20,16 +20,16 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         }
 
         private readonly QLBanDienThoaiContext da = new QLBanDienThoaiContext();
-        //public IActionResult Index()
-        //{
-        //    List<SanPham> list = da.SanPhams.OrderBy(s => s.MaSp).ToList();
-        //    var viewModel = new SanPhamModel
-        //    {
-        //        Items = list,
-        //        TotalItems = list.Count
-        //    };
-        //    return View(viewModel);
-        //}
+        public IActionResult Index()
+        {
+            List<SanPham> list = da.SanPhams.OrderBy(s => s.MaSp).ToList();
+            var viewModel = new SanPhamModel
+            {
+                Items = list,
+                TotalItems = list.Count
+            };
+            return View(viewModel);
+        }
         public IActionResult Privacy()
         {
             return View();

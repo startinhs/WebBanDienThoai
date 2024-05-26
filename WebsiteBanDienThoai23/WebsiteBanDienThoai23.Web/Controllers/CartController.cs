@@ -171,7 +171,9 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                     MaKh = userId.Value,
                     NgayDatHang = DateTime.Now,
                     TongGiaTri = total,
-                    DiaChiGiaoHang = khachHang.DiaChi
+                    DiaChiGiaoHang = khachHang.DiaChi,
+                    TrangThaiTt = false,
+                    TrangThaiDh = 0
                 };
 
                 _context.HoaDons.Add(order);
@@ -200,61 +202,45 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             return RedirectToAction("ListCarts");
         }
 
-
-        
 		public ActionResult CheckoutSuccess()
 		{
 			return View();
 		}
 
 
-		// GET: CartController/Details/5
-		public ActionResult Details(int id)
+
+        [Authorize]
+        public ActionResult DonMua()
         {
-            return View();
+            int? userId = GetUserId();
+            if (userId == null)
+            {
+                return RedirectToAction("DangNhap", "Account");
+            }
+
+            var DonMua = (from hd in _context.HoaDons
+                                     join ct in _context.ChiTietHoaDons on hd.MaHd equals ct.MaHd
+                                     join sp in _context.SanPhams on ct.MaSp equals sp.MaSp
+                                     where hd.MaKh == userId.Value
+                                     select new DonMuaModel
+                                     {
+                                         MaSp = sp.MaSp,
+                                         TenSp = sp.TenSp,
+                                         SoLuongDatHang = ct.SoLuongDatHang,
+                                         DonGia = ct.DonGia,
+                                         NgayDatHang = hd.NgayDatHang,
+                                         TongGiaTri = hd.TongGiaTri,
+                                         DiaChiGiaoHang = hd.DiaChiGiaoHang,
+                                         TrangThaiThanhToan = hd.TrangThaiTt,
+                                         TrangThaiDonHang = hd.TrangThaiDh,
+                                         NgayNhanHang = hd.NgayNhanHang
+                                     }).ToList();
+
+            return View(DonMua);
         }
 
-        // GET: CartController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
 
-        // POST: CartController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
 
-        // GET: CartController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: CartController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
 
         // GET: CartController/Delete/5
         public ActionResult Delete(int id)

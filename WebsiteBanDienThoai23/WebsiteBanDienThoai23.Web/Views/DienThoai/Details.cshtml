@@ -1,4 +1,4 @@
-﻿@model WebsiteBanDienThoai23.DAL.Models.SanPham
+﻿@model WebsiteBanDienThoai23.Web.Models.SanPhamModel
 <link rel="stylesheet" href="~/css/details.css">
 <link rel="stylesheet" href="~/css/style.css">
 
@@ -8,7 +8,7 @@
                     <div id="breadcrumbs_10">
                         <div class="breadcrumbs clearfix">
                             <div class="view_product_title">
-                                <h1 class="mainbox-title" style=" padding-bottom: 0; ">@Model.TenSp <span style=" font-size: 18px; font-weight: normal; "></span></br></h1>
+                        <h1 class="mainbox-title" style=" padding-bottom: 0; ">@Model.ItemDetails.TenSp <span style=" font-size: 18px; font-weight: normal; ">Mới 100%</span></br></h1>
                                 <div class="rating-wrapper clearfix" id="average_rating_product">
                                     <p class="nowrap stars">
                                         <i class="icon-star-empty"></i>
@@ -31,7 +31,7 @@
                                                     <div class="image-wrap product_view_image">
                                                         <div class="image-border center cm-reload-3807" id="product_images_3807_update">
                                                             <div class="border-image-wrap cm-preview-wrapper">
-                                                                <a id="det_img_link_3807663e2f7ec76e4_37012" data-ca-image-id="preview[product_images_3807663e2f7ec76e4]" class="cm-image-previewer cm-previewer previewer" data-ca-image-width="480" data-ca-image-height="480" href="~/imgProduct/@Model.Hinh"><img class="   pict" id="det_img_3807663e2f7ec76e4_37012" src="~/imgProduct/@Model.Hinh" width="480" height="480" alt="iPhone 12 128GB Chính Hãng VN/A" title="iPhone 12 128GB Chính Hãng VN/A" /></a>
+                                                        <a id="det_img_link_3807663e2f7ec76e4_37012" data-ca-image-id="preview[product_images_3807663e2f7ec76e4]" class="cm-image-previewer cm-previewer previewer" data-ca-image-width="480" data-ca-image-height="480" href="~/imgProduct/@Model.ItemDetails.Hinh"><img class="   pict" id="det_img_3807663e2f7ec76e4_37012" src="~/imgProduct/@Model.ItemDetails.Hinh" width="480" height="480" alt="iPhone 12 128GB Chính Hãng VN/A" title="iPhone 12 128GB Chính Hãng VN/A" /></a>
                                                             </div>
                                                         </div>
 
@@ -39,7 +39,7 @@
                                                 </div>
                                                 <div class="span6 product_view_main">
                                                     <div class="product-main-info">
-                                                <form action="@Url.Action("AddToCart", "Cart", new { id = Model.MaSp })" method="post" class="cm-disable-empty-files">
+                                                <form action="@Url.Action("AddToCart", "Cart", new { id = Model.ItemDetails.MaSp })" method="post" class="cm-disable-empty-files">
                                                             <div class="main_info_content clearfix">
                                                                 <div class="main_info_left">
                                                                     <div class="prices-container price-wrap clearfix product-detail-price">
@@ -47,20 +47,20 @@
                                                                             <div class="actual-price ">
                                                                                 <span class="cm-reload-3807 price-update" id="price_update_3807">
                                                                                     <span class="price" id="line_discounted_price_3807">
-                                                                                        <span id="sec_discounted_price_3807" class="price-num">@Math.Round(Model.Gia * (1 - (Model.GiamGia / 100))).ToString("N0")</span>&nbsp;<span class="price-num" style=" text-decoration: underline; ">
+                                                                                <span id="sec_discounted_price_3807" class="price-num">@Math.Round(Model.ItemDetails.Gia * (1 - (Model.ItemDetails.GiamGia / 100))).ToString("N0")</span>&nbsp;<span class="price-num" style=" text-decoration: underline; ">
                                                                                             đ
                                                                                         </span>
                                                                                     </span>
                                                                                 </span>
-                                                                                <span class="detail_list_price">@Model.Gia.ToString("N0")<span>đ</span></span>
-                                                                                <strong class="detail_list_discount_prc">- @Model.GiamGia<span>%</span></strong>                                                                                                <span class="lab_tragop_o">Trả góp 0%</span>
+                                                                                <span class="detail_list_price">@Model.ItemDetails.Gia.ToString("N0")<span>đ</span></span>
+                                                                        <strong class="detail_list_discount_prc">- @Model.ItemDetails.GiamGia<span>%</span></strong>                                                                                                <span class="lab_tragop_o">Trả góp 0%</span>
                                                                             </div>
                                                                             <p class="nt-prepaid-installment">Mua Trả trước: <strong></strong>. <a href="tel:0999999999">Liên hệ tư vấn qua điện thoại</a></p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="product-note">
                                                                         <ul>
-                                                                            <li>@Model.TenSp<span> tại Mobile Phone Store là máy phiên bản chính hãng thị trường Việt Nam.</span></li>
+                                                                    <li>@Model.ItemDetails.TenSp<span> tại Mobile Phone Store là máy phiên bản chính hãng thị trường Việt Nam.</span></li>
                                                                             <li>Giá luôn rẻ hơn thị trường, shop sẵn hàng đủ màu, có hỗ trợ trả góp 0%, ship COD.</li>
                                                                         </ul>
                                                                     </div>
@@ -93,8 +93,8 @@
                                                                             <li class="icon-info-installment"><strong>Trả trước 30%</strong> liên hệ qua <a class="link_tragop" rel="nofollow">điện thoại để được tư vấn</a>. Thủ tục chỉ cần CCCD + GPLX;</li>
                                                                         </ul>
                                                                     </div>
-                                                            
-                                                                <input type="hidden" name="MaSp" value="@Model.MaSp" />
+
+                                                            <input type="hidden" name="MaSp" value="@Model.ItemDetails.MaSp" />
                                                                 <div class="form-group" style="text-align: center;">
                                                                     <label for="SoLuong">Số lượng:</label>
                                                                     <input type="number" id="Quantity" name="Quantity" value="1" min="1" />
@@ -109,44 +109,44 @@
                                                         </form>
                                                     </div>
                                                     <ul class="popup-tabs hidden">
-                                                        <div id="content_features" class="hidden" title="Cấu hình chi tiết của @Model.TenSp" data-ca-keep-in-place="true">
-                                                            <img class="   pict" id="det_img_3807" src="~/imgProduct/@Model.Hinh" width="800" height="600" alt="iphone-12-128gb-note_dd1e-au" title="iphone-12-128gb-note_dd1e-au" />
+                                                <div id="content_features" class="hidden" title="Cấu hình chi tiết của @Model.ItemDetails.TenSp" data-ca-keep-in-place="true">
+                                                    <img class="   pict" id="det_img_3807" src="~/imgProduct/@Model.ItemDetails.Hinh" width="800" height="600" alt="iphone-12-128gb-note_dd1e-au" title="iphone-12-128gb-note_dd1e-au" />
                                                             <p class="subheader">Màn hình</p>
                                                             <div class="control-group">
                                                                 <label>Màn hình rộng:</label>
-                                                        <div class="feature-value"><ul class="no-markers no-margin">@Math.Round(Model.ManHinh.Value, 1)<span> inches</span></li></ul></div>
+                                                        <div class="feature-value"><ul class="no-markers no-margin">@Math.Round(Model.ItemDetails.ManHinh.Value, 1)<span> inches</span></li></ul></div>
                                                             </div>
                                                             <p class="subheader">Camera</p>
                                                             <div class="control-group">
                                                                 <label>Camera sau:</label>
-                                                                <div class="feature-value"><ul class="no-markers no-margin">@Model.CameraSau<span> MP</span></li></ul></div>
+                                                        <div class="feature-value"><ul class="no-markers no-margin">@Model.ItemDetails.CameraSau<span> MP</span></li></ul></div>
                                                             </div>
                                                             <div class="control-group">
                                                                 <label>Camera trước:</label>
-                                                                <div class="feature-value"><ul class="no-markers no-margin">@Model.CameraTruoc<span> MP</span></li></ul></div>
+                                                        <div class="feature-value"><ul class="no-markers no-margin">@Model.ItemDetails.CameraTruoc<span> MP</span></li></ul></div>
                                                             </div>
                                                             <p class="subheader">Hệ điều hành - CPU</p>
                                                             <div class="control-group">
                                                                 <label>Chipset:</label>
-                                                                <div class="feature-value"><ul class="no-markers no-margin">@Model.Cpu</li></ul></div>
+                                                        <div class="feature-value"><ul class="no-markers no-margin">@Model.ItemDetails.Cpu</li></ul></div>
                                                             </div>
                                                             <div class="control-group">
                                                                 <label>Hệ điều hành:</label>
-                                                                <div class="feature-value"><ul class="no-markers no-margin">@Model.HeDieuHanh</li></ul></div>
+                                                        <div class="feature-value"><ul class="no-markers no-margin">@Model.ItemDetails.HeDieuHanh</li></ul></div>
                                                             </div>
                                                             <p class="subheader">Bộ nhớ &amp; Lưu trữ</p>
                                                             <div class="control-group">
                                                                 <label>RAM:</label>
-                                                                <div class="feature-value"><ul class="no-markers no-margin">@Model.Ram <span> GB</span></li></ul></div>
+                                                        <div class="feature-value"><ul class="no-markers no-margin">@Model.ItemDetails.Ram <span> GB</span></li></ul></div>
                                                             </div>
                                                             <div class="control-group">
                                                                 <label>Bộ nhớ trong ( Rom):</label>
-                                                                <div class="feature-value"><ul class="no-markers no-margin">@Model.Rom <span> GB</span></li></ul></div>
+                                                        <div class="feature-value"><ul class="no-markers no-margin">@Model.ItemDetails.Rom <span> GB</span></li></ul></div>
                                                             </div>
                                                             <p class="subheader">Thông tin pin</p>
                                                             <div class="control-group">
                                                                 <label>Dung lượng pin:</label>
-                                                                <div class="feature-value">@Model.Pin <span> mah</span></div>
+                                                        <div class="feature-value">@Model.ItemDetails.Pin <span> mah</span></div>
                                                             </div>
                                                         </div>
                                                     </ul>
@@ -170,32 +170,16 @@
                                 <div class="row">
                                     <div class="span11 product_main11">
                                         <div class=" tab_product_view show_full_mota">
-                                            <h2 style=" font-size: 18px; font-weight: normal; margin-bottom: 15px;">Thông tin <span>@Model.TenSp</span></h2>
+                                    <h2 style=" font-size: 18px; font-weight: normal; margin-bottom: 15px;">Thông tin <span>@Model.ItemDetails.TenSp</span></h2>
                                             <div id="content_description" class="wysiwyg-content2">
                                                 <div>
-                                                    <p><strong>@Model.TenSp</strong> @Model.MoTa</p>
+                                            <p><strong>@Model.ItemDetails.TenSp</strong> @Model.ItemDetails.MoTa</p>
                                                 </div>
                                             </div>
                                         </div>
 
-                                @using (Html.BeginForm("SubmitReview", "Product", FormMethod.Post))
-                                {
-                                    <div class="form-group">
-                                        <label for="rating">Đánh giá:</label>
-                                        <select name="rating" id="rating">
-                                            <option value="1">1 sao</option>
-                                            <option value="2">2 sao</option>
-                                            <option value="3">3 sao</option>
-                                            <option value="4">4 sao</option>
-                                            <option value="5">5 sao</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="comment">Bình luận:</label>
-                                        <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
-                                    </div>
-                                    <button type="submit">Gửi</button>
-                                }
+                                
+
 
 
                                         <div class=" mtop20">
@@ -203,147 +187,52 @@
                                             <div class="discussion-block left" id="content_discussion">
                                                 <div class="clearfix discussion-stars">
                                                     <div class="clearfix discussion-stars-left">
-                                                        <div class="discussion_title_name">Đánh giá <strong>iPhone 12 128GB Chính Hãng VN/A</strong></div>
-                                                        <span class="text-rated">0.0</span> <span class="per-number">/5</span>
-                                                        <p class="nowrap stars">
-                                                            <i class="icon-star-empty"></i>
-                                                            <i class="icon-star-empty"></i>
-                                                            <i class="icon-star-empty"></i>
-                                                            <i class="icon-star-empty"></i>
-                                                            <i class="icon-star-empty"></i>
-                                                        </p>
-                                                        <span class="number-review">1 đánh giá</span>
+                                                        <div class="discussion_title_name">Đánh giá <strong>@Model.ItemDetails.TenSp</strong></div>
+                                                        
                                                     </div>
-                                                    <div class="clearfix discussion-stars-right">
-                                                        <div class="row-rate">
-                                                            <p class="nowrap stars">
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                            </p>
-                                                            <div class="progress progress-rate">
-                                                                <div class="progress-bar-orrange" style="width: 0%"></div>
-                                                            </div>
-                                                            <span class="num-review">0</span>
-                                                        </div>                     
+                                            @{
+                                                var isAuthenticated = User.Identity.IsAuthenticated;
+                                            }
+
+                                            @if (isAuthenticated)
+                                            {
+                                                @using (Html.BeginForm("SubmitReview", "DienThoai", FormMethod.Post))
+                                                {
+                                                    <div class="form-group">
+                                                        <label for="SoSao">Đánh giá:</label>
+                                                        <select name="SoSao" id="SoSao">
+                                                            <option value="1">1 sao</option>
+                                                            <option value="2">2 sao</option>
+                                                            <option value="3">3 sao</option>
+                                                            <option value="4">4 sao</option>
+                                                            <option value="5">5 sao</option>
+                                                        </select>
                                                     </div>
+                                                    <div class="form-group">
+                                                        <label for="BinhLuan">Bình luận:</label>
+                                                        <textarea name="BinhLuan" id="BinhLuan" rows="4" cols="50"></textarea>
+                                                    </div>
+                                                    <input type="hidden" name="MaSp" value="@Model.ItemDetails.MaSp" />
+                                                    <button type="submit" class="btn btn-primary">Gửi</button>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <p>Bạn cần <a href="@Url.Action("DangNhap", "Account")">đăng nhập</a> để đánh giá sản phẩm.</p>
+                                            }
+
+                                            <h3>Đánh giá</h3>
+                                            @foreach (var review in Model.Reviews) // Giả sử Model.Reviews là danh sách đánh giá của sản phẩm
+                                            {
+                                                <div>
+                                                    <p><strong>@review.HoTen</strong> - @review.SoSao sao</p>
+                                                    <p>@review.BinhLuan</p>
+                                                </div>
+                                            }
                                                 </div>
 
-                                                <div class="ty-discussion-post-popup" id="new_post_dialog_3807">
-                                                    <form action="https://www.duchuymobile.com/" method="post" class="cm-ajax cm-ajax-full-render posts-form" name="add_post_form" id="add_post_form_3807">
-                                                        <input type="hidden" name="result_ids" value="average_rating*,content_discussion">
-                                                        <input type="hidden" name="post_data[thread_id]" value="11138" />
-                                                        <input type="hidden" name="redirect_url" value="https://www.duchuymobile.com/index.php?dispatch=products.view&amp;product_id=3807" />
-                                                        <input type="hidden" name="selected_section" value="" />
-                                                        <div id="new_post_3807">
-                                                            <div class="ty-control-group">
-                                                                <label for="dsc_message_3807" class="hidden cm-required">Tin nhắn của bạn</label>
-<textarea id="dsc_message_3807" name="post_data[message]" class="ty-input-textarea ty-input-text-post show_post " rows="3" placeholder="Hãy giúp chúng tôi đánh giá sản phẩm này!" style="width:99%;padding: 10px;"></textarea>
-                                                            </div>
-                                                            <div class="hidden_post">
-                                                                <div class="clearfix">
-                                                                    <div class="post_left" style="margin-right:15px">
-                                                                        <div class="ty-control-group">
-                                                                            <label for="dsc_name_3807" class="hidden cm-required">Tên bạn</label>
-                                                                            <input type="text" id="dsc_name_3807" name="post_data[name]" value="" size="20" class="ty-input-text-medium cm-hint" title="Họ tên (bắt buộc)" />
-                                                                        </div>
-                                                                        <div class="ty-control-group">
-                                                                            <label for="dsc_phone" class="hidden">Điện thoại</label>
-                                                                            <input id="dsc_phone" type="text" name="post_data[email]" value="" size="20" title="Số điện thoại" class="cm-hint ty-input-text-medium cm-phone">
-                                                                        </div>
-                                                                        <div class="ty-control-group ayour_rating">
-                                                                            <label class="ty-control-group__title cm-multiple-radios ty-float-left">Đánh giá: </label>
-                                                                            <div class="clearfix cm-field-container">
-                                                                                <fieldset class="rating" id="rating_3807">
-                                                                                    <input type="radio" id="rating_3807_5" name="post_data[rating_value]" value="5" />
-                                                                                    <label for="rating_3807_5" title="Tuyệt vời!">Tuyệt vời!</label>
-                                                                                    <input type="radio" id="rating_3807_4" name="post_data[rating_value]" value="4" />
-                                                                                    <label for="rating_3807_4" title="Rất tốt">Rất tốt</label>
-                                                                                    <input type="radio" id="rating_3807_3" name="post_data[rating_value]" value="3" />
-                                                                                    <label for="rating_3807_3" title="Trung bình">Trung bình</label>
-                                                                                    <input type="radio" id="rating_3807_2" name="post_data[rating_value]" value="2" />
-                                                                                    <label for="rating_3807_2" title="Fair">Fair</label>
-                                                                                    <input type="radio" id="rating_3807_1" name="post_data[rating_value]" value="1" />
-                                                                                    <label for="rating_3807_1" title="Kém">Kém</label>
-                                                                                </fieldset>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="buttons-container-submit">
-                                                                            <input class="ty-post-coment" type="submit" name="dispatch[discussion.add]" value="Gửi" />
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <div id="posts_list">
-
-                                                    <div class="ty-discussion-post__content">
-
-
-                                                        <span class="ty-discussion-post__author ty-float-left"><strong>S</strong>Sang</span>
-
-                                                        <div class="ty-discussion-post__rating">
-                                                            <p class="nowrap stars">
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                                <i class="icon-star"></i>
-                                                            </p>
-
-                                                        </div>
-                                                        <div class="ty-discussion-post__message">còn hàng không shop?</div>
-
-                                                        <span class="ty-discussion-post__date">Ngày: 08/11/2022</span>
-                                                        <span class="reply-item" id="item_135026">Trả lời</span>
-                                                    </div>
-                                                    <div class="list-cmt-item-parent clearfix " id="show-list-item_135026">
-                                                        <div class="form-send-ask form-parent clearfix hiden-form-post-item" id="hiden-form-post-item_135026">
-                                                            <div class="avatar icon-user"></div>
-                                                            <form action="https://www.duchuymobile.com/" method="post" class="cm-ajax cm-ajax-full-render posts-parent-form" name="add_tra_loi_parent_form">
-                                                                <input type="hidden" name="result_ids" value="content_discussion">
-                                                                <input type="hidden" name="redirect_url" value="https://www.duchuymobile.com/index.php?dispatch=products.view&amp;product_id=3807" />
-                                                                <input type="hidden" name="item_data[posts_per_page]" value="N" />
-                                                                <input type="hidden" name="item_data[post_id]" value="135026" />
-                                                                <div class="ty-control-group">
-<textarea name="item_data[description]" id="dsc_parent_message_135026" class="ty-input-textarea ty-input-text-post show_post_item " rows="3" placeholder="Đề nghị viết câu trả lời có dấu và câu trả lời không mang tính khích bác, đả kích cá nhân và vi phạm thuần phong mỹ tục Việt Nam." style="width:100%;padding: 10px; "></textarea> <label for="dsc_parent_message_135026" class="cm-required hidden">Tin nhắn của bạn</label>
-                                                                </div>
-                                                                <div class="relative hidden_post_item">
-                                                                    <div class="ty-control-group float-left">
-                                                                        <label for="dsc_parent_user_135026" class="cm-required hidden">Tên</label>
-                                                                        <input id="dsc_parent_user_135026" type="text" name="item_data[name]" value="" placeholder="Tên (bắt buộc)" class="ty-input-text-medium" style=" height: 35px; padding: 10px; margin-right: 10px; " />
-                                                                    </div>
-                                                                    <div class="buttons-container add_post">
-
-
-                                                                        <input class="ty-btn__secondary" type="submit" name="dispatch[discussion.add_item]" value="Gửi" />
-
-
-                                                                    </div>
-                                                                    <div class="clear"></div>
-
-
-                                                                </div>
-                                                            </form>
-                                                            <div class="clear"></div>
-                                                        </div>
-
-                                                        <div class="replay">
-
-                                                            <img style=" width: 25px; " src="images/favicon-dhm-2016.ico" />
-                                                            <strong>Mobile Phone Store</strong>
-                                                            <b class="admin_type">QTV</b>
-                                                            <div class="replay-content">
-                                                                Chào anh ạ<br />
-                                                                Hiện tại còn hàng nha.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -351,15 +240,15 @@
                                         <div class="view-product_features view-product-question">
                                             <h3>Thông số sản phẩm</h3>
                                             <div class="content-product_features">
-                                        <div class="features-list-item"><label>Màn hình rộng: </label><span>    @Math.Round(Model.ManHinh.Value, 1) inches</span></div>
-                                                <div class="features-list-item"><label>Camera sau: </label><span>    @Model.CameraSau MP</span></div>
-                                                <div class="features-list-item"><label>Camera Trước: </label><span>    @Model.CameraTruoc MP</span></div>
-                                                <div class="features-list-item"><label>Hệ điều hành: </label><span>    @Model.HeDieuHanh</span></div>
-                                                <div class="features-list-item"><label>Chipset: </label><span>    @Model.Cpu</span></div>
+                                        <div class="features-list-item"><label>Màn hình rộng: </label><span>    @Math.Round(Model.ItemDetails.ManHinh.Value, 1) inches</span></div>
+                                        <div class="features-list-item"><label>Camera sau: </label><span>    @Model.ItemDetails.CameraSau MP</span></div>
+                                        <div class="features-list-item"><label>Camera Trước: </label><span>    @Model.ItemDetails.CameraTruoc MP</span></div>
+                                        <div class="features-list-item"><label>Hệ điều hành: </label><span>    @Model.ItemDetails.HeDieuHanh</span></div>
+                                        <div class="features-list-item"><label>Chipset: </label><span>    @Model.ItemDetails.Cpu</span></div>
                                                 <div class="features-list-item">
-                                                    <label>RAM: </label><span>    @Model.Ram GB</span>
-                                                </div><div class="features-list-item"><label>Bộ nhớ trong ( Rom): </label><span>    @Model.Rom GB</span></div>
-                                                <div class="features-list-item"><label>Dung lượng pin: </label><span>    @Model.Pin mAh</span></div></p>
+                                            <label>RAM: </label><span>    @Model.ItemDetails.Ram GB</span>
+                                        </div><div class="features-list-item"><label>Bộ nhớ trong ( Rom): </label><span>    @Model.ItemDetails.Rom GB</span></div>
+                                        <div class="features-list-item"><label>Dung lượng pin: </label><span>    @Model.ItemDetails.Pin mAh</span></div></p>
                                                 <a id="features" class="cm-dialog-opener" data-ca-target-id="content_features" rel="nofollow">Xem cấu hình chi tiết</a>
                                             </div>
                                         </div>

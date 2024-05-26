@@ -80,6 +80,11 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                     ViewBag.TenTKError = "Tên tài khoản đã tồn tại!";
                     return View();
                 }
+                else if (string.IsNullOrEmpty(model.MatKhau))
+                {
+                    ModelState.AddModelError("MatKhau", "Vui lòng nhập mật khẩu.");
+                    return View(model);
+                }
                 else
                 {
                     model.IsAdmin = false;
@@ -109,11 +114,16 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 		[HttpPost]
 		public async Task<IActionResult> DangNhap(DangNhap model, string? ReturnUrl)
 		{
+            if (string.IsNullOrEmpty(model.MatKhau))
+            {
+                ModelState.AddModelError("MatKhau", "Vui lòng nhập mật khẩu.");
+                return View(model);
+            }
             ViewBag.ReturnUrl = ReturnUrl;
             if (ModelState.IsValid)
 			{
                 var nd = _context.NguoiDungs.SingleOrDefault(kh => kh.TenTaiKhoan == model.TenTaiKhoan);
-                if (nd != null)
+                if (nd != null && nd.IsAdmin == false)
                 {
                     bool passwordMatch = BCrypt.Net.BCrypt.Verify(model.MatKhau, nd.MatKhau);
                     if (passwordMatch)
@@ -150,8 +160,13 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                         return View();
                     }
                 }
+                else if (nd.IsAdmin == true)
+                {
+                    return Redirect("/QuanLyAdmin");
+                }
                 else
                 {
+                    
                     ViewBag.UserNameError = "Tên tài khoản chưa được đăng ký!";
                     return View();
                 }

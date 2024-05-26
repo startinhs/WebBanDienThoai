@@ -1,0 +1,14 @@
+
+
+CREATE PROCEDURE ThongKeDoanhThu
+    @Ngay DATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+    
+    SELECT SUM(TongGiaTri) AS DoanhThu
+    FROM HoaDon
+    WHERE CONVERT(DATE, NgayDatHang) = @Ngay
+    AND TrangThaiTt = 1 
+    AND TrangThaiDh = 2; 
+END

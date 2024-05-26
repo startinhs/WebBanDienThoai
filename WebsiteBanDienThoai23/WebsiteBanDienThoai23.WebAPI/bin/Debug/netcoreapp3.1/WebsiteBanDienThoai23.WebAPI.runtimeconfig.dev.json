@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\quoch\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\quoch\\.nuget\\packages"
-    ]
-  }
-}

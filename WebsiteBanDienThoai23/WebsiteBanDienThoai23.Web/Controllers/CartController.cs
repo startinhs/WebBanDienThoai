@@ -40,190 +40,235 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             ViewBag.CountProduct = carts.Sum(s => s.SoLuong);
             decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
             ViewBag.SubTotal = subTotal;
-			decimal discount = 0;
-			foreach (var cart in carts)
-			{
-				// Giả sử thuộc tính GiamGia của sản phẩm là phần trăm giảm giá
-				discount += (cart.GiamGia / 100.0m) * (cart.Gia * cart.SoLuong);
-			}
-			// Gán tổng giá trị sản phẩm vào ViewBag
-			ViewBag.Discount = discount;
+            decimal discount = 0;
+            foreach (var cart in carts)
+            {
+                discount += (cart.GiamGia / 100.0m) * (cart.Gia * cart.SoLuong);
+            }
+
+            ViewBag.Discount = discount;
             ViewBag.Total = subTotal - discount;
-			return View(carts);
+            return View(carts);
         }
 
-		public ActionResult AddToCart(string id)
-		{
-			var product = _context.SanPhams.FirstOrDefault(s => s.MaSp == id);
+        public ActionResult AddToCart(string id, int quantity)
+        {
+            var product = _context.SanPhams.FirstOrDefault(s => s.MaSp == id);
 
-			if (product != null)
-			{
-				List<CartModel> carts = GetListCarts();
-				CartModel existingProduct = carts.FirstOrDefault(s => s.MaSp == id);
+            if (product != null && quantity > 0)
+            {
+                List<CartModel> carts = GetListCarts();
+                CartModel existingProduct = carts.FirstOrDefault(s => s.MaSp == id);
 
-				if (existingProduct != null)
-				{
-					existingProduct.SoLuong++;
-				}
-				else
-				{
-					CartModel newProduct = new CartModel();
-					newProduct.MaSp = product.MaSp;
-					newProduct.TenSp = product.TenSp;
-					newProduct.Gia = product.Gia;
-					newProduct.SoLuong = 1;
-					newProduct.Hinh = product.Hinh;
-					newProduct.Ram = product.Ram;
-					newProduct.Rom = product.Rom;
-					newProduct.ManHinh = product.ManHinh;
-					newProduct.GiamGia = product.GiamGia;
-					carts.Add(newProduct);
-				}
+                if (existingProduct != null)
+                {
+                    existingProduct.SoLuong += quantity;
+                }
+                else
+                {
+                    CartModel newProduct = new CartModel();
+                    newProduct.MaSp = product.MaSp;
+                    newProduct.TenSp = product.TenSp;
+                    newProduct.Gia = product.Gia;
+                    newProduct.SoLuong = quantity;
+                    newProduct.Hinh = product.Hinh;
+                    newProduct.Ram = product.Ram;
+                    newProduct.Rom = product.Rom;
+                    newProduct.ManHinh = product.ManHinh;
+                    newProduct.GiamGia = product.GiamGia;
+                    carts.Add(newProduct);
+                }
 
-				HttpContext.Session.SetObjectAsJson("CartModel", carts);
-			}
-			return RedirectToAction("ListCarts");
-		}
-		[Authorize]
-		public ActionResult Checkout()
-		{
+                HttpContext.Session.SetObjectAsJson("CartModel", carts);
+            }
+            return RedirectToAction("ListCarts");
+        }
+
+        private int? GetUserId()
+        {
+            // Lấy user ID từ session
+            var userIdString = HttpContext.Session.GetString("UserId");
+
+            if (int.TryParse(userIdString, out int userId))
+            {
+                return userId;
+            }
+
+            return null;
+        }
+        public string GenerateMaHd()
+        {
+
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            var random = new Random();
+            var result = new string(
+                Enumerable.Repeat(chars, 6)
+                          .Select(s => s[random.Next(s.Length)])
+                          .ToArray());
+            return result;
+        }
+        [Authorize]
+        public ActionResult CheckoutConfirmation(string DiaChiGiaoHang)
+        {
             if (!User.Identity.IsAuthenticated)
             {
-                // Ghi nhớ URL hiện tại trước khi chuyển hướng đến trang đăng nhập
+
+                string returnUrl = Url.Action("CheckoutConfirmation", "Cart");
+                return RedirectToAction("DangNhap", "Account", new { returnUrl });
+            }
+
+            int? userId = GetUserId();
+            var nguoiDung = _context.NguoiDungs.FirstOrDefault(u => u.UserId == userId);
+
+            List<CartModel> carts = GetListCarts();
+
+            decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
+            decimal discount = carts.Sum(s => (s.GiamGia / 100.0m) * (s.Gia * s.SoLuong));
+            decimal total = subTotal - discount;
+
+            ViewBag.HoTen = nguoiDung != null ? nguoiDung.HoTen : "";
+            ViewBag.DiaChi = nguoiDung != null ? nguoiDung.DiaChi : "";
+            ViewBag.SDT = nguoiDung != null ? nguoiDung.Sdt : "";
+            ViewBag.Email = nguoiDung != null ? nguoiDung.Email : "";
+            ViewBag.DiaChi = nguoiDung != null ? nguoiDung.DiaChi : "";
+
+            ViewBag.CountProduct = carts.Sum(s => s.SoLuong);
+            ViewBag.SubTotal = subTotal;
+            ViewBag.Discount = discount;
+            ViewBag.Total = total;
+
+
+
+            return View(carts);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Checkout()
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
                 string returnUrl = Url.Action("Checkout", "Cart");
 
-                return RedirectToAction("Login", "Account", new { returnUrl });
+                return RedirectToAction("DangNhap", "Account", new { returnUrl });
             }
 
             // Lấy danh sách các sản phẩm trong giỏ hàng từ session
             List<CartModel> carts = GetListCarts();
 
-			// Lấy user ID từ session hoặc qua một phương thức
-			int? userId = GetUserId();
+            // Lấy user ID từ session
+            int? userId = GetUserId();
 
-			if (carts != null && carts.Count > 0 && userId.HasValue)
-			{
-				// Tạo một Giỏ Hàng mới
-				var cart = new GioHang
-				{
-					MaKh = userId.Value
-				};
+            decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
+            decimal discount = carts.Sum(s => (s.GiamGia / 100.0m) * (s.Gia * s.SoLuong));
+            decimal total = subTotal - discount;
+            if (carts != null && carts.Count > 0 && userId.HasValue)
+            {
+                var khachHang = _context.NguoiDungs.FirstOrDefault(u => u.UserId == userId);
+                var order = new HoaDon
+                {
+                    MaHd = GenerateMaHd(),
+                    MaKh = userId.Value,
+                    NgayDatHang = DateTime.Now,
+                    TongGiaTri = total,
+                    DiaChiGiaoHang = khachHang.DiaChi,
+                    TrangThaiTt = false,
+                    TrangThaiDh = 0
+                };
 
-				_context.GioHangs.Add(cart);
+                _context.HoaDons.Add(order);
+                _context.SaveChanges();
 
-				// Lưu các thay đổi vào cơ sở dữ liệu để nhận được giá trị MaGh tự động tạo
-				_context.SaveChanges();
+                foreach (var item in carts)
+                {
+                    var orderDetail = new ChiTietHoaDon
+                    {
+                        MaHd = order.MaHd,
+                        MaSp = item.MaSp,
+                        SoLuongDatHang = item.SoLuong,
+                        DonGia = item.Gia
+                    };
+                    _context.ChiTietHoaDons.Add(orderDetail);
 
-				// Thêm từng sản phẩm trong giỏ vào Chi tiết giỏ hàng
-				foreach (var item in carts)
-				{
-					var cartDetail = new ChiTietGioHang
-					{
-						MaGh = cart.MaGh, // Sử dụng MaGh đã được tạo tự động
-						MaSp = item.MaSp,
-						SoLuong = item.SoLuong
-					};
+                    // Giảm số lượng sản phẩm trong cơ sở dữ liệu
+                    var product = _context.SanPhams.FirstOrDefault(p => p.MaSp == item.MaSp);
+                    if (product != null)
+                    {
+                        product.SoLuong -= (short)item.SoLuong;
+                        if (product.SoLuong < 0)
+                        {
+                            // Xử lý khi số lượng âm (ví dụ: đặt số lượng là 0)
+                            product.SoLuong = 0;
+                        }
+                    }
+                }
 
-					_context.ChiTietGioHangs.Add(cartDetail);
-				}
+                _context.SaveChanges();
 
-				// Lưu các thay đổi vào cơ sở dữ liệu
-				_context.SaveChanges();
+                // Xóa session gio hang
+                HttpContext.Session.Remove("CartModel");
 
-				// Xóa session giỏ hàng
-				HttpContext.Session.Remove("CartModel");
+                return RedirectToAction("CheckoutSuccess");
+            }
 
-				return RedirectToAction("CheckoutSuccess");
-			}
+            return RedirectToAction("ListCarts");
+        }
 
-			return RedirectToAction("ListCarts");
-		}
-
-		private int? GetUserId()
-		{
-			// Lấy user ID từ session
-			var userIdString = HttpContext.Session.GetString("UserId");
-
-			if (int.TryParse(userIdString, out int userId))
-			{
-				return userId;
-			}
-
-			return null;
-		}
-		public ActionResult CheckoutSuccess()
-		{
-			return View();
-		}
-
-
-		// GET: CartController/Details/5
-		public ActionResult Details(int id)
+        public ActionResult CheckoutSuccess()
         {
             return View();
         }
 
-        // GET: CartController/Create
-        public ActionResult Create()
+
+
+        [Authorize]
+        public ActionResult DonMua()
         {
-            return View();
+            int? userId = GetUserId();
+            if (userId == null)
+            {
+                return RedirectToAction("DangNhap", "Account");
+            }
+
+            var DonMua = (from hd in _context.HoaDons
+                          join ct in _context.ChiTietHoaDons on hd.MaHd equals ct.MaHd
+                          join sp in _context.SanPhams on ct.MaSp equals sp.MaSp
+                          where hd.MaKh == userId.Value
+                          select new DonMuaModel
+                          {
+                              MaSp = sp.MaSp,
+                              TenSp = sp.TenSp,
+                              SoLuongDatHang = ct.SoLuongDatHang,
+                              DonGia = ct.DonGia,
+                              NgayDatHang = hd.NgayDatHang,
+                              TongGiaTri = hd.TongGiaTri,
+                              DiaChiGiaoHang = hd.DiaChiGiaoHang,
+                              TrangThaiThanhToan = hd.TrangThaiTt,
+                              TrangThaiDonHang = hd.TrangThaiDh,
+                              NgayNhanHang = hd.NgayNhanHang
+                          }).ToList();
+
+            return View(DonMua);
         }
 
-        // POST: CartController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+
+
+
+        public ActionResult Delete(string id)
         {
-            try
+            // Lấy giỏ hàng từ Session
+            var carts = GetListCarts();
+
+            // Tìm sản phẩm cần xóa và xóa nó khỏi danh sách giỏ hàng
+            var productToRemove = carts.FirstOrDefault(p => p.MaSp == id);
+            if (productToRemove != null)
             {
-                return RedirectToAction(nameof(Index));
+                carts.Remove(productToRemove);
+                HttpContext.Session.SetObjectAsJson("CartModel", carts);
             }
-            catch
-            {
-                return View();
-            }
+
+            return RedirectToAction("ListCarts");
         }
 
-        // GET: CartController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: CartController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: CartController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: CartController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

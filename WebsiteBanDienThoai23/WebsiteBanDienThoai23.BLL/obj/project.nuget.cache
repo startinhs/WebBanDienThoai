@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FcaTQQft3kSBAmVxvCv+9YS3JDTrFdTwO4A9b3hi6QsnbrA0Un/3WrI6DJYq5ifhuBzCNXLqWEMfieuT5ceo5g==",
+  "dgSpecHash": "259yZ/YA9YyEQnflFuPV6wfnfItNMFVOKIzEyueZP35uNq9L30LhKpEv05hm6+3htupWUzrEgyq1PiIVgNYOfA==",
   "success": true,
-  "projectFilePath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj",
+  "projectFilePath": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nguye\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nguye\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",

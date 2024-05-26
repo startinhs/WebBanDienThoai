@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {}
+    "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {}
   },
   "projects": {
-    "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {
+    "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj",
+        "projectUniqueName": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj",
         "projectName": "WebsiteBanDienThoai23.Common",
-        "projectPath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj",
+        "projectPath": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj",
         "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-        "outputPath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\obj\\",
+        "outputPath": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",

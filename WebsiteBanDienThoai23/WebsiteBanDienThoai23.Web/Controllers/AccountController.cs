@@ -166,7 +166,8 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                     return View();
                 }
             }
-            return RedirectToAction("DangNhap", "Account");
+            else
+                return View();
         }
         [HttpGet]
         public IActionResult QuenMatKhau()
@@ -236,20 +237,35 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             string storedCode = TempData["RandomCode"] as string;
             int? userId = TempData["UserId"] as int?;
             var nd = _context.NguoiDungs.SingleOrDefault(kh => kh.UserId == userId);
-            if (MaXacThuc == storedCode)
+            if (MaXacThuc != null && MatKhau != null)
             {
-                string salt = BCrypt.Net.BCrypt.GenerateSalt();
-                string mk_hash = BCrypt.Net.BCrypt.HashPassword(MatKhau, salt);
-                nd.MatKhau = mk_hash;
-                _context.Update(nd);
-                _context.SaveChanges();
-                return RedirectToAction("DangNhap", "Account");
+                if (MaXacThuc == storedCode)
+                {
+                    string salt = BCrypt.Net.BCrypt.GenerateSalt();
+                    string mk_hash = BCrypt.Net.BCrypt.HashPassword(MatKhau, salt);
+                    nd.MatKhau = mk_hash;
+                    _context.Update(nd);
+                    _context.SaveChanges();
+                    return RedirectToAction("DangNhap", "Account");
+                }
+                else
+                {
+                    ViewBag.CodeError = "Sai mã xác thực!";
+                    return View();
+                }
+            }
+            else if (MaXacThuc == null)
+            {
+                ViewBag.CodeError = "Vui lòng điền đầy đủ thông tin!";
+                return View(null);
+            }
+            else if (MatKhau == null)
+            {
+                ViewBag.Password = "Vui lòng điền đầy đủ thông tin!";
+                return View(null);
             }
             else
-            {
-                ViewBag.CodeError = "Sai mã xác thực!";
                 return View();
-            }
         }
         [HttpGet]
         public async Task<IActionResult> DangXuat()

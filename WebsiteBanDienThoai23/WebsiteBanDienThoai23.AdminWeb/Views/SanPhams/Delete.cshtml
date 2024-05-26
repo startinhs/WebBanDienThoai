@@ -1,0 +1,149 @@
+﻿@model WebsiteBanDienThoai23.DAL.Models.SanPham
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SanPham</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenSp)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenSp)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Hinh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Hinh)
+        </dd>
+        <dt class = "col-sm-2">
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MoTa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MoTa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TonKho)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TonKho)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ThoiGianBh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ThoiGianBh)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model._5g)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model._5g)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cpu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cpu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Pin)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Pin)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SacNhanh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SacNhanh)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ram)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ram)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Rom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Rom)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ManHinh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ManHinh)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fps)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fps)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HeDieuHanh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HeDieuHanh)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CameraSau)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CameraSau)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CameraTruoc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CameraTruoc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Imel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Imel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GiamGia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GiamGia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaLoaiNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MaLoaiNavigation.MaLoai)
+        </dd class>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MaSp" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

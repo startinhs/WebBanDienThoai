@@ -16,6 +16,8 @@ namespace WebsiteBanDienThoai23.DAL.Models
             : base(options)
         {
         }
+        public DbSet<SanPham> Products { get; set; }
+        // Other DbSet properties for your other database tables
 
         public virtual DbSet<BaoHanh> BaoHanhs { get; set; }
         public virtual DbSet<ChiTietBaoHanh> ChiTietBaoHanhs { get; set; }

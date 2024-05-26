@@ -14,5 +14,12 @@ namespace WebsiteBanDienThoai23.Web.Models
 		public short? Rom { get; set; }
 		public double? ManHinh { get; set; }
 		public decimal GiamGia { get; set; }
-	}
+
+        public string HoTen { get; set; }
+        public string SDT { get; set; }
+        public string DiaChi { get; set; }
+        public string Email { get; set; }
+        public string DiaChiGiaoHang { get; set; }
+        public string PhuongThucThanhToan { get; set; }
+    }
 }

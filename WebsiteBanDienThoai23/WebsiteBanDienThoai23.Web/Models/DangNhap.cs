@@ -7,6 +7,6 @@ namespace WebsiteBanDienThoai23.Web.Models
         [Required(ErrorMessage = "Vui lòng nhập tên tài khoản của bạn!")]
         public string TenTaiKhoan { get; set; }
         [Required(ErrorMessage = "Vui lòng nhập mật khẩu của bạn!")]
-        public string MatKhau { get; set;}
+        public string MatKhau { get; set; }
     }
 }

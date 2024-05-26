@@ -6513,11 +6513,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj",
+      "projectUniqueName": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj",
       "projectName": "WebsiteBanDienThoai23.BLL",
-      "projectPath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj",
+      "projectPath": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\WebsiteBanDienThoai23.BLL.csproj",
       "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-      "outputPath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\obj\\",
+      "outputPath": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6534,11 +6534,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {
-              "projectPath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj"
+            "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj": {
+              "projectPath": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj"
             },
-            "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj": {
-              "projectPath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj"
+            "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj": {
+              "projectPath": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj"
             }
           }
         }

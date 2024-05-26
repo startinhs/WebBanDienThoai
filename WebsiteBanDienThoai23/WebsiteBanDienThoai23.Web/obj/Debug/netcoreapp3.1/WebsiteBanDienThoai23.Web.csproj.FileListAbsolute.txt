@@ -596,3 +596,12 @@ D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDien
 D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\BCrypt.Net.dll
 D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\DangKy.cshtml.g.cs
 D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\DangNhap.cshtml.g.cs
+D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\BouncyCastle.Cryptography.dll
+D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\System.Formats.Asn1.dll
+D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Cng.dll
+D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+D:\LTCSDL\School\DoAnWebAPI\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Cng.dll

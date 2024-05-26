@@ -10,6 +10,7 @@ using WebsiteBanDienThoai23.Web.Models;
 using System.Linq;
 using WebsiteBanDienThoai23.Web.ViewModels;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using WebsiteBanDienThoai23.Web.MailService;
 
 namespace WebsiteBanDienThoai23.Web.Controllers
 {
@@ -21,7 +22,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 			return View();
 		}
 
-		private readonly QLBanDienThoaiContext _context;
+        private readonly QLBanDienThoaiContext _context;
 
 		public AccountController(QLBanDienThoaiContext context)
 		{
@@ -141,6 +142,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                         }
                         else
                         {
+
                             return RedirectToAction("Index", "Home");
                         }
                     }
@@ -158,8 +160,17 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             }
             return RedirectToAction("DangNhap", "Account");
 		}
-
-		[HttpGet]
+        [HttpGet]
+        public IActionResult QuenMatKhau()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult QuenMatKhau(string TenTaiKhoan, string Email)
+        {
+            return View();
+        }
+        [HttpGet]
 		public async Task<IActionResult> DangXuat()
 		{
 			await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);

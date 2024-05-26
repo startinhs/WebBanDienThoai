@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -11,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebsiteBanDienThoai23.DAL.Models;
+using WebsiteBanDienThoai23.Web.MailService;
 
 namespace WebsiteBanDienThoai23.Web
 {
@@ -27,6 +29,13 @@ namespace WebsiteBanDienThoai23.Web
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddControllersWithViews();
+
+			services.AddOptions();
+			var mailsettings = Configuration.GetSection("MailSettings");
+
+            services.Configure<MailSettings>(mailsettings);
+
+			services.AddTransient<SendMailService>();
 
 			services.AddSession(options =>
 			{
@@ -72,7 +81,23 @@ namespace WebsiteBanDienThoai23.Web
 				endpoints.MapControllerRoute(
 					name: "default",
 					pattern: "{controller=Home}/{action=Index}/{id?}");
-			});
-		}
+                endpoints.MapGet("/testmail", async context => {
+
+                    // Lấy dịch vụ sendmailservice
+                    var sendmailservice = context.RequestServices.GetService<SendMailService>();
+
+                    MailContent content = new MailContent
+                    {
+                        To = "nguyenichtruong77@gmail.com",
+                        Subject = "Kiểm tra thử",
+                        Body = "<p><strong>Xin chào Trường</strong></p>"
+                    };
+
+                    var kq = await sendmailservice.SendMail(content);
+                    await context.Response.WriteAsync(kq);
+                });
+
+            });
+        }
 	}
 }

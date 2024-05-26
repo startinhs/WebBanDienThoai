@@ -165,7 +165,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                 }
                 else if (nd.IsAdmin == true)
                 {
-                    return Redirect("/QuanLyAdmin");
+                    return Redirect("https://localhost:5001/");
                 }
                 else
                 {

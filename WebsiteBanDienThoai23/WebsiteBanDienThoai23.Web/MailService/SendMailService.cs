@@ -13,7 +13,7 @@ namespace WebsiteBanDienThoai23.Web.MailService
         {
             _mailSettings = mailSettings.Value;
         }
-        public async Task<string> SendMail(MailContent mailContent)
+        public async Task<int> SendMail(MailContent mailContent)
         {
             var email = new MimeMessage();
             email.Sender = new MailboxAddress(_mailSettings.DisplayName, _mailSettings.Mail);
@@ -39,11 +39,11 @@ namespace WebsiteBanDienThoai23.Web.MailService
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-                return "LOI " + e.Message + "!";
+                return 0;
             }
 
             smtp.Disconnect(true);
-            return "GUI THANH CONG!";
+            return 1;
         }
     }
     public class MailContent

@@ -8,32 +8,36 @@ using System.Threading.Tasks;
 using WebsiteBanDienThoai23.DAL.Models;
 using WebsiteBanDienThoai23.Web.Models;
 using System.Linq;
-using WebsiteBanDienThoai23.Web.ViewModels;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using WebsiteBanDienThoai23.Web.MailService;
+using System;
+using System.Threading;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebsiteBanDienThoai23.Web.Controllers
 {
-	public class AccountController : Controller
-	{
-		// GET: AccountController
-		public ActionResult Index()
-		{
-			return View();
-		}
+    public class AccountController : Controller
+    {
+        // GET: AccountController
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        private readonly SendMailService _sendMailService;
 
         private readonly QLBanDienThoaiContext _context;
 
-		public AccountController(QLBanDienThoaiContext context)
-		{
-			_context = context;
-		}
-		[HttpGet]
+        public AccountController(QLBanDienThoaiContext context, SendMailService sendMailService)
+        {
+            _context = context;
+            _sendMailService = sendMailService;
+        }
+        [HttpGet]
         public IActionResult DangKy()
         {
             return View();
         }
-		[HttpPost]
+        [HttpPost]
         public IActionResult Dangky(DangKy model)
         {
             if (ModelState.IsValid)
@@ -90,6 +94,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                     nd.DiaChi = model.DiaChi;
                     nd.Sdt = model.Sdt;
                     nd.TenTaiKhoan = model.TenTaiKhoan;
+                    nd.IsAdmin = model.IsAdmin;
                     string salt = BCrypt.Net.BCrypt.GenerateSalt();
                     string mk_hash = BCrypt.Net.BCrypt.HashPassword(model.MatKhau, salt);
                     nd.MatKhau = mk_hash;
@@ -98,21 +103,24 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                     return RedirectToAction("DangNhap", "Account");
                 }
             }
-            return View();
+            else
+            {
+                return View();
+            }
         }
         [HttpGet]
-		public IActionResult DangNhap(string? ReturnUrl)
-		{
+        public IActionResult DangNhap(string? ReturnUrl)
+        {
             ViewBag.ReturnUrl = ReturnUrl;
             return View();
-		}
+        }
 
-		[HttpPost]
-		public async Task<IActionResult> DangNhap(DangNhap model, string? ReturnUrl)
-		{
+        [HttpPost]
+        public async Task<IActionResult> DangNhap(DangNhap model, string? ReturnUrl)
+        {
             ViewBag.ReturnUrl = ReturnUrl;
             if (ModelState.IsValid)
-			{
+            {
                 var nd = _context.NguoiDungs.SingleOrDefault(kh => kh.TenTaiKhoan == model.TenTaiKhoan);
                 if (nd != null)
                 {
@@ -159,23 +167,96 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                 }
             }
             return RedirectToAction("DangNhap", "Account");
-		}
+        }
         [HttpGet]
         public IActionResult QuenMatKhau()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult QuenMatKhau(string TenTaiKhoan, string Email)
+        public async Task<IActionResult> QuenMatKhau(string Email)
+        {
+            if (Email != null)
+            {
+                var nd = _context.NguoiDungs.SingleOrDefault(kh => kh.Email == Email);
+                if (nd != null)
+                {
+                    try
+                    {
+
+                        Random rand = new Random();
+                        string randomCode = (rand.Next(999999)).ToString();
+                        TempData["RandomCode"] = randomCode;
+
+                        MailContent content = new MailContent
+                        {
+                            To = nd.Email,
+                            Subject = "Xác nhận tài khoản " + nd.TenTaiKhoan,
+                            Body = "Xin chào " + nd.HoTen + "!\n" + "Mã xác thực của bạn là: " + randomCode + "\nVui lòng không cung cấp mã xác thực cho bất kì ai."
+                        };
+                        int kq = await _sendMailService.SendMail(content);
+                        if (kq == 1)
+                        {
+                            TempData["UserId"] = nd.UserId;
+                            HttpContext.Session.SetInt32("UserId", nd.UserId);
+                            return RedirectToAction("KhoiPhucMatKhau", "Account");
+                        }
+                        else
+                        {
+                            ViewBag.FailedRecovery = "Sai định dạng Email, nếu bạn đăng ký tài khoản bằng Email ảo, vui lòng liên hệ bộ phận CSKH";
+                            return View();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.FailedRecovery = "Sai định dạng Email, nếu bạn đăng ký tài khoản bằng Email ảo, vui lòng liên hệ bộ phận CSKH";
+                        return View();
+                    }
+                }
+                else
+                {
+                    ViewBag.FailedRecovery = "Email chưa được đăng ký tài khoản!";
+                    return View();
+                }
+            }
+            else
+            {
+                ViewBag.FailedRecovery = "Vui lòng điền đầy đủ thông tin!";
+                return View();
+            }
+        }
+        [HttpGet]
+        public IActionResult KhoiPhucMatKhau()
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult KhoiPhucMatKhau(string MaXacThuc, string MatKhau)
+        {
+            string storedCode = TempData["RandomCode"] as string;
+            int? userId = TempData["UserId"] as int?;
+            var nd = _context.NguoiDungs.SingleOrDefault(kh => kh.UserId == userId);
+            if (MaXacThuc == storedCode)
+            {
+                string salt = BCrypt.Net.BCrypt.GenerateSalt();
+                string mk_hash = BCrypt.Net.BCrypt.HashPassword(MatKhau, salt);
+                nd.MatKhau = mk_hash;
+                _context.Update(nd);
+                _context.SaveChanges();
+                return RedirectToAction("DangNhap", "Account");
+            }
+            else
+            {
+                ViewBag.CodeError = "Sai mã xác thực!";
+                return View();
+            }
+        }
         [HttpGet]
-		public async Task<IActionResult> DangXuat()
-		{
-			await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-			HttpContext.Session.Remove("UserId");
-			return RedirectToAction("Index", "Home");
-		}
-	}
+        public async Task<IActionResult> DangXuat()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            HttpContext.Session.Remove("UserId");
+            return RedirectToAction("Index", "Home");
+        }
+    }
 }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -43,6 +44,9 @@ namespace WebsiteBanDienThoai23.Web
 				options.Cookie.HttpOnly = true;
 				options.Cookie.IsEssential = true;
 			});
+
+			services.AddSingleton<ITempDataProvider, CookieTempDataProvider>();
+			services.AddDistributedMemoryCache();
 
 			services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
 				.AddCookie(options =>
@@ -94,7 +98,7 @@ namespace WebsiteBanDienThoai23.Web
                     };
 
                     var kq = await sendmailservice.SendMail(content);
-                    await context.Response.WriteAsync(kq);
+                    await context.Response.WriteAsync(kq.ToString());
                 });
 
             });

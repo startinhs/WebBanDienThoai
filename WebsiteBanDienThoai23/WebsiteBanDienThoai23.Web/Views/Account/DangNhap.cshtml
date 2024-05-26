@@ -1,4 +1,4 @@
-﻿@model WebsiteBanDienThoai23.Web.ViewModels.DangNhap
+﻿@model WebsiteBanDienThoai23.Web.Models.DangNhap
 
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -34,7 +34,7 @@
                                         <div class="col-12">
                                             @Html.Label("Tên tài khoản:", null, new { @class = "form-label" })
                                             @Html.TextBox("TenTaiKhoan", null, new { @class = "form-control", @id = "yourUsername", @required = "required", @placeholder = "Nhập tên tài khoản của bạn" })
-                                            @Html.ValidationMessage("TenTaiKhoan", "Vui lòng nhập tên tài khoản của bạn!", new { @class = "invalid-feedback" })
+                                            @Html.ValidationMessage("TenTaiKhoan", /* "Vui lòng nhập tên tài khoản của bạn!",  */new { style = "color: red;" })
                                             @if (ViewBag.UserNameError != null)
                                             {
                                                 <span class="badge badge-danger" style="color:red">@ViewBag.UserNameError</span>
@@ -53,7 +53,7 @@
                                             <button class="btn btn-primary w-100" type="submit">Đăng nhập</button>
                                         </div>
                                         <div class="col-12">
-                                            <p class="small mb-0">Quên mật khẩu? <a href="@Url.Action("ForgotPass","Account")">Khôi phục</a></p>
+                                            <p class="small mb-0">Quên mật khẩu? <a href="@Url.Action("QuenMatKhau","Account")">Khôi phục</a></p>
                                             <br />
                                             <br />
                                             <p class="small mb-0">Bạn chưa có tài khoản? @Html.ActionLink("Tạo tài khoản", "DangKy", "Account")</p>

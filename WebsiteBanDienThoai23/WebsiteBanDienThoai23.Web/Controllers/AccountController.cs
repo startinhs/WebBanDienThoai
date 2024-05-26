@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 using WebsiteBanDienThoai23.DAL.Models;
 using WebsiteBanDienThoai23.Web.Models;
 using System.Linq;
-using WebsiteBanDienThoai23.Web.ViewModels;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace WebsiteBanDienThoai23.Web.Controllers
@@ -162,10 +161,6 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                         ViewBag.UserPassError = "Sai mật khẩu!";
                         return View();
                     }
-                }
-                else if (nd.IsAdmin == true)
-                {
-                    return Redirect("https://localhost:5001/");
                 }
                 else
                 {

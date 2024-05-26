@@ -29,15 +29,16 @@
                         <td>@item.MaSp</td>
                         <td>@item.TenSp</td>
                         <td>@item.SoLuongDatHang</td>
-                        <td>@item.DonGia ₫</td>
+                        <td>@(item.DonGia.HasValue ? item.DonGia.Value.ToString("N0") + " ₫" : "-")</td>
                         <td>@item.NgayDatHang</td>
-                        <td>@item.TongGiaTri ₫</td>
+                        <td>@(item.TongGiaTri.HasValue ? item.TongGiaTri.Value.ToString("N0") + " ₫" : "-")</td>
                         <td>@item.DiaChiGiaoHang</td>
                         <td>@(item.TrangThaiThanhToan.HasValue ? (item.TrangThaiThanhToan.Value ? "Đã thanh toán" : "Chưa thanh toán") : "-")</td>
                         <td>@(item.TrangThaiDonHang.HasValue ? GetOrderStatus(item.TrangThaiDonHang.Value) : "-")</td>
                         <td>@(item.NgayNhanHang.HasValue ? item.NgayNhanHang.Value.ToString("dd/MM/yyyy") : "-")</td>
                     </tr>
                 }
+
             </tbody>
         </table>
 
@@ -52,7 +53,7 @@
                     default: return "Không xác định";
                 }
             }
-        }>
+        }
     </section>
 </main>
 

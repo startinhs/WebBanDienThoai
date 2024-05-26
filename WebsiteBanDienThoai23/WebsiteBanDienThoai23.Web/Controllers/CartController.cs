@@ -40,15 +40,15 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             ViewBag.CountProduct = carts.Sum(s => s.SoLuong);
             decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
             ViewBag.SubTotal = subTotal;
-			decimal discount = 0;
-			foreach (var cart in carts)
-			{
-				discount += (cart.GiamGia / 100.0m) * (cart.Gia * cart.SoLuong);
-			}
+            decimal discount = 0;
+            foreach (var cart in carts)
+            {
+                discount += (cart.GiamGia / 100.0m) * (cart.Gia * cart.SoLuong);
+            }
 
-			ViewBag.Discount = discount;
+            ViewBag.Discount = discount;
             ViewBag.Total = subTotal - discount;
-			return View(carts);
+            return View(carts);
         }
 
         public ActionResult AddToCart(string id, int quantity)
@@ -70,7 +70,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                     newProduct.MaSp = product.MaSp;
                     newProduct.TenSp = product.TenSp;
                     newProduct.Gia = product.Gia;
-                    newProduct.SoLuong = quantity; 
+                    newProduct.SoLuong = quantity;
                     newProduct.Hinh = product.Hinh;
                     newProduct.Ram = product.Ram;
                     newProduct.Rom = product.Rom;
@@ -137,7 +137,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             ViewBag.Discount = discount;
             ViewBag.Total = total;
 
-            
+
 
             return View(carts);
         }
@@ -158,7 +158,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
             // Lấy user ID từ session
             int? userId = GetUserId();
-            
+
             decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
             decimal discount = carts.Sum(s => (s.GiamGia / 100.0m) * (s.Gia * s.SoLuong));
             decimal total = subTotal - discount;
@@ -177,13 +177,13 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                 };
 
                 _context.HoaDons.Add(order);
-                _context.SaveChanges(); 
+                _context.SaveChanges();
 
                 foreach (var item in carts)
                 {
                     var orderDetail = new ChiTietHoaDon
                     {
-                        MaHd = order.MaHd, 
+                        MaHd = order.MaHd,
                         MaSp = item.MaSp,
                         SoLuongDatHang = item.SoLuong,
                         DonGia = item.Gia
@@ -202,10 +202,10 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             return RedirectToAction("ListCarts");
         }
 
-		public ActionResult CheckoutSuccess()
-		{
-			return View();
-		}
+        public ActionResult CheckoutSuccess()
+        {
+            return View();
+        }
 
 
 
@@ -219,22 +219,22 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             }
 
             var DonMua = (from hd in _context.HoaDons
-                                     join ct in _context.ChiTietHoaDons on hd.MaHd equals ct.MaHd
-                                     join sp in _context.SanPhams on ct.MaSp equals sp.MaSp
-                                     where hd.MaKh == userId.Value
-                                     select new DonMuaModel
-                                     {
-                                         MaSp = sp.MaSp,
-                                         TenSp = sp.TenSp,
-                                         SoLuongDatHang = ct.SoLuongDatHang,
-                                         DonGia = ct.DonGia,
-                                         NgayDatHang = hd.NgayDatHang,
-                                         TongGiaTri = hd.TongGiaTri,
-                                         DiaChiGiaoHang = hd.DiaChiGiaoHang,
-                                         TrangThaiThanhToan = hd.TrangThaiTt,
-                                         TrangThaiDonHang = hd.TrangThaiDh,
-                                         NgayNhanHang = hd.NgayNhanHang
-                                     }).ToList();
+                          join ct in _context.ChiTietHoaDons on hd.MaHd equals ct.MaHd
+                          join sp in _context.SanPhams on ct.MaSp equals sp.MaSp
+                          where hd.MaKh == userId.Value
+                          select new DonMuaModel
+                          {
+                              MaSp = sp.MaSp,
+                              TenSp = sp.TenSp,
+                              SoLuongDatHang = ct.SoLuongDatHang,
+                              DonGia = ct.DonGia,
+                              NgayDatHang = hd.NgayDatHang,
+                              TongGiaTri = hd.TongGiaTri,
+                              DiaChiGiaoHang = hd.DiaChiGiaoHang,
+                              TrangThaiThanhToan = hd.TrangThaiTt,
+                              TrangThaiDonHang = hd.TrangThaiDh,
+                              NgayNhanHang = hd.NgayNhanHang
+                          }).ToList();
 
             return View(DonMua);
         }
@@ -242,25 +242,21 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
 
 
-        // GET: CartController/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(string id)
         {
-            return View();
+            // Lấy giỏ hàng từ Session
+            var carts = GetListCarts();
+
+            // Tìm sản phẩm cần xóa và xóa nó khỏi danh sách giỏ hàng
+            var productToRemove = carts.FirstOrDefault(p => p.MaSp == id);
+            if (productToRemove != null)
+            {
+                carts.Remove(productToRemove);
+                HttpContext.Session.SetObjectAsJson("CartModel", carts);
+            }
+
+            return RedirectToAction("ListCarts");
         }
 
-        // POST: CartController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

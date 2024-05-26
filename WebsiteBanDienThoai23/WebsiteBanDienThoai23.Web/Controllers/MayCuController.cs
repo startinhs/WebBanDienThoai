@@ -18,7 +18,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
         public async Task<IActionResult> Index(int page = 1)
         {
-            const int pageSize = 10;
+            const int pageSize = 5;
             var lstSanPham = _context.SanPhams.AsQueryable();
             lstSanPham = lstSanPham.Where(n => n.MayCu == true);
             var totalItems = lstSanPham.Count();

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebsiteBanDienThoai23.Web.ViewModels
+namespace WebsiteBanDienThoai23.Web.Models
 {
     public class DangNhap
     {

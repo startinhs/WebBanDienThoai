@@ -606,3 +606,5 @@ D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai2
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.AdminWeb.dll
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.AdminWeb.pdb
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.AdminWeb.genruntimeconfig.cache
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\bin\Debug\netcoreapp3.1\BCrypt.Net.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\Account\DangNhap.cshtml.g.cs

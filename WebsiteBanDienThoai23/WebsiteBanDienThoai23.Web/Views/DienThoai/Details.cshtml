@@ -9,16 +9,7 @@
                         <div class="breadcrumbs clearfix">
                             <div class="view_product_title">
                         <h1 class="mainbox-title" style=" padding-bottom: 0; ">@Model.ItemDetails.TenSp <span style=" font-size: 18px; font-weight: normal; ">Mới 100%</span></br></h1>
-                                <div class="rating-wrapper clearfix" id="average_rating_product">
-                                    <p class="nowrap stars">
-                                        <i class="icon-star-empty"></i>
-                                        <i class="icon-star-empty"></i>
-                                        <i class="icon-star-empty"></i>
-                                        <i class="icon-star-empty"></i>
-                                        <i class="icon-star-empty"></i>
-                                    </p>
-                                    <a class="cm-external-click" data-ca-scroll="content_discussion" data-ca-external-click-id="discussion">1 đánh giá | Hỏi Đáp</a>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="row">
@@ -201,11 +192,11 @@
                                                     <div class="form-group">
                                                         <label for="SoSao">Đánh giá:</label>
                                                         <select name="SoSao" id="SoSao">
-                                                            <option value="1">1 sao</option>
-                                                            <option value="2">2 sao</option>
-                                                            <option value="3">3 sao</option>
-                                                            <option value="4">4 sao</option>
                                                             <option value="5">5 sao</option>
+                                                            <option value="4">4 sao</option>
+                                                            <option value="3">3 sao</option>
+                                                            <option value="2">2 sao</option>
+                                                            <option value="1">1 sao</option>
                                                         </select>
                                                     </div>
                                                     <div class="form-group">
@@ -221,8 +212,9 @@
                                                 <p>Bạn cần <a href="@Url.Action("DangNhap", "Account")">đăng nhập</a> để đánh giá sản phẩm.</p>
                                             }
 
-                                            <h3>Đánh giá</h3>
-                                            @foreach (var review in Model.Reviews) // Giả sử Model.Reviews là danh sách đánh giá của sản phẩm
+                                            <br /> <br />
+                                            <h4>Các đánh giá</h4>
+                                            @foreach (var review in Model.Reviews)
                                             {
                                                 <div>
                                                     <p><strong>@review.HoTen</strong> - @review.SoSao sao</p>

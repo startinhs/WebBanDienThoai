@@ -97,6 +97,9 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                     string salt = BCrypt.Net.BCrypt.GenerateSalt();
                     string mk_hash = BCrypt.Net.BCrypt.HashPassword(model.MatKhau, salt);
                     nd.MatKhau = mk_hash;
+
+                    nd.IsAdmin = false;
+
                     _context.Add(nd);
                     _context.SaveChanges();
                     return RedirectToAction("DangNhap", "Account");

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebsiteBanDienThoai23.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+961c18509e7c1c3f6ab30f060f044d2bc6f07784")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60dfca2fdf715c32e3a553e1622c34a1ec681121")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebsiteBanDienThoai23.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebsiteBanDienThoai23.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

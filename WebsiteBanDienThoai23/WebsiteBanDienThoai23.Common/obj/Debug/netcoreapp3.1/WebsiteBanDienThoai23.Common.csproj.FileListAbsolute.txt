@@ -65,3 +65,16 @@ D:\Downloads\Compressed\WebBanDienThoai-Quoc\WebBanDienThoai-Quoc\WebsiteBanDien
 D:\Downloads\Compressed\WebBanDienThoai-Quoc\WebBanDienThoai-Quoc\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.dll
 D:\Downloads\Compressed\WebBanDienThoai-Quoc\WebBanDienThoai-Quoc\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.pdb
 D:\Downloads\Compressed\WebBanDienThoai-Quoc\WebBanDienThoai-Quoc\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.genruntimeconfig.cache
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.deps.json
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.runtimeconfig.json
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.runtimeconfig.dev.json
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.dll
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\bin\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.pdb
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.csproj.AssemblyReference.cache
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.AssemblyInfoInputs.cache
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.AssemblyInfo.cs
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.csproj.CoreCompileInputs.cache
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.dll
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.pdb
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Common\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.Common.genruntimeconfig.cache

@@ -12,6 +12,7 @@ using WebsiteBanDienThoai23.Web.MailService;
 using System;
 using System.Threading;
 using Microsoft.EntityFrameworkCore;
+using WebsiteBanDienThoai23.Extensions;
 
 namespace WebsiteBanDienThoai23.Web.Controllers
 {
@@ -276,9 +277,75 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             else
                 return View();
         }
+
+        private int? GetUserId()
+        {
+            var userIdString = HttpContext.Session.GetString("UserId");
+
+            if (int.TryParse(userIdString, out int userId))
+            {
+                return userId;
+            }
+
+            return null;
+        }
+        [HttpGet]
+        public IActionResult DoiMatKhau()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult DoiMatKhau(string MatKhauCu, string MatKhauMoi)
+        {
+            if (ModelState.IsValid)
+            {
+                var userId = GetUserId();
+                var nd = _context.NguoiDungs.FirstOrDefault(kh => kh.UserId == userId);
+
+                if (nd != null)
+                {
+                    bool isPasswordCorrect = BCrypt.Net.BCrypt.Verify(MatKhauCu, nd.MatKhau);
+                    if (isPasswordCorrect)
+                    {
+                        if (!string.IsNullOrEmpty(MatKhauMoi))
+                        {
+                            string salt = BCrypt.Net.BCrypt.GenerateSalt();
+                            string mk_hash = BCrypt.Net.BCrypt.HashPassword(MatKhauMoi, salt);
+                            nd.MatKhau = mk_hash;
+
+                            _context.Update(nd);
+                            _context.SaveChanges();
+
+                            return RedirectToAction("Index", "Home");
+                        }
+                        else
+                        {
+                            ModelState.AddModelError("MatKhauMoi", "Vui lòng nhập mật khẩu mới.");
+                            return View();
+                        }
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("MatKhauCu", "Mật khẩu cũ không đúng.");
+                        return View();
+                    }
+                }
+                else
+                {
+                    return RedirectToAction("Error", "Home");
+                }
+            }
+            else
+            {
+                return View();
+            }
+        }
+
         [HttpGet]
         public async Task<IActionResult> DangXuat()
         {
+            HttpContext.Session.Remove("CartModel");
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             HttpContext.Session.Remove("UserId");
             return RedirectToAction("Index", "Home");

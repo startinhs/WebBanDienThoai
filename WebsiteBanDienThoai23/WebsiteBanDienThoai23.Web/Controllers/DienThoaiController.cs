@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -119,21 +121,88 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
 
         // GET: DienThoai/Details/5
-        public async Task<IActionResult> Details(string id)
+        public ActionResult Details(string id)
         {
-            if (id == null)
+            var product = _context.SanPhams.FirstOrDefault(p => p.MaSp == id);
+            if (product == null)
             {
-                return NotFound();
+                return null;
             }
 
-            var sanPham = await _context.SanPhams
-                .FirstOrDefaultAsync(m => m.MaSp == id);
-            if (sanPham == null)
-            {
-                return NotFound();
-            }
+            var reviews = _context.DanhGia
+                .Where(r => r.MaSp == id)
+                .Join(_context.NguoiDungs,
+                      r => r.MaKh,
+                      u => u.UserId,
+                      (r, u) => new DanhGiaModel
+                      {
+                          HoTen = u.HoTen,
+                          SoSao = r.SoSao,
+                          BinhLuan = r.BinhLuan
+                      })
+                .ToList();
 
-            return View(sanPham);
+            var viewModel = new SanPhamModel
+            {
+                ItemDetails = product,
+                Reviews = reviews
+            };
+
+            return View(viewModel);
         }
+
+
+        private int? GetUserId()
+        {
+            // Lấy user ID từ session
+            var userIdString = HttpContext.Session.GetString("UserId");
+
+            if (int.TryParse(userIdString, out int userId))
+            {
+                return userId;
+            }
+
+            return null;
+        }
+
+        [HttpPost]
+        [Authorize] // Chỉ cho phép người dùng đã đăng nhập
+        public ActionResult SubmitReview(string MaSp, int SoSao, string BinhLuan)
+        {
+            int? userId = GetUserId();
+            if (userId == null)
+            {
+                // Nếu người dùng chưa đăng nhập, chuyển hướng đến trang đăng nhập
+                return RedirectToAction("DangNhap", "Account");
+            }
+
+            var existingReview = _context.DanhGia.FirstOrDefault(r => r.MaSp == MaSp && r.MaKh == userId.Value);
+
+            if (existingReview != null)
+            {
+                // Cập nhật đánh giá hiện có
+                existingReview.SoSao = SoSao;
+                existingReview.BinhLuan = BinhLuan;
+            }
+            else
+            {
+                // Tạo đánh giá mới
+                var review = new DanhGia
+                {
+                    MaSp = MaSp,
+                    MaKh = userId.Value,
+                    SoSao = SoSao,
+                    BinhLuan = BinhLuan
+                };
+                _context.DanhGia.Add(review);
+            }
+
+            _context.SaveChanges();
+
+            // Chuyển hướng hoặc hiển thị thông báo thành công
+            return RedirectToAction("Details", new { id = MaSp });
+        }
+
     }
 }
+

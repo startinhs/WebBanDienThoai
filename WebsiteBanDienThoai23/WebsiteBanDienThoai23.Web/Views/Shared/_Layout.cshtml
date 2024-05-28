@@ -12,11 +12,13 @@
 <body>
     <header>
         <div class="header-list">
-            <div class="header-list--logo-and-search">
-                <div class="logo">
-                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logotext1.png" alt="" style="height:50px"></a>
+            <div class="header-list--logo-and-search" style="display: flex; align-items: center;">
+                <div class="logo" style="margin-right: 20px;">
+                    <a asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="~/images/logotext1.png" alt="" style="height:50px">
+                    </a>
                 </div>
-                <form action="/DienThoai/Name" method="get">
+                <form action="/DienThoai/Name" method="get" style="flex-grow: 1;">
                     <div class="search">
                         <input type="text" name="key" placeholder="Bạn tìm gì">
                         <button style="border:none">
@@ -25,15 +27,42 @@
                     </div>
                 </form>
             </div>
+
             
             <i class="fas fa-bars"></i>
             <div class="header-list--menu">
                 <ul>
                     <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><i class="icon icon_dien_thoai" style="font-size: 12px;"></i><span style="font-size: 12px;">điện thoại</span></a></li>
                     <li><a asp-area="" asp-controller="MayCu" asp-action="Index"><i class="icon icon_cu_gia_re" style="font-size: 12px;">máy</i><span style="font-size: 12px;">cũ giá rẻ</span></a></li>
-                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><span style="font-size: 12px;">Đăng nhập</span></a></li>
-                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><span style="font-size: 12px;">Đăng ký</span></a></li>
-                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><i class="fas fa-cart-plus size" style="font-size: 12px;"></i><span style="font-size: 12px;"> Giỏ hàng</span></a></li>
+
+                    @{
+                        var isAuthenticated = User.Identity.IsAuthenticated;
+                        var userName = isAuthenticated ? User.Identity.Name : "Guest";
+                    }
+                    @if (isAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <span class="nav-link">Xin chào, @userName</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("DangXuat", "Account")">Đăng xuất</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("DonMua", "Cart")">Đơn mua</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("DangNhap", "Account")">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("DangKy", "Account")">Đăng ký</a>
+                        </li>
+                    }
+                    @* <li><a asp-area="" asp-controller="Account" asp-action="Login"><span style="font-size: 12px;">Đăng nhập</span></a></li>
+                    <li><a asp-area="" asp-controller="DienThoai" asp-action="Index"><span style="font-size: 12px;">Đăng ký</span></a></li> *@
+                    <li><a asp-area="" asp-controller="Cart" asp-action="ListCarts"><i class="fas fa-cart-plus size" style="font-size: 12px;"></i><span style="font-size: 12px;"> Giỏ hàng</span></a></li>
                 </ul>
             </div>
         </div>
@@ -42,7 +71,11 @@
     <div>
         @RenderBody()
     </div>
-    
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <footer>
         <div class="container-fluid footer">
             <div class="row">
@@ -77,6 +110,7 @@
         </div>
         </div><p style="text-align: center;"><span style="font-size:12px;">&copy; 2024. Cửa hàng Mobile Phone Store. Email: abc@Ou.edu.vn. Chịu trách nhiệm nội dung: Lê Minh Tính, Nguyễn Thái Quốc, Nguyễn Ích Trường.</span></p>
     </footer>
+
     <a style="display: scroll; position: fixed; bottom: 20px; right: 7px;" title="Back to Top" href="#"><img src="~/images/up-arrow.png" alt="" /></a>
     <script src="~/js/jquery.js"></script>
     <script src="~/js/bootstrap.js"></script>

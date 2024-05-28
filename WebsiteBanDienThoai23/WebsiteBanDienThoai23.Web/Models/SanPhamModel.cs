@@ -10,5 +10,8 @@ namespace WebsiteBanDienThoai23.Web.Models
         public int TotalPages { get; set; }
         public int CurrentPage { get; set; }
         public List<LoaiSp> DanhSachLoaiSP { get; set; }
+
+        public SanPham ItemDetails { get; set; }
+        public List<DanhGiaModel> Reviews { get; set; }
     }
 }

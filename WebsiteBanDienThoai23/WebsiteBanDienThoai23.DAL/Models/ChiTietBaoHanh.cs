@@ -9,7 +9,8 @@ namespace WebsiteBanDienThoai23.DAL.Models
     {
         public int MaBh { get; set; }
         public string MaSp { get; set; }
-        public string Imel { get; set; }
+        public DateTime? NgayBatDau { get; set; }
+        public DateTime? NgayKetThuc { get; set; }
 
         public virtual BaoHanh MaBhNavigation { get; set; }
         public virtual SanPham MaSpNavigation { get; set; }

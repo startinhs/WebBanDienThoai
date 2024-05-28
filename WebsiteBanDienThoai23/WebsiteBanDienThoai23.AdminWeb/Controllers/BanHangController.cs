@@ -16,9 +16,14 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
         // GET: BanHang
         public async Task<IActionResult> Index()
         {
-            var qLBanDienThoaiContext = _context.HoaDons.Include(h => h.MaKhNavigation).Include(h => h.MaNvNavigation);
+            var qLBanDienThoaiContext = _context.HoaDons
+                .Include(h => h.MaKhNavigation)
+                .Include(h => h.MaNvNavigation)
+                .OrderByDescending(h => h.NgayDatHang);
+
             return View(await qLBanDienThoaiContext.ToListAsync());
         }
+
 
         // GET: BanHang/Details/5
         public async Task<IActionResult> Details(string id)
@@ -77,7 +82,6 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
         // GET: BanHang/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
-            var NhanVienLapDon = await _context.NguoiDungs.FindAsync(GetUserId());
             if (id == null)
             {
                 return NotFound();
@@ -88,10 +92,10 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             {
                 return NotFound();
             }
-            ViewData["MaKh"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaKh);
 
-
-                ViewBag.NhanVienLapDon = NhanVienLapDon.HoTen;
+            var NhanVienLapDon = await _context.NguoiDungs.FindAsync(GetUserId());
+            ViewBag.MaNhanVienLapDon = NhanVienLapDon.UserId;
+            hoaDon.MaNv = ViewBag.MaNhanVienLapDon;
 
             ViewData["TrangThaiTt"] = new SelectList(new List<SelectListItem>
             {
@@ -109,45 +113,97 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             return View(hoaDon);
         }
 
-        // POST: BanHang/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("MaHd,MaKh,MaNv,NgayDatHang,DiaChiGiaoHang,TongGiaTri,TrangThaiTt,TrangThaiDh,NgayNhanHang")] HoaDon hoaDon)
-        {
-            if (id != hoaDon.MaHd)
-            {
-                return NotFound();
-            }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Edit(string id, [Bind("MaHd,MaKh,MaNv,NgayDatHang,DiaChiGiaoHang,TongGiaTri,TrangThaiTt,TrangThaiDh,NgayNhanHang")] HoaDon hoaDon)
+        //{
+        //    if (id != hoaDon.MaHd)
+        //    {
+        //        return NotFound();
+        //    }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(hoaDon);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!HoaDonExists(hoaDon.MaHd))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["MaKh"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaKh);
-            ViewData["MaNv"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaNv);
-            ViewData["TrangThaiTt"] = new SelectList(_context.HoaDons, "MaHd", "MaHd", hoaDon.TrangThaiTt);
-            return View(hoaDon);
-        }
+        //    if (ModelState.IsValid)
+        //    {
+        //        try
+        //        {
+        //            _context.Update(hoaDon);
+        //            await _context.SaveChangesAsync();
+
+        //            // Kiểm tra điều kiện để lưu vào bảng BaoHanh và ChiTietBaoHanh
+        //            if (hoaDon.TrangThaiTt == true && hoaDon.TrangThaiDh == 2)
+        //            {
+        //                var maKh = GetUserId();
+        //                var ngayBatDau = hoaDon.NgayNhanHang;
+        //                var ngayKetThuc = ngayBatDau;
+        //                var tinhTrangBaoHanh = true;
+
+        //                byte? thoiGianBH = 0;
+        //                var Imel = "";
+        //                // Lấy ThoiGianBH từ bảng SanPham
+        //                var thongTinSanPhamVaChiTiet = await (from sp in _context.SanPhams
+        //                                                      join ct in _context.ChiTietBaoHanhs on sp.MaSp equals ct.MaSp
+        //                                                      select new
+        //                                                      {
+        //                                                          SanPham = sp,
+        //                                                          ChiTietBaoHanh = ct
+        //                                                      }).ToListAsync();
+
+        //                // Kiểm tra xem có dữ liệu từ cả hai bảng không
+        //                if (thongTinSanPhamVaChiTiet.Any())
+        //                {
+        //                    foreach (var thongTin in thongTinSanPhamVaChiTiet)
+        //                    {
+        //                        var sanPham = thongTin.SanPham;
+        //                        var chiTietBaoHanh = thongTin.ChiTietBaoHanh;
+        //                        thoiGianBH = sanPham.ThoiGianBh;
+        //                        Imel = sanPham.Imel;
+        //                    }
+        //                }
+
+        //                // Tính toán TinhTrangBh và số ngày còn lại
+        //                var ngayHienTai = DateTime.Now;
+
+        //                // Tính toán số ngày còn lại
+        //                int soNgayConLai = (ngayHienTai - ngayBatDau.Value).Days;
+        //                tinhTrangBaoHanh = soNgayConLai > 0 ? true : false;
+        //                // Tính toán NgayKetThuc
+        //                if (thoiGianBH>0)
+        //                {
+        //                    ngayKetThuc = ngayBatDau.Value.AddYears(thoiGianBH.Value);
+        //                }
+
+        //                var baoHanh = new BaoHanh
+        //                {
+        //                    MaKh = maKh.Value,
+        //                    NgayBatDau = ngayBatDau,
+        //                    NgayKetThuc = ngayKetThuc,
+        //                    TinhTrangBh = tinhTrangBaoHanh
+        //                };
+
+        //                _context.BaoHanhs.Add(baoHanh);
+        //                await _context.SaveChangesAsync();
+
+        //            }
+
+        //        }
+        //        catch (DbUpdateConcurrencyException)
+        //        {
+        //            if (!HoaDonExists(hoaDon.MaHd))
+        //            {
+        //                return NotFound();
+        //            }
+        //            else
+        //            {
+        //                throw;
+        //            }
+        //        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    return View(hoaDon);
+        //}
 
         // GET: BanHang/Delete/5
+        [HttpPost]
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -167,16 +223,23 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             return View(hoaDon);
         }
 
-        // POST: BanHang/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        [HttpPost]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var hoaDon = await _context.HoaDons.FindAsync(id);
+            var hoaDon = await _context.HoaDons.Include(h => h.ChiTietHoaDons).FirstOrDefaultAsync(h => h.MaHd == id);
+            if (hoaDon == null)
+            {
+                return NotFound();
+            }
+
+            // Xóa các chi tiết hóa đơn trước
+            _context.ChiTietHoaDons.RemoveRange(hoaDon.ChiTietHoaDons);
             _context.HoaDons.Remove(hoaDon);
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
 
         private bool HoaDonExists(string id)
         {

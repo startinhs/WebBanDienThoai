@@ -12,6 +12,15 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.MaHd)
+            </th>
+            <th>
+                Khách hàng
+            </th>
+            <th>
+                Nhân viên
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.NgayDatHang)
             </th>
             <th>
@@ -29,18 +38,21 @@
             <th>
                 @Html.DisplayNameFor(model => model.NgayNhanHang)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaKhNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MaHd)
-            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaHd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaKhNavigation.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNvNavigation.HoTen)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.NgayDatHang)
             </td>
@@ -51,24 +63,38 @@
                 @Html.DisplayFor(modelItem => item.TongGiaTri)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TrangThaiTt)
+                @if (item.TrangThaiTt.HasValue)
+                {
+                    @(item.TrangThaiTt.Value ? "Đã thanh toán" : "Chưa thanh toán")
+                }
+                else
+                {
+                    <span>Không xác định</span>
+                }
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TrangThaiDh)
+                @switch (item.TrangThaiDh)
+                {
+                    case 0:
+                        <span>Đang xử lý</span>
+                        break;
+                    case 1:
+                        <span>Đang giao</span>
+                        break;
+                    case 2:
+                        <span>Đã giao</span>
+                        break;
+                }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.NgayNhanHang)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.MaKhNavigation.UserId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaHd)
-            </td>
-            <td>
                 <a asp-action="Edit" asp-route-id="@item.MaHd">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MaHd">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MaHd">Delete</a>
+                <form asp-action="DeleteConfirmed" method="post" style="display:inline;">
+                    <input type="hidden" name="id" value="@item.MaHd" />
+                    <input type="submit" value="Delete" class="btn btn-link text-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa hóa đơn này không?');" />
+                </form>
             </td>
         </tr>
 }

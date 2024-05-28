@@ -49,13 +49,10 @@
                
                 <div class="navbar-nav w-100">
                     <a href="@Url.Action("Index","SanPhams")" class="nav-item nav-link"><i class="fa fa-table me-2"></i>QL sản phẩm</a>
-                    <a href="/swagger" class="nav-item nav-link"><i class="fa fa-table me-2"></i>QL sản phẩm | API</a>
-                    <a href="/swagger" class="nav-item nav-link"><i class="fa fa-table me-2"></i>QL loại sản phẩm | API</a>
-                    <a href="/swagger" class="nav-item nav-link"><i class="fa fa-table me-2"></i>QL người dùng | API</a>
-                    <a href="#" class="nav-item nav-link"><i class="fa fa-table me-2"></i>QL bảo hành</a>
-                    <a href="#" class="nav-item nav-link"><i class="fa fa-table me-2"></i>QL hoá đơn</a>
-                   
-                    <a href="#" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Thống kê</a>
+                    <a href="/swagger" class="nav-item nav-link"><i class="fa fa-table me-2"></i><span>API Quản Lý - </span>Sản phẩm,<span> Loại sản phẩm,</span> Người dùng</a>
+                    <a href="@Url.Action("Index", "BaoHanh")" class="nav-item nav-link"><i class="fa fa-table me-2"></i>QL bảo hành</a>
+                    <a href="@Url.Action("Index", "BanHang")" class="nav-item nav-link"><i class="fa fa-table me-2"></i>QL bán hàng</a>
+                    <a href="@Url.Action("Index", "ThongKe")" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Thống kê</a>
                     
                 </div>
             </nav>
@@ -106,11 +103,10 @@
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+
+  
                         </div>
                     </div>
                 </div>

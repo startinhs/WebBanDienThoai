@@ -38,7 +38,6 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public decimal GiamGia { get; set; }
         public string MaLoai { get; set; }
         public bool? MayCu { get; set; }
-        public string Color { get; set; }
 
         public virtual LoaiSp MaLoaiNavigation { get; set; }
         public virtual ICollection<ChiTietBaoHanh> ChiTietBaoHanhs { get; set; }

@@ -16,8 +16,6 @@ namespace WebsiteBanDienThoai23.DAL.Models
             : base(options)
         {
         }
-        public DbSet<SanPham> Products { get; set; }
-        // Other DbSet properties for your other database tables
 
         public virtual DbSet<BaoHanh> BaoHanhs { get; set; }
         public virtual DbSet<ChiTietBaoHanh> ChiTietBaoHanhs { get; set; }
@@ -52,6 +50,12 @@ namespace WebsiteBanDienThoai23.DAL.Models
                 entity.Property(e => e.MaBh).HasColumnName("MaBH");
 
                 entity.Property(e => e.MaKh).HasColumnName("MaKH");
+
+                entity.Property(e => e.NgayBatDau).HasColumnType("datetime");
+
+                entity.Property(e => e.NgayKetThuc).HasColumnType("datetime");
+
+                entity.Property(e => e.TinhTrangBh).HasColumnName("TinhTrangBH");
 
                 entity.HasOne(d => d.MaKhNavigation)
                     .WithMany(p => p.BaoHanhs)
@@ -270,7 +274,7 @@ namespace WebsiteBanDienThoai23.DAL.Models
                 entity.Property(e => e.HoTen).HasMaxLength(30);
 
                 entity.Property(e => e.MatKhau)
-                    .HasMaxLength(50)
+                    .HasMaxLength(100)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Sdt)
@@ -294,8 +298,6 @@ namespace WebsiteBanDienThoai23.DAL.Models
                     .IsUnicode(false)
                     .HasColumnName("MaSP")
                     .IsFixedLength(true);
-
-                entity.Property(e => e.Color).HasMaxLength(10);
 
                 entity.Property(e => e.Cpu).HasMaxLength(20);
 

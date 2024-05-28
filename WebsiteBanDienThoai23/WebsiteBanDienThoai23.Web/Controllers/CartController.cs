@@ -2,9 +2,13 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Session;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using WebsiteBanDienThoai23.DAL.Models;
 using WebsiteBanDienThoai23.Extensions;
 using WebsiteBanDienThoai23.Web.Models;
@@ -34,9 +38,16 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             return carts;
         }
 
-        public ActionResult ListCarts()
+        public async Task<IActionResult> ListCarts()
         {
-            List<CartModel> carts = GetListCarts();
+            await LoadCartFromDatabase();
+
+            var cartsFromSession = HttpContext.Session.GetObjectFromJson<List<CartModel>>("CartModel");
+            Debug.WriteLine("Dữ liệu trong session:");
+            Debug.WriteLine(JsonConvert.SerializeObject(cartsFromSession));
+
+            var carts = cartsFromSession ?? new List<CartModel>();
+
             ViewBag.CountProduct = carts.Sum(s => s.SoLuong);
             decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
             ViewBag.SubTotal = subTotal;
@@ -48,8 +59,10 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
             ViewBag.Discount = discount;
             ViewBag.Total = subTotal - discount;
+
             return View(carts);
         }
+
 
         public ActionResult AddToCart(string id, int quantity)
         {
@@ -66,27 +79,82 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                 }
                 else
                 {
-                    CartModel newProduct = new CartModel();
-                    newProduct.MaSp = product.MaSp;
-                    newProduct.TenSp = product.TenSp;
-                    newProduct.Gia = product.Gia;
-                    newProduct.SoLuong = quantity;
-                    newProduct.Hinh = product.Hinh;
-                    newProduct.Ram = product.Ram;
-                    newProduct.Rom = product.Rom;
-                    newProduct.ManHinh = product.ManHinh;
-                    newProduct.GiamGia = product.GiamGia;
+                    CartModel newProduct = new CartModel
+                    {
+                        MaSp = product.MaSp,
+                        TenSp = product.TenSp,
+                        Gia = product.Gia,
+                        SoLuong = quantity,
+                        Hinh = product.Hinh,
+                        Ram = product.Ram,
+                        Rom = product.Rom,
+                        ManHinh = product.ManHinh,
+                        GiamGia = product.GiamGia
+                    };
                     carts.Add(newProduct);
                 }
-
                 HttpContext.Session.SetObjectAsJson("CartModel", carts);
+                var maKh = GetUserId();
+                var gioHang = _context.GioHangs.FirstOrDefault(g => g.MaKh == maKh);
+
+                if (gioHang == null)
+                {
+                    gioHang = new GioHang { MaKh = maKh };
+                    _context.GioHangs.Add(gioHang);
+                    _context.SaveChanges();
+                }
+
+                var chiTietGioHang = _context.ChiTietGioHangs.FirstOrDefault(c => c.MaGh == gioHang.MaGh && c.MaSp == id);
+                if (chiTietGioHang != null)
+                {
+                    chiTietGioHang.SoLuong += quantity;
+                }
+                else
+                {
+                    chiTietGioHang = new ChiTietGioHang
+                    {
+                        MaGh = gioHang.MaGh,
+                        MaSp = id,
+                        SoLuong = quantity
+                    };
+                    _context.ChiTietGioHangs.Add(chiTietGioHang);
+                }
+
+                _context.SaveChanges();
             }
+
             return RedirectToAction("ListCarts");
+        }
+
+        private async Task LoadCartFromDatabase()
+        {
+            var userId = GetUserId();
+
+            if (userId != null)
+            {
+                var cartItems = await (from gioHang in _context.GioHangs
+                                       join chiTietGioHang in _context.ChiTietGioHangs on gioHang.MaGh equals chiTietGioHang.MaGh
+                                       join sanPham in _context.SanPhams on chiTietGioHang.MaSp equals sanPham.MaSp
+                                       where gioHang.MaKh == userId
+                                       select new CartModel
+                                       {
+                                           MaSp = sanPham.MaSp,
+                                           TenSp = sanPham.TenSp,
+                                           Gia = sanPham.Gia,
+                                           SoLuong = chiTietGioHang.SoLuong ?? 0,
+                                           Hinh = sanPham.Hinh,
+                                           Ram = sanPham.Ram,
+                                           Rom = sanPham.Rom,
+                                           ManHinh = sanPham.ManHinh,
+                                           GiamGia = sanPham.GiamGia
+                                       }).ToListAsync();
+
+                HttpContext.Session.SetObjectAsJson("CartModel", cartItems);
+            }
         }
 
         private int? GetUserId()
         {
-            // Lấy user ID từ session
             var userIdString = HttpContext.Session.GetString("UserId");
 
             if (int.TryParse(userIdString, out int userId))
@@ -153,10 +221,8 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                 return RedirectToAction("DangNhap", "Account", new { returnUrl });
             }
 
-            // Lấy danh sách các sản phẩm trong giỏ hàng từ session
             List<CartModel> carts = GetListCarts();
 
-            // Lấy user ID từ session
             int? userId = GetUserId();
 
             decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
@@ -197,7 +263,6 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                         product.SoLuong -= (short)item.SoLuong;
                         if (product.SoLuong < 0)
                         {
-                            // Xử lý khi số lượng âm (ví dụ: đặt số lượng là 0)
                             product.SoLuong = 0;
                         }
                     }
@@ -205,7 +270,6 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
                 _context.SaveChanges();
 
-                // Xóa session gio hang
                 HttpContext.Session.Remove("CartModel");
 
                 return RedirectToAction("CheckoutSuccess");
@@ -256,19 +320,32 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
         public ActionResult Delete(string id)
         {
-            // Lấy giỏ hàng từ Session
             var carts = GetListCarts();
-
-            // Tìm sản phẩm cần xóa và xóa nó khỏi danh sách giỏ hàng
             var productToRemove = carts.FirstOrDefault(p => p.MaSp == id);
             if (productToRemove != null)
             {
                 carts.Remove(productToRemove);
                 HttpContext.Session.SetObjectAsJson("CartModel", carts);
+
+                var userId = GetUserId();
+                if (userId != null)
+                {
+                    var gioHang = _context.GioHangs.FirstOrDefault(g => g.MaKh == userId);
+                    if (gioHang != null)
+                    {
+                        var chiTietGioHang = _context.ChiTietGioHangs.FirstOrDefault(c => c.MaGh == gioHang.MaGh && c.MaSp == id);
+                        if (chiTietGioHang != null)
+                        {
+                            _context.ChiTietGioHangs.Remove(chiTietGioHang);
+                            _context.SaveChanges();
+                        }
+                    }
+                }
             }
 
             return RedirectToAction("ListCarts");
         }
+
 
     }
 }

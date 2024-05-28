@@ -108,5 +108,12 @@ namespace WebsiteBanDienThoai23.BLL
             }
             return res;
         }
-    }
+		public SingleRsp thongKe()
+		{
+			var res = new SingleRsp();
+			var products = _rep.ThongKe();
+			res.Data = products;
+			return res;
+		}
+	}
 }

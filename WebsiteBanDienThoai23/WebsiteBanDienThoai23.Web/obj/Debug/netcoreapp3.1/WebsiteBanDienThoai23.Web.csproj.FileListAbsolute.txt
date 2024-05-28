@@ -813,3 +813,17 @@ D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienT
 D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Cng.dll
 D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\KhoiPhucMatKhau.cshtml.g.cs
 D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\QuenMatKhau.cshtml.g.cs
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\BouncyCastle.Cryptography.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\System.Formats.Asn1.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Cng.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Cng.dll
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\KhoiPhucMatKhau.cshtml.g.cs
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\QuenMatKhau.cshtml.g.cs
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\DoiMatKhau.cshtml.g.cs
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\DoiMatKhau.cshtml.g.cs
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\DoiThongTin.cshtml.g.cs

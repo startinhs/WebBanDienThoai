@@ -32,7 +32,6 @@
 								<div class="col-12">
 									@Html.Label("Email:", null, new { @class = "form-label" })
 									@Html.TextBox("Email", null, new { @class = "form-control", @id = "Email", @type = "email", @required = "required", @placeholder = "Nhập email đã đăng ký"/* , @autocomplete = "off" */ })
-									@Html.ValidationMessage("Email", "Vui lòng nhập email của bạn", new { @class = "invalid-feedback" })
 									@if (ViewBag.FailedRecovery != null)
 									{
 										<span class="badge badge-danger" style="color:red">@ViewBag.FailedRecovery</span>
@@ -46,7 +45,7 @@
 					</div>
 
 					<div class="credits" style="font-weight:bold">
-						Đồ án Website bán điện thoại - Nhóm MobilePhone Store
+						Đồ án Website bán điện thoại
 					</div>
 				</div>
 			</div>

@@ -812,3 +812,14 @@ D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienT
 D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.AdminWeb.dll
 D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.AdminWeb.pdb
 D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\WebsiteBanDienThoai23.AdminWeb.genruntimeconfig.cache
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\Create.cshtml.g.cs
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\Delete.cshtml.g.cs
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\Details.cshtml.g.cs
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\Edit.cshtml.g.cs
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\Index.cshtml.g.cs
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\Create.cshtml.g.cs
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\Delete.cshtml.g.cs
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\Details.cshtml.g.cs
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\Edit.cshtml.g.cs
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\Index.cshtml.g.cs
+D:\LTCSDL\School\Nháp\WebBanDienThoai-main\WebBanDienThoai-main\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\ThongKe\Index.cshtml.g.cs

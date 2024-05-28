@@ -825,3 +825,4 @@ D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai2
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\KhoiPhucMatKhau.cshtml.g.cs
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\QuenMatKhau.cshtml.g.cs
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\DoiMatKhau.cshtml.g.cs
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.Web\obj\Debug\netcoreapp3.1\Razor\Views\Cart\ChiTietDonMua.cshtml.g.cs

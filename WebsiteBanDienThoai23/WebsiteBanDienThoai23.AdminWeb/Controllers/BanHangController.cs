@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -47,9 +48,6 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             return View();
         }
 
-        // POST: BanHang/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("MaHd,MaKh,MaNv,NgayDatHang,DiaChiGiaoHang,TongGiaTri,TrangThaiTt,TrangThaiDh,NgayNhanHang")] HoaDon hoaDon)
@@ -65,9 +63,21 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             return View(hoaDon);
         }
 
+        private int? GetUserId()
+        {
+            var userIdString = HttpContext.Session.GetString("UserId");
+
+            if (int.TryParse(userIdString, out int userId))
+            {
+                return userId;
+            }
+
+            return null;
+        }
         // GET: BanHang/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
+            var NhanVienLapDon = await _context.NguoiDungs.FindAsync(GetUserId());
             if (id == null)
             {
                 return NotFound();
@@ -79,7 +89,23 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
                 return NotFound();
             }
             ViewData["MaKh"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaKh);
-            ViewData["MaNv"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaNv);
+
+
+                ViewBag.NhanVienLapDon = NhanVienLapDon.HoTen;
+
+            ViewData["TrangThaiTt"] = new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Đã thanh toán", Value = "true", Selected = hoaDon.TrangThaiTt == true },
+                new SelectListItem { Text = "Chưa thanh toán", Value = "false", Selected = hoaDon.TrangThaiTt == false }
+            }, "Value", "Text");
+
+            ViewData["TrangThaiDh"] = new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Đang xử lý", Value = "0", Selected = hoaDon.TrangThaiDh == 0 },
+                new SelectListItem { Text = "Đang giao hàng", Value = "1", Selected = hoaDon.TrangThaiDh == 1 },
+                new SelectListItem { Text = "Giao hàng thành công", Value = "2", Selected = hoaDon.TrangThaiDh == 2 }
+            }, "Value", "Text");
+
             return View(hoaDon);
         }
 
@@ -117,6 +143,7 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             }
             ViewData["MaKh"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaKh);
             ViewData["MaNv"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaNv);
+            ViewData["TrangThaiTt"] = new SelectList(_context.HoaDons, "MaHd", "MaHd", hoaDon.TrangThaiTt);
             return View(hoaDon);
         }
 

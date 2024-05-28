@@ -24,6 +24,30 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             return View();
         }
 
+        private int? GetUserId()
+        {
+            var userIdString = HttpContext.Session.GetString("UserId");
+
+            if (int.TryParse(userIdString, out int userId))
+            {
+                return userId;
+            }
+
+            return null;
+        }
+
+        public string GenerateMaHd()
+        {
+
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            var random = new Random();
+            var result = new string(
+                Enumerable.Repeat(chars, 6)
+                          .Select(s => s[random.Next(s.Length)])
+                          .ToArray());
+            return result;
+        }
+
         public List<CartModel> GetListCarts()
         {
             // Lấy giỏ hàng từ Session
@@ -62,7 +86,6 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
             return View(carts);
         }
-
 
         public ActionResult AddToCart(string id, int quantity)
         {
@@ -153,28 +176,35 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             }
         }
 
-        private int? GetUserId()
+        public ActionResult Delete(string id)
         {
-            var userIdString = HttpContext.Session.GetString("UserId");
-
-            if (int.TryParse(userIdString, out int userId))
+            var carts = GetListCarts();
+            var productToRemove = carts.FirstOrDefault(p => p.MaSp == id);
+            if (productToRemove != null)
             {
-                return userId;
+                carts.Remove(productToRemove);
+                HttpContext.Session.SetObjectAsJson("CartModel", carts);
+
+                var userId = GetUserId();
+                if (userId != null)
+                {
+                    var gioHang = _context.GioHangs.FirstOrDefault(g => g.MaKh == userId);
+                    if (gioHang != null)
+                    {
+                        var chiTietGioHang = _context.ChiTietGioHangs.FirstOrDefault(c => c.MaGh == gioHang.MaGh && c.MaSp == id);
+                        if (chiTietGioHang != null)
+                        {
+                            _context.ChiTietGioHangs.Remove(chiTietGioHang);
+                            _context.SaveChanges();
+                        }
+                    }
+                }
             }
 
-            return null;
+            return RedirectToAction("ListCarts");
         }
-        public string GenerateMaHd()
-        {
 
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-            var random = new Random();
-            var result = new string(
-                Enumerable.Repeat(chars, 6)
-                          .Select(s => s[random.Next(s.Length)])
-                          .ToArray());
-            return result;
-        }
+        
         [Authorize]
         public ActionResult CheckoutConfirmation(string DiaChiGiaoHang)
         {
@@ -298,8 +328,10 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                           join ct in _context.ChiTietHoaDons on hd.MaHd equals ct.MaHd
                           join sp in _context.SanPhams on ct.MaSp equals sp.MaSp
                           where hd.MaKh == userId.Value
+                          orderby hd.NgayDatHang descending
                           select new DonMuaModel
                           {
+                              MaHd = hd.MaHd,
                               MaSp = sp.MaSp,
                               TenSp = sp.TenSp,
                               SoLuongDatHang = ct.SoLuongDatHang,
@@ -315,37 +347,28 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             return View(DonMua);
         }
 
-
-
-
-        public ActionResult Delete(string id)
+        [Authorize]
+        public ActionResult ChiTietDonMua(string maHd)
         {
-            var carts = GetListCarts();
-            var productToRemove = carts.FirstOrDefault(p => p.MaSp == id);
-            if (productToRemove != null)
+            int? userId = GetUserId();
+            if (userId == null)
             {
-                carts.Remove(productToRemove);
-                HttpContext.Session.SetObjectAsJson("CartModel", carts);
-
-                var userId = GetUserId();
-                if (userId != null)
-                {
-                    var gioHang = _context.GioHangs.FirstOrDefault(g => g.MaKh == userId);
-                    if (gioHang != null)
-                    {
-                        var chiTietGioHang = _context.ChiTietGioHangs.FirstOrDefault(c => c.MaGh == gioHang.MaGh && c.MaSp == id);
-                        if (chiTietGioHang != null)
-                        {
-                            _context.ChiTietGioHangs.Remove(chiTietGioHang);
-                            _context.SaveChanges();
-                        }
-                    }
-                }
+                return RedirectToAction("DangNhap", "Account");
             }
 
-            return RedirectToAction("ListCarts");
+            var chiTietDonMua = (from ct in _context.ChiTietHoaDons
+                                 join sp in _context.SanPhams on ct.MaSp equals sp.MaSp
+                                 where ct.MaHd == maHd
+                                 select new DonMuaModel
+                                 {
+                                     MaHd = ct.MaHd,
+                                     MaSp = sp.MaSp,
+                                     TenSp = sp.TenSp,
+                                     SoLuongDatHang = ct.SoLuongDatHang,
+                                     DonGia = ct.DonGia
+                                 }).ToList();
+
+            return View(chiTietDonMua);
         }
-
-
     }
 }

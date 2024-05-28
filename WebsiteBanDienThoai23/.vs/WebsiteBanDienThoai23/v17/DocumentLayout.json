@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D0C1920F-746D-4ED3-8D25-80C1A4E9CB35}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.dal\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0C1920F-746D-4ED3-8D25-80C1A4E9CB35}|WebsiteBanDienThoai23.DAL\\WebsiteBanDienThoai23.DAL.csproj|solutionrelative:websitebandienthoai23.dal\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81F6671F-87AF-4DE3-BCCE-EDEDA2FBB897}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\views\\banhang\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81F6671F-87AF-4DE3-BCCE-EDEDA2FBB897}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\views\\banhang\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81F6671F-87AF-4DE3-BCCE-EDEDA2FBB897}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\controllers\\banhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81F6671F-87AF-4DE3-BCCE-EDEDA2FBB897}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\controllers\\banhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81F6671F-87AF-4DE3-BCCE-EDEDA2FBB897}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81F6671F-87AF-4DE3-BCCE-EDEDA2FBB897}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81F6671F-87AF-4DE3-BCCE-EDEDA2FBB897}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.adminweb\\views\\banhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81F6671F-87AF-4DE3-BCCE-EDEDA2FBB897}|WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj|solutionrelative:websitebandienthoai23.adminweb\\views\\banhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +43,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "NguoiDung.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\Models\\NguoiDung.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.DAL\\Models\\NguoiDung.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.DAL\\Models\\NguoiDung.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.DAL\\Models\\NguoiDung.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T10:47:44.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CartController.cs",
               "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Controllers\\CartController.cs",
               "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Controllers\\CartController.cs",
               "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Controllers\\CartController.cs",
-              "ViewState": "AQIAAAwBAAAAAAAAAAAuwCABAAAkAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T08:34:23.427Z",
+              "WhenOpened": "2024-05-28T10:06:35.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAE0BAAAAAAAAAAAuwFsBAAAMAAAA",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\BanHang\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\BanHang\\Edit.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\BanHang\\Edit.cshtml",
+              "RelativeToolTip": "WebsiteBanDienThoai23.AdminWeb\\Views\\BanHang\\Edit.cshtml",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-28T09:46:18.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SanPhamsController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\SanPhamsController.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\SanPhamsController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\SanPhamsController.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\SanPhamsController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAC4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T08:34:10.408Z",
+              "WhenOpened": "2024-05-28T09:38:35.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BanHangController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\BanHangController.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\BanHangController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Controllers\\BanHangController.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.AdminWeb\\Controllers\\BanHangController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAwwFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T09:21:06.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\BanHang\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.AdminWeb\\Views\\BanHang\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\Views\\BanHang\\Index.cshtml",
+              "RelativeToolTip": "WebsiteBanDienThoai23.AdminWeb\\Views\\BanHang\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAkwCwAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-28T09:26:59.636Z",
               "EditorCaption": ""
             }
           ]

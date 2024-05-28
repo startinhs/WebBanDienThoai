@@ -58,7 +58,6 @@ namespace WebsiteBanDienThoai23.DAL
                                 HeDieuHanh = reader["HeDieuHanh"].ToString(),
                                 CameraSau = (short)reader["CameraSau"],
                                 CameraTruoc = (short)reader["CameraTruoc"],
-                                Imel = reader["Imel"].ToString(),
                                 GiamGia = (decimal)reader["GiamGia"],
                                 MaLoai = reader["MaLoai"].ToString()
                             };

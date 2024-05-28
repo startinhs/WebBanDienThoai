@@ -18,14 +18,23 @@
                         <img src="~/images/logotext1.png" alt="" style="height:50px">
                     </a>
                 </div>
-                <form action="/DienThoai/Name" method="get" style="flex-grow: 1;">
+                <form id="searchForm" action="/DienThoai/Name" method="get" style="flex-grow: 1;">
                     <div class="search">
-                        <input type="text" name="key" placeholder="Bạn tìm gì">
+                        <input id="searchInput" type="text" name="key" placeholder="Bạn tìm gì">
                         <button style="border:none">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
                 </form>
+
+                <script>
+                    document.getElementById("searchInput").addEventListener("keypress", function (event) {
+                        if (event.keyCode === 13) {
+                            event.preventDefault();
+                            document.getElementById("searchForm").submit();
+                        }
+                    });
+                </script>
             </div>
 
             

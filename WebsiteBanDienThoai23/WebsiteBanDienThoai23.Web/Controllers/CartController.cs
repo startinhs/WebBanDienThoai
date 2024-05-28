@@ -50,10 +50,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
         public List<CartModel> GetListCarts()
         {
-            // Lấy giỏ hàng từ Session
             var carts = HttpContext.Session.GetObjectFromJson<List<CartModel>>("CartModel");
-
-            // Nếu chưa có giỏ hàng thì tạo mới
             if (carts == null)
             {
                 carts = new List<CartModel>();
@@ -325,17 +322,11 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             }
 
             var DonMua = (from hd in _context.HoaDons
-                          join ct in _context.ChiTietHoaDons on hd.MaHd equals ct.MaHd
-                          join sp in _context.SanPhams on ct.MaSp equals sp.MaSp
                           where hd.MaKh == userId.Value
                           orderby hd.NgayDatHang descending
                           select new DonMuaModel
                           {
                               MaHd = hd.MaHd,
-                              MaSp = sp.MaSp,
-                              TenSp = sp.TenSp,
-                              SoLuongDatHang = ct.SoLuongDatHang,
-                              DonGia = ct.DonGia,
                               NgayDatHang = hd.NgayDatHang,
                               TongGiaTri = hd.TongGiaTri,
                               DiaChiGiaoHang = hd.DiaChiGiaoHang,

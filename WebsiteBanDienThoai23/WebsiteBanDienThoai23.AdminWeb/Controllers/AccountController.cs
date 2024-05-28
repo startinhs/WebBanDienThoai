@@ -73,7 +73,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                         }
                         else
                         {
-                            return RedirectToAction("Index", "SanPhams");
+                            return RedirectToAction("ListOrders", "BanHang");
                         }
                     }
                     else

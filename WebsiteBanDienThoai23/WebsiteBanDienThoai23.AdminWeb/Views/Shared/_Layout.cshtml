@@ -56,7 +56,7 @@
                         <span>Người dùng</span><br>
                         <span>Bảo hành</span>
                     </a>
-                    <a href="@Url.Action("Index", "BanHang")" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Quản lý bán hàng</a>
+                    <a href="@Url.Action("ListOrders", "BanHang")" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Quản lý bán hàng</a>
                     <a href="@Url.Action("Index", "ThongKe")" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Thống kê</a>
                     
                 </div>
@@ -75,9 +75,20 @@
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control border-0" type="search" placeholder="Search">
+                <form action="/BanHang/Search" method="get" class="d-none d-md-flex ms-4">
+                    <div class="search">
+                        <input class="form-control border-0" type="text" name="key" placeholder="Bạn tìm gì">
+                    </div>
                 </form>
+
+                <script>
+                    document.getElementById("searchInput").addEventListener("keypress", function (event) {
+                        if (event.keyCode === 13) {
+                            event.preventDefault();
+                            document.getElementById("searchForm").submit();
+                        }
+                    });
+                </script>
                 <div class="navbar-nav align-items-center ms-auto">        
                     <div class="nav-item dropdown">
                        <a class="nav-link" href="@Url.Action("DangXuat", "Account")">Đăng xuất</a>

@@ -367,9 +367,11 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             if (ModelState.IsValid)
             {
                 var userId = GetUserId();
+                List<NguoiDung> lnd = _context.NguoiDungs.ToList();
                 var ndg = _context.NguoiDungs.FirstOrDefault(kh => kh.UserId == userId);
-                var checkEmail = _context.NguoiDungs.FirstOrDefault(x => x.Email == nd.Email);
-                var checkSDT = _context.NguoiDungs.FirstOrDefault(x => x.Sdt == nd.Sdt);
+                lnd.Remove(ndg);
+                var checkEmail = lnd.FirstOrDefault(x => x.Email == nd.Email);
+                var checkSDT = lnd.FirstOrDefault(x => x.Sdt == nd.Sdt);
                 if (checkEmail != null && checkSDT == null)
                 {
                     ViewBag.EmailError = "Email đã tồn tại!";

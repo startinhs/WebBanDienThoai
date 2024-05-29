@@ -37,7 +37,7 @@
                 </script>
             </div>
 
-            
+
             <i class="fas fa-bars"></i>
             <div class="header-list--menu">
                 <ul>
@@ -51,7 +51,7 @@
                     @if (isAuthenticated)
                     {
                         <li class="nav-item">
-                            <span class="nav-link">Xin chào, @userName</span>
+                            <a class="nav-link" href="@Url.Action("DoiThongTin", "Account")">Xin chào, @userName</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="@Url.Action("DoiMatKhau", "Account")">Đổi mật khẩu</a>
@@ -116,7 +116,7 @@
         </div><p style="text-align: center;"><span style="font-size:12px;">&copy; 2024. Cửa hàng Mobile Phone Store. Email: abc@Ou.edu.vn. Chịu trách nhiệm nội dung: Lê Minh Tính, Nguyễn Thái Quốc, Nguyễn Ích Trường.</span></p>
     </footer>
 
-    <a style="display: scroll; position: fixed; bottom: 20px; right: 7px;" title="Back to Top" href="#"><img src="~/images/up-arrow.png"/></a>
+    <a style="display: scroll; position: fixed; bottom: 20px; right: 7px;" title="Back to Top" href="#"><img src="~/images/up-arrow.png" /></a>
     <script src="~/js/jquery.js"></script>
     <script src="~/js/bootstrap.js"></script>
     <script src="~/js/slick.js"></script>

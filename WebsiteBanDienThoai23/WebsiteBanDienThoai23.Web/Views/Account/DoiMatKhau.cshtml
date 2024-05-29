@@ -24,19 +24,37 @@
                                     <h5 class="card-title text-center pb-0 fs-4">Đổi mật khẩu</h5>
                                     <p class="text-center small">Vui lòng nhập đúng mật khẩu cũ!</p>
                                 </div>
-                                <form asp-action="DoiMatKhau" method="post">
-                                    <div class="form-group">
-                                        <label for="MatKhauCu">Mật khẩu cũ:</label>
-                                        <input type="password" class="form-control" id="MatKhauCu" name="MatKhauCu">
+                                @using (Html.BeginForm("DoiMatKhau", "Account", FormMethod.Post, new { @class = "row g-3 needs-validation", @novalidate = "novalidate" }))
+                                {
+                                    <div class="col-12">
+                                        @Html.Label("Mật khẩu hiện tại:", null, new { @class = "form-label" })
+                                        @Html.Password("MatKhauCu", null, new { @class = "form-control", @id = "yourUsername", @required = "required", @placeholder = "Nhập mật khẩu hiện tại" })
+                                        @if (ViewBag.MatKhauCu != null)
+                                        {
+                                            <span class="badge badge-danger" style="color:red">@ViewBag.MatKhauCu</span>
+                                        }
                                     </div>
-                                    <br />
-                                    <div class="form-group">
-                                        <label for="MatKhauMoi">Mật khẩu mới:</label>
-                                        <input type="password" class="form-control" id="MatKhauMoi" name="MatKhauMoi">
+                                    <div class="col-12">
+                                        @Html.Label("Mật khẩu mới:", null, new { @class = "form-label" })
+                                        @Html.Password("MatKhauMoi", null, new { @class = "form-control", @id = "yourPassword", @required = "required", @placeholder = "Nhập mật khẩu mới" })
+                                        @if (ViewBag.MatKhauMoi != null)
+                                        {
+                                            <span class="badge badge-danger" style="color:red">@ViewBag.MatKhauMoi</span>
+                                        }
                                     </div>
-                                    <br />
-                                    <button type="submit" class="btn btn-primary">Đổi mật khẩu</button>
-                                </form>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100" type="submit">Đổi mật khẩu</button>
+                                    </div>
+                                    <div>
+                                        @if (ViewBag.ThieuThongTin != null)
+                                        {
+                                            <span class="badge badge-danger" style="color:red">@ViewBag.ThieuThongTin</span>
+                                        }
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="small mb-0">Quên mật khẩu? <a href="@Url.Action("QuenMatKhau","Account")">Khôi phục</a></p>
+                                    </div>
+                                }
                             </div>
                         </div>
                         <div class="credits" style="font-weight:bold">

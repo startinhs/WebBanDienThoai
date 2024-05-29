@@ -36,5 +36,33 @@ namespace WebsiteBanDienThoai23.DAL
             Context.LoaiSps.Remove(cate);
             Context.SaveChanges();
         }
-    }
+		public List<ThongKeReq> ThongKeMayMoi()
+		{
+			List<ThongKeReq> tk = new List<ThongKeReq>();
+			List<LoaiSp> lsp = Context.LoaiSps.ToList();
+			foreach (LoaiSp sp in lsp)
+			{
+				ThongKeReq a = new ThongKeReq();
+				a.MaLoai = sp.MaLoai;
+				a.TenLoai = sp.TenLoai;
+				a.TonKho = Context.SanPhams.Where(s => s.MayCu == false & s.MaLoai == sp.MaLoai).Sum(sl => sl.SoLuong);
+				tk.Add(a);
+			}
+			return tk;
+		}
+		public List<ThongKeReq> ThongKeMayCu()
+		{
+			List<ThongKeReq> tk = new List<ThongKeReq>();
+			List<LoaiSp> lsp = Context.LoaiSps.ToList();
+			foreach (LoaiSp sp in lsp)
+			{
+				ThongKeReq a = new ThongKeReq();
+				a.MaLoai = sp.MaLoai;
+				a.TenLoai = sp.TenLoai;
+				a.TonKho = Context.SanPhams.Where(s => s.MayCu == true & s.MaLoai == sp.MaLoai).Sum(sl => sl.SoLuong);
+				tk.Add(a);
+			}
+			return tk;
+		}
+	}
 }

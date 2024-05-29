@@ -36,20 +36,6 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             return View(orderDetails);
         }
 
-        public async Task<IActionResult> Search(string key)
-        {
-            var lstHoaDon = _context.HoaDons.AsQueryable();
-            if (!string.IsNullOrEmpty(key))
-            {
-                lstHoaDon = lstHoaDon.Where(hd => hd.MaHd.Contains(key));
-            }
-            var lstSearch = await lstHoaDon.ToListAsync();
-
-            return View("ListOrders", lstSearch);
-        }
-
-
-
         // GET: BanHang/Details/5
         public async Task<IActionResult> Details(string id)
         {

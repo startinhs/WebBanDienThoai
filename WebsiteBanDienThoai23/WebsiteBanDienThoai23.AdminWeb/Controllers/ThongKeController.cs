@@ -21,7 +21,8 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             {
 				if (NgayBD <= NgayKT)
                 {
-                    ViewBag.SLDH = _context.HoaDons.Count(s => (s.NgayDatHang >= NgayBD) & (s.NgayDatHang <= NgayKT) & (s.TrangThaiTt == true));
+					NgayKT = NgayKT.AddDays(1);
+					ViewBag.SLDH = _context.HoaDons.Count(s => (s.NgayDatHang >= NgayBD) & (s.NgayDatHang <= NgayKT) & (s.TrangThaiTt == true));
                     ViewBag.DT = _context.HoaDons.Where(s => (s.NgayDatHang >= NgayBD) & (s.NgayDatHang <= NgayKT) & (s.TrangThaiTt == true)).Sum(a => a.TongGiaTri);
 					ViewBag.DT = string.Format("{0:N0} VND", @ViewBag.DT);
 					return View();

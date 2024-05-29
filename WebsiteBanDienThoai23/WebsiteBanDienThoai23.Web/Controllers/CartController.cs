@@ -83,97 +83,114 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
             return View(carts);
         }
+		public ActionResult AddToCart(string id, int quantity)
+		{
+			var product = _context.SanPhams.FirstOrDefault(s => s.MaSp == id);
 
-        public ActionResult AddToCart(string id, int quantity)
-        {
-            var product = _context.SanPhams.FirstOrDefault(s => s.MaSp == id);
+			if (product != null && quantity > 0)
+			{
+				List<CartModel> carts = GetListCarts();
+				CartModel existingProduct = carts.FirstOrDefault(s => s.MaSp == id);
 
-            if (product != null && quantity > 0)
-            {
-                List<CartModel> carts = GetListCarts();
-                CartModel existingProduct = carts.FirstOrDefault(s => s.MaSp == id);
+				if (existingProduct != null)
+				{
+					existingProduct.SoLuong += quantity;
+				}
+				else
+				{
+					CartModel newProduct = new CartModel
+					{
+						MaSp = product.MaSp,
+						TenSp = product.TenSp,
+						Gia = product.Gia,
+						SoLuong = quantity,
+						Hinh = product.Hinh,
+						Ram = product.Ram,
+						Rom = product.Rom,
+						ManHinh = product.ManHinh,
+						GiamGia = product.GiamGia
+					};
+					carts.Add(newProduct);
+				}
+				HttpContext.Session.SetObjectAsJson("CartModel", carts);
 
-                if (existingProduct != null)
-                {
-                    existingProduct.SoLuong += quantity;
-                }
-                else
-                {
-                    CartModel newProduct = new CartModel
-                    {
-                        MaSp = product.MaSp,
-                        TenSp = product.TenSp,
-                        Gia = product.Gia,
-                        SoLuong = quantity,
-                        Hinh = product.Hinh,
-                        Ram = product.Ram,
-                        Rom = product.Rom,
-                        ManHinh = product.ManHinh,
-                        GiamGia = product.GiamGia
-                    };
-                    carts.Add(newProduct);
-                }
-                HttpContext.Session.SetObjectAsJson("CartModel", carts);
-                var maKh = GetUserId();
-                var gioHang = _context.GioHangs.FirstOrDefault(g => g.MaKh == maKh);
+				var maKh = GetUserId();
+				if (maKh != null)
+				{
+					var gioHang = _context.GioHangs.FirstOrDefault(g => g.MaKh == maKh);
 
-                if (gioHang == null)
-                {
-                    gioHang = new GioHang { MaKh = maKh };
-                    _context.GioHangs.Add(gioHang);
-                    _context.SaveChanges();
-                }
+					if (gioHang == null)
+					{
+						gioHang = new GioHang { MaKh = maKh };
+						_context.GioHangs.Add(gioHang);
+						_context.SaveChanges();
+					}
 
-                var chiTietGioHang = _context.ChiTietGioHangs.FirstOrDefault(c => c.MaGh == gioHang.MaGh && c.MaSp == id);
-                if (chiTietGioHang != null)
-                {
-                    chiTietGioHang.SoLuong += quantity;
-                }
-                else
-                {
-                    chiTietGioHang = new ChiTietGioHang
-                    {
-                        MaGh = gioHang.MaGh,
-                        MaSp = id,
-                        SoLuong = quantity
-                    };
-                    _context.ChiTietGioHangs.Add(chiTietGioHang);
-                }
+					var chiTietGioHang = _context.ChiTietGioHangs.FirstOrDefault(c => c.MaGh == gioHang.MaGh && c.MaSp == id);
+					if (chiTietGioHang != null)
+					{
+						chiTietGioHang.SoLuong += quantity;
+					}
+					else
+					{
+						chiTietGioHang = new ChiTietGioHang
+						{
+							MaGh = gioHang.MaGh,
+							MaSp = id,
+							SoLuong = quantity
+						};
+						_context.ChiTietGioHangs.Add(chiTietGioHang);
+					}
 
-                _context.SaveChanges();
-            }
+					_context.SaveChanges();
+				}
+			}
 
-            return RedirectToAction("ListCarts");
-        }
+			return RedirectToAction("ListCarts");
+		}
 
-        private async Task LoadCartFromDatabase()
-        {
-            var userId = GetUserId();
+		private async Task LoadCartFromDatabase()
+		{
+			var userId = GetUserId();
 
-            if (userId != null)
-            {
-                var cartItems = await (from gioHang in _context.GioHangs
-                                       join chiTietGioHang in _context.ChiTietGioHangs on gioHang.MaGh equals chiTietGioHang.MaGh
-                                       join sanPham in _context.SanPhams on chiTietGioHang.MaSp equals sanPham.MaSp
-                                       where gioHang.MaKh == userId
-                                       select new CartModel
-                                       {
-                                           MaSp = sanPham.MaSp,
-                                           TenSp = sanPham.TenSp,
-                                           Gia = sanPham.Gia,
-                                           SoLuong = chiTietGioHang.SoLuong ?? 0,
-                                           Hinh = sanPham.Hinh,
-                                           Ram = sanPham.Ram,
-                                           Rom = sanPham.Rom,
-                                           ManHinh = sanPham.ManHinh,
-                                           GiamGia = sanPham.GiamGia
-                                       }).ToListAsync();
+			if (userId != null)
+			{
+				var cartItemsFromDb = await (from gioHang in _context.GioHangs
+											 join chiTietGioHang in _context.ChiTietGioHangs on gioHang.MaGh equals chiTietGioHang.MaGh
+											 join sanPham in _context.SanPhams on chiTietGioHang.MaSp equals sanPham.MaSp
+											 where gioHang.MaKh == userId
+											 select new CartModel
+											 {
+												 MaSp = sanPham.MaSp,
+												 TenSp = sanPham.TenSp,
+												 Gia = sanPham.Gia,
+												 SoLuong = chiTietGioHang.SoLuong ?? 0,
+												 Hinh = sanPham.Hinh,
+												 Ram = sanPham.Ram,
+												 Rom = sanPham.Rom,
+												 ManHinh = sanPham.ManHinh,
+												 GiamGia = sanPham.GiamGia
+											 }).ToListAsync();
 
-                HttpContext.Session.SetObjectAsJson("CartModel", cartItems);
-            }
-        }
+				var cartItemsFromSession = HttpContext.Session.GetObjectFromJson<List<CartModel>>("CartModel") ?? new List<CartModel>();
+				// Nối session và giỏ
+				foreach (var sessionItem in cartItemsFromSession)
+				{
+					var dbItem = cartItemsFromDb.FirstOrDefault(c => c.MaSp == sessionItem.MaSp);
+					if (dbItem != null)
+					{
+						dbItem.SoLuong += (sessionItem.SoLuong-1);
+					}
+					else
+					{
+						cartItemsFromDb.Add(sessionItem);
+					}
+				}
+				HttpContext.Session.SetObjectAsJson("CartModel", cartItemsFromDb);
+			}
+		}
 
-        public ActionResult Delete(string id)
+		public ActionResult Delete(string id)
         {
             var carts = GetListCarts();
             var productToRemove = carts.FirstOrDefault(p => p.MaSp == id);
@@ -202,76 +219,88 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         }
 
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Order(string paymentMethod)
-        {
-            if (!User.Identity.IsAuthenticated)
-            {
-                string returnUrl = Url.Action("Order", "Cart");
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+		public ActionResult Order(string paymentMethod)
+		{
+			if (!User.Identity.IsAuthenticated)
+			{
+				string returnUrl = Url.Action("Order", "Cart");
+				return RedirectToAction("DangNhap", "Account", new { returnUrl });
+			}
 
-                return RedirectToAction("DangNhap", "Account", new { returnUrl });
-            }
+			List<CartModel> carts = GetListCarts();
+			int? userId = GetUserId();
 
-            List<CartModel> carts = GetListCarts();
+			if (carts == null || carts.Count == 0 || !userId.HasValue)
+			{
+				return RedirectToAction("ListCarts");
+			}
 
-            int? userId = GetUserId();
+			decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
+			decimal discount = carts.Sum(s => (s.GiamGia / 100.0m) * (s.Gia * s.SoLuong));
+			decimal total = subTotal - discount;
 
-            decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
-            decimal discount = carts.Sum(s => (s.GiamGia / 100.0m) * (s.Gia * s.SoLuong));
-            decimal total = subTotal - discount;
-            if (carts != null && carts.Count > 0 && userId.HasValue)
-            {
-                var khachHang = _context.NguoiDungs.FirstOrDefault(u => u.UserId == userId);
-				bool tinhTrangTt = paymentMethod == "Online";
-				var order = new HoaDon
-                {
-                    MaHd = GenerateMaHd(),
-                    MaKh = userId.Value,
-                    NgayDatHang = DateTime.Now,
-                    TongGiaTri = total,
-                    DiaChiGiaoHang = khachHang.DiaChi,
-                    TrangThaiTt = tinhTrangTt,
-                    TrangThaiDh = 0
-                };
+			var khachHang = _context.NguoiDungs.FirstOrDefault(u => u.UserId == userId);
+			if (khachHang == null)
+			{
+				return RedirectToAction("ListCarts");
+			}
 
-                _context.HoaDons.Add(order);
-                _context.SaveChanges();
+			bool tinhTrangTt = paymentMethod == "Online";
+			var order = new HoaDon
+			{
+				MaHd = GenerateMaHd(),
+				MaKh = userId.Value,
+				NgayDatHang = DateTime.Now,
+				TongGiaTri = total,
+				DiaChiGiaoHang = khachHang.DiaChi,
+				TrangThaiTt = tinhTrangTt,
+				TrangThaiDh = 0
+			};
 
-                foreach (var item in carts)
-                {
-                    var orderDetail = new ChiTietHoaDon
-                    {
-                        MaHd = order.MaHd,
-                        MaSp = item.MaSp,
-                        SoLuongDatHang = item.SoLuong,
-                        DonGia = item.Gia
-                    };
-                    _context.ChiTietHoaDons.Add(orderDetail);
+			_context.HoaDons.Add(order);
+			_context.SaveChanges();
 
-                    // Giảm số lượng sản phẩm trong cơ sở dữ liệu
-                    var product = _context.SanPhams.FirstOrDefault(p => p.MaSp == item.MaSp);
-                    if (product != null)
-                    {
-                        product.SoLuong -= (short)item.SoLuong;
-                        if (product.SoLuong < 0)
-                        {
-                            product.SoLuong = 0;
-                        }
-                    }
-                }
+			foreach (var item in carts)
+			{
+				var orderDetail = new ChiTietHoaDon
+				{
+					MaHd = order.MaHd,
+					MaSp = item.MaSp,
+					SoLuongDatHang = item.SoLuong,
+					DonGia = item.Gia
+				};
+				_context.ChiTietHoaDons.Add(orderDetail);
 
-                _context.SaveChanges();
+				var product = _context.SanPhams.FirstOrDefault(p => p.MaSp == item.MaSp);
+				if (product != null)
+				{
+					product.SoLuong -= (short)item.SoLuong;
+					if (product.SoLuong < 0)
+					{
+						product.SoLuong = 0;
+					}
+				}
+			}
 
-                HttpContext.Session.Remove("CartModel");
+			_context.SaveChanges();
 
-                return RedirectToAction("OrderSuccess");
-            }
+			var gioHang = _context.GioHangs.FirstOrDefault(g => g.MaKh == userId);
+			if (gioHang != null)
+			{
+				var chiTietGioHangs = _context.ChiTietGioHangs.Where(c => c.MaGh == gioHang.MaGh).ToList();
+				_context.ChiTietGioHangs.RemoveRange(chiTietGioHangs);
+				_context.GioHangs.Remove(gioHang);
+				_context.SaveChanges();
+			}
 
-            return RedirectToAction("ListCarts");
-        }
+			HttpContext.Session.Remove("CartModel");
 
-        [Authorize]
+			return RedirectToAction("OrderSuccess");
+		}
+
+		[Authorize]
         public ActionResult OrderConfirmation(string DiaChiGiaoHang)
         {
             if (!User.Identity.IsAuthenticated)

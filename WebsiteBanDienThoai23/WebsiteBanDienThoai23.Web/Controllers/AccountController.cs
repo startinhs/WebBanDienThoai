@@ -357,47 +357,49 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         }
         [HttpPost]
         [Authorize]
-        public IActionResult DoiThongTin(NguoiDung nd)
-        {
-            if (nd.HoTen == null || nd.Email == null || nd.DiaChi == null || nd.Sdt == null)
-            {
-                ViewBag.ThieuThongTin = "Vui lòng điều đầy đủ thông tin!";
-                return View();
-            }
-            if (ModelState.IsValid)
-            {
-                var userId = GetUserId();
-                var ndg = _context.NguoiDungs.FirstOrDefault(kh => kh.UserId == userId);
-                var checkEmail = _context.NguoiDungs.FirstOrDefault(x => x.Email == nd.Email);
-                var checkSDT = _context.NguoiDungs.FirstOrDefault(x => x.Sdt == nd.Sdt);
-                if (checkEmail != null && checkSDT == null)
-                {
-                    ViewBag.EmailError = "Email đã tồn tại!";
-                    return View();
-                }
-                else if (checkEmail == null && checkSDT != null)
-                {
-                    ViewBag.SDTError = "Số điện thoại đã tồn tại!";
-                    return View();
-                }
-                else if (checkEmail != null && checkSDT != null)
-                {
-                    ViewBag.EmailError = "Email đã tồn tại!";
-                    ViewBag.SDTError = "Số điện thoại đã tồn tại!";
-                    return View();
-                }
-                else
-                {
-                    ndg.HoTen = nd.HoTen;
-                    ndg.Email = nd.Email;
-                    ndg.DiaChi = nd.DiaChi;
-                    ndg.Sdt = nd.Sdt;
-                    _context.Update(ndg);
-                    _context.SaveChanges();
-                    return RedirectToAction("Index", "Home");
-                }
-            }
-            return View();
-        }
-    }
+		public IActionResult DoiThongTin(NguoiDung nd)
+		{
+			if (nd.HoTen == null || nd.Email == null || nd.DiaChi == null || nd.Sdt == null)
+			{
+				ViewBag.ThieuThongTin = "Vui lòng điều đầy đủ thông tin!";
+				return View();
+			}
+			if (ModelState.IsValid)
+			{
+				var userId = GetUserId();
+				List<NguoiDung> lnd = _context.NguoiDungs.ToList();
+				var ndg = _context.NguoiDungs.FirstOrDefault(kh => kh.UserId == userId);
+				lnd.Remove(ndg);
+				var checkEmail = lnd.FirstOrDefault(x => x.Email == nd.Email);
+				var checkSDT = lnd.FirstOrDefault(x => x.Sdt == nd.Sdt);
+				if (checkEmail != null && checkSDT == null)
+				{
+					ViewBag.EmailError = "Email đã tồn tại!";
+					return View();
+				}
+				else if (checkEmail == null && checkSDT != null)
+				{
+					ViewBag.SDTError = "Số điện thoại đã tồn tại!";
+					return View();
+				}
+				else if (checkEmail != null && checkSDT != null)
+				{
+					ViewBag.EmailError = "Email đã tồn tại!";
+					ViewBag.SDTError = "Số điện thoại đã tồn tại!";
+					return View();
+				}
+				else
+				{
+					ndg.HoTen = nd.HoTen;
+					ndg.Email = nd.Email;
+					ndg.DiaChi = nd.DiaChi;
+					ndg.Sdt = nd.Sdt;
+					_context.Update(ndg);
+					_context.SaveChanges();
+					return RedirectToAction("Index", "Home");
+				}
+			}
+			return View();
+		}
+	}
 }

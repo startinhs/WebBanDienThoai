@@ -37,7 +37,7 @@
 								<label>Phương thức thanh toán mặc định: <strong>Tiền mặt</strong></label>
 							</div>
 
-							<button id="selectPaymentMethod" class="btn btn-secondary" onclick="togglePaymentForm()">Chọn phương thức chuyển khoản</button>
+							<button id="selectPaymentMethod" class="btn btn-secondary" onclick="togglePaymentForm()">Chọn phương thức Visa</button>
 
 							<div id="paymentForm" style="display: none; margin-top: 20px;">
 								<h2>Form thanh toán trực tuyến</h2>
@@ -76,7 +76,7 @@
 										paymentMethodField.value = "Online";
 									} else {
 										paymentForm.style.display = "none";
-										selectPaymentButton.textContent = "Chọn phương thức chuyển khoản";
+										selectPaymentButton.textContent = "Chọn phương thức Visa";
 										paymentMethodField.value = "";
 									}
 								}

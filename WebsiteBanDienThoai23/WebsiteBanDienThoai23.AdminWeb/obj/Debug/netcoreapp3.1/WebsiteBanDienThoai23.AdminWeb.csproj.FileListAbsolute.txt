@@ -810,3 +810,4 @@ D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai2
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\Edit.cshtml.g.cs
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\ListOrders.cshtml.g.cs
 D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\BanHang\OrderDetails.cshtml.g.cs
+D:\Documents\IM_OU_K21\232\LTCSDL_DBDEV\BTL\WebBanDienThoai\WebsiteBanDienThoai23\WebsiteBanDienThoai23.AdminWeb\obj\Debug\netcoreapp3.1\Razor\Views\ThongKe\Index.cshtml.g.cs

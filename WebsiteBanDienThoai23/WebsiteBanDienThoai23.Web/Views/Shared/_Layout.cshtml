@@ -51,7 +51,7 @@
                     @if (isAuthenticated)
                     {
                         <li class="nav-item">
-                            <span class="nav-link">Xin chào, @userName</span>
+                            <a class="nav-link" href="@Url.Action("DoiThongTin", "Account")">Xin chào, @userName</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="@Url.Action("DoiMatKhau", "Account")">Đổi mật khẩu</a>

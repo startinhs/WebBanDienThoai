@@ -394,8 +394,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                     ndg.Sdt = nd.Sdt;
                     _context.Update(ndg);
                     _context.SaveChanges();
-                    ViewBag.ThanhCong = "Thông tin đã được thay đổi!";
-                    return RedirectToAction("DoiThongTin", "Account");
+                    return RedirectToAction("Index", "Home");
                 }
             }
             return View();

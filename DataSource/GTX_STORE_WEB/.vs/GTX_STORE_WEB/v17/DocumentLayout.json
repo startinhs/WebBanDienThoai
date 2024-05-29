@@ -1,0 +1,933 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\datasource\\gtx_store_web\\gtx_store_web\\views\\home\\error404.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\home\\error404.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\home\\address.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\home\\address.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\controllers\\producecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\controllers\\producecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\datasource\\gtx_store_web\\gtx_store_web\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\datasource\\gtx_store_web\\gtx_store_web\\views\\home\\thankyou.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\home\\thankyou.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\datasource\\gtx_store_web\\gtx_store_web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\forms\\contact.php||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\forms\\contact.php||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\forms\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\forms\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\profile-img.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\profile-img.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\slides-1.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\slides-1.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\slides-2.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\slides-2.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\slides-3.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\slides-3.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\news-1.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\news-1.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\messages-2.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\messages-2.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\messages-1.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\messages-1.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\logo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\logo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\card.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\card.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\avatar2.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\avatar2.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\avatar.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\avatar.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\assets\\img\\apple-touch-icon.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\assets\\img\\apple-touch-icon.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\areas\\admin\\controllers\\produceadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\areas\\admin\\controllers\\produceadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\areas\\admin\\controllers\\orderadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\areas\\admin\\controllers\\orderadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6412FEC0-10BD-42AC-B921-CB5807452308}|Common\\Common.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\common\\mailhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6412FEC0-10BD-42AC-B921-CB5807452308}|Common\\Common.csproj|solutionrelative:common\\mailhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\account\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\areas\\admin\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\areas\\admin\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\areas\\admin\\controllers\\findadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\areas\\admin\\controllers\\findadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\order\\detailorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\order\\detailorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\order\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\order\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\models\\db_gtxstore.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\models\\db_gtxstore.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\user\\homeuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\user\\homeuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\user\\updateaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\user\\updateaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\shared\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\shared\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\areas\\admin\\views\\orderadmin\\orderuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\areas\\admin\\views\\orderadmin\\orderuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\produce\\shownsx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\produce\\shownsx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\areas\\admin\\views\\homeadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\areas\\admin\\views\\homeadmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\produce\\findpr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\produce\\findpr.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\gtx_store_web\\views\\produce\\findnsx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C69D6BE8-1855-4501-8714-6137253A8E99}|GTX_STORE_WEB\\GTX_STORE_WEB.csproj|solutionrelative:gtx_store_web\\views\\produce\\findnsx.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ThankYou.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Home\\ThankYou.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Home\\ThankYou.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Home\\ThankYou.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Home\\ThankYou.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T06:16:52.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T06:16:43.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Error404.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Home\\Error404.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Home\\Error404.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Home\\Error404.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Home\\Error404.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T06:16:36.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "contact.php",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\forms\\contact.php",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\forms\\contact.php",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\forms\\contact.php",
+              "RelativeToolTip": "GTX_STORE_WEB\\forms\\contact.php",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002338|",
+              "WhenOpened": "2024-05-29T06:11:37.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Readme.txt",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\forms\\Readme.txt",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\forms\\Readme.txt",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\forms\\Readme.txt",
+              "RelativeToolTip": "GTX_STORE_WEB\\forms\\Readme.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-29T06:11:37.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAewBcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Address.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Home\\Address.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Home\\Address.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Home\\Address.cshtml*",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Home\\Address.cshtml*",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAFIAAAAVAgAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T06:11:37.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProduceController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\ProduceController.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Controllers\\ProduceController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\ProduceController.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Controllers\\ProduceController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\UserController.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAYwAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAewEoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\css\\style.css",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\css\\style.css",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\css\\style.css",
+              "RelativeToolTip": "GTX_STORE_WEB\\assets\\css\\style.css",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-29T06:11:37.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T06:11:37.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "news-1.jpg -  [English (United States)] - Bitmap [1024x768, 24 bit, JPG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\news-1.jpg",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\news-1.jpg",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\news-1.jpg -  [English (United States)] - Bitmap [1024x768, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\news-1.jpg -  [English (United States)] - Bitmap [1024x768, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:36.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "slides-3.jpg -  [English (United States)] - Bitmap [1024x683, 24 bit, JPG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\slides-3.jpg",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\slides-3.jpg",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\slides-3.jpg -  [English (United States)] - Bitmap [1024x683, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\slides-3.jpg -  [English (United States)] - Bitmap [1024x683, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:36.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "profile-img.jpg -  [English (United States)] - Bitmap [120x120, 24 bit, JPG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\profile-img.jpg",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\profile-img.jpg",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\profile-img.jpg -  [English (United States)] - Bitmap [120x120, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\profile-img.jpg -  [English (United States)] - Bitmap [120x120, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:36.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "slides-2.jpg -  [English (United States)] - Bitmap [1024x683, 24 bit, JPG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\slides-2.jpg",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\slides-2.jpg",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\slides-2.jpg -  [English (United States)] - Bitmap [1024x683, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\slides-2.jpg -  [English (United States)] - Bitmap [1024x683, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:36.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "slides-1.jpg -  [English (United States)] - Bitmap [1024x683, 24 bit, JPG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\slides-1.jpg",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\slides-1.jpg",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\slides-1.jpg -  [English (United States)] - Bitmap [1024x683, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\slides-1.jpg -  [English (United States)] - Bitmap [1024x683, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:37.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "messages-2.jpg -  [English (United States)] - Bitmap [120x120, 24 bit, JPG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\messages-2.jpg",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\messages-2.jpg",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\messages-2.jpg -  [English (United States)] - Bitmap [120x120, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\messages-2.jpg -  [English (United States)] - Bitmap [120x120, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:37.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "messages-1.jpg -  [English (United States)] - Bitmap [120x120, 24 bit, JPG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\messages-1.jpg",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\messages-1.jpg",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\messages-1.jpg -  [English (United States)] - Bitmap [120x120, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\messages-1.jpg -  [English (United States)] - Bitmap [120x120, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:37.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "logo.png -  [English (United States)] - PNG [49x52, 32 bit, PNG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\logo.png",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\logo.png",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\logo.png -  [English (United States)] - PNG [49x52, 32 bit, PNG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\logo.png -  [English (United States)] - PNG [49x52, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:37.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "card.jpg -  [English (United States)] - Bitmap [1024x768, 24 bit, JPG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\card.jpg",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\card.jpg",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\card.jpg -  [English (United States)] - Bitmap [1024x768, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\card.jpg -  [English (United States)] - Bitmap [1024x768, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:37.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "avatar2.jpg -  [English (United States)] - Bitmap [700x700, 24 bit, JPG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\avatar2.jpg",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\avatar2.jpg",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\avatar2.jpg -  [English (United States)] - Bitmap [700x700, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\avatar2.jpg -  [English (United States)] - Bitmap [700x700, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:37.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "avatar.jpg -  [English (United States)] - Bitmap [800x800, 24 bit, JPG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\avatar.jpg",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\avatar.jpg",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\avatar.jpg -  [English (United States)] - Bitmap [800x800, 24 bit, JPG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\avatar.jpg -  [English (United States)] - Bitmap [800x800, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:37.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "apple-touch-icon.png -  [English (United States)] - PNG [180x180, 32 bit, PNG]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\apple-touch-icon.png",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\assets\\img\\apple-touch-icon.png",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\apple-touch-icon.png -  [English (United States)] - PNG [180x180, 32 bit, PNG]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\assets\\img\\apple-touch-icon.png -  [English (United States)] - PNG [180x180, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-05-29T06:11:37.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Web.config",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Web.config",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Web.config",
+              "RelativeToolTip": "GTX_STORE_WEB\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-29T06:11:37.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "OrderAdminController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Controllers\\OrderAdminController.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Areas\\Admin\\Controllers\\OrderAdminController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Controllers\\OrderAdminController.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Areas\\Admin\\Controllers\\OrderAdminController.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowFAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProduceAdminController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Controllers\\ProduceAdminController.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Areas\\Admin\\Controllers\\ProduceAdminController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Controllers\\ProduceAdminController.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Areas\\Admin\\Controllers\\ProduceAdminController.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\CartController.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Controllers\\CartController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAwwEUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MailHelper.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\Common\\MailHelper.cs",
+              "RelativeDocumentMoniker": "Common\\MailHelper.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\Common\\MailHelper.cs",
+              "RelativeToolTip": "Common\\MailHelper.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Account\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Account\\SignUp.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Account\\SignUp.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Account\\SignUp.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHsAAACfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "HomeAdminController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwCAAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "web.config",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Views\\web.config",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Areas\\Admin\\Views\\web.config",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Views\\web.config",
+              "RelativeToolTip": "GTX_STORE_WEB\\Areas\\Admin\\Views\\web.config",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAUwBkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-29T06:11:37.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "FindAdminController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Controllers\\FindAdminController.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Areas\\Admin\\Controllers\\FindAdminController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Controllers\\FindAdminController.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Areas\\Admin\\Controllers\\FindAdminController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAowBUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\App_Start\\FilterConfig.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\App_Start\\FilterConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\App_Start\\BundleConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DetailOrder.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Order\\DetailOrder.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Order\\DetailOrder.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Order\\DetailOrder.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Order\\DetailOrder.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Order.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Order\\Order.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Order\\Order.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Order\\Order.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Order\\Order.cshtml",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAowD0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AdminAreaRegistration.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Areas\\Admin\\AdminAreaRegistration.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:11:37.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Web.Debug.config",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Web.Debug.config",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Web.Debug.config",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Web.Debug.config",
+              "RelativeToolTip": "GTX_STORE_WEB\\Web.Debug.config",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-05-29T06:11:37.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DB_GTXSTORE.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Models\\DB_GTXSTORE.edmx",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Models\\DB_GTXSTORE.edmx",
+              "ToolTip": "D:\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\Models\\DB_GTXSTORE.edmx [Diagram1]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\H\u00E0\\GTX_STORE_WEB\\GTX_STORE_WEB\\GTX_STORE_WEB\\Models\\DB_GTXSTORE.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-05-29T06:11:37.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "HomeUser.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\User\\HomeUser.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\User\\HomeUser.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\User\\HomeUser.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\User\\HomeUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Web.config",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Web.config",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Web.config",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-29T06:11:37.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Web.Release.config",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Web.Release.config",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Web.Release.config",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Web.Release.config",
+              "RelativeToolTip": "GTX_STORE_WEB\\Web.Release.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-05-29T06:11:37.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Header.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Shared\\Header.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Shared\\Header.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Shared\\Header.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Shared\\Header.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAFkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "UpdateAccount.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\User\\UpdateAccount.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\User\\UpdateAccount.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\User\\UpdateAccount.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\User\\UpdateAccount.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "OrderUser.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Views\\OrderAdmin\\OrderUser.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Areas\\Admin\\Views\\OrderAdmin\\OrderUser.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Views\\OrderAdmin\\OrderUser.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Areas\\Admin\\Views\\OrderAdmin\\OrderUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Global.asax.cs",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Global.asax.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Global.asax.cs",
+              "RelativeToolTip": "GTX_STORE_WEB\\Global.asax.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-05-29T06:11:37.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ShowNSX.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Produce\\ShowNSX.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Produce\\ShowNSX.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Produce\\ShowNSX.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Produce\\ShowNSX.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Areas\\Admin\\Views\\HomeAdmin\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "FindNSX.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Produce\\FindNSX.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Produce\\FindNSX.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Produce\\FindNSX.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Produce\\FindNSX.cshtml",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "FindPR.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Produce\\FindPR.cshtml",
+              "RelativeDocumentMoniker": "GTX_STORE_WEB\\Views\\Produce\\FindPR.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\DataSource\\GTX_STORE_WEB\\GTX_STORE_WEB\\Views\\Produce\\FindPR.cshtml",
+              "RelativeToolTip": "GTX_STORE_WEB\\Views\\Produce\\FindPR.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAkwDYAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2024-05-29T06:11:37.745Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -201,49 +201,14 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             return RedirectToAction("ListCarts");
         }
 
-        
-        [Authorize]
-        public ActionResult CheckoutConfirmation(string DiaChiGiaoHang)
-        {
-            if (!User.Identity.IsAuthenticated)
-            {
-
-                string returnUrl = Url.Action("CheckoutConfirmation", "Cart");
-                return RedirectToAction("DangNhap", "Account", new { returnUrl });
-            }
-
-            int? userId = GetUserId();
-            var nguoiDung = _context.NguoiDungs.FirstOrDefault(u => u.UserId == userId);
-
-            List<CartModel> carts = GetListCarts();
-
-            decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
-            decimal discount = carts.Sum(s => (s.GiamGia / 100.0m) * (s.Gia * s.SoLuong));
-            decimal total = subTotal - discount;
-
-            ViewBag.HoTen = nguoiDung != null ? nguoiDung.HoTen : "";
-            ViewBag.DiaChi = nguoiDung != null ? nguoiDung.DiaChi : "";
-            ViewBag.SDT = nguoiDung != null ? nguoiDung.Sdt : "";
-            ViewBag.Email = nguoiDung != null ? nguoiDung.Email : "";
-            ViewBag.DiaChi = nguoiDung != null ? nguoiDung.DiaChi : "";
-
-            ViewBag.CountProduct = carts.Sum(s => s.SoLuong);
-            ViewBag.SubTotal = subTotal;
-            ViewBag.Discount = discount;
-            ViewBag.Total = total;
-
-
-
-            return View(carts);
-        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Checkout()
+        public ActionResult Order(string paymentMethod)
         {
             if (!User.Identity.IsAuthenticated)
             {
-                string returnUrl = Url.Action("Checkout", "Cart");
+                string returnUrl = Url.Action("Order", "Cart");
 
                 return RedirectToAction("DangNhap", "Account", new { returnUrl });
             }
@@ -258,14 +223,15 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             if (carts != null && carts.Count > 0 && userId.HasValue)
             {
                 var khachHang = _context.NguoiDungs.FirstOrDefault(u => u.UserId == userId);
-                var order = new HoaDon
+				bool tinhTrangTt = paymentMethod == "Online";
+				var order = new HoaDon
                 {
                     MaHd = GenerateMaHd(),
                     MaKh = userId.Value,
                     NgayDatHang = DateTime.Now,
                     TongGiaTri = total,
                     DiaChiGiaoHang = khachHang.DiaChi,
-                    TrangThaiTt = false,
+                    TrangThaiTt = tinhTrangTt,
                     TrangThaiDh = 0
                 };
 
@@ -299,20 +265,52 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
                 HttpContext.Session.Remove("CartModel");
 
-                return RedirectToAction("CheckoutSuccess");
+                return RedirectToAction("OrderSuccess");
             }
 
             return RedirectToAction("ListCarts");
         }
 
-        public ActionResult CheckoutSuccess()
+        [Authorize]
+        public ActionResult OrderConfirmation(string DiaChiGiaoHang)
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+
+                string returnUrl = Url.Action("OrderConfirmation", "Cart");
+                return RedirectToAction("DangNhap", "Account", new { returnUrl });
+            }
+
+            int? userId = GetUserId();
+            var nguoiDung = _context.NguoiDungs.FirstOrDefault(u => u.UserId == userId);
+
+            List<CartModel> carts = GetListCarts();
+
+            decimal subTotal = carts.Sum(s => s.SoLuong * s.Gia);
+            decimal discount = carts.Sum(s => (s.GiamGia / 100.0m) * (s.Gia * s.SoLuong));
+            decimal total = subTotal - discount;
+
+            ViewBag.HoTen = nguoiDung != null ? nguoiDung.HoTen : "";
+            ViewBag.DiaChi = nguoiDung != null ? nguoiDung.DiaChi : "";
+            ViewBag.SDT = nguoiDung != null ? nguoiDung.Sdt : "";
+            ViewBag.Email = nguoiDung != null ? nguoiDung.Email : "";
+            ViewBag.DiaChi = nguoiDung != null ? nguoiDung.DiaChi : "";
+
+            ViewBag.CountProduct = carts.Sum(s => s.SoLuong);
+            ViewBag.SubTotal = subTotal;
+            ViewBag.Discount = discount;
+            ViewBag.Total = total;
+
+
+
+            return View(carts);
+        }
+        public ActionResult OrderSuccess()
         {
             return View();
         }
 
-
-
-        [Authorize]
+		[Authorize]
         public ActionResult DonMua()
         {
             int? userId = GetUserId();

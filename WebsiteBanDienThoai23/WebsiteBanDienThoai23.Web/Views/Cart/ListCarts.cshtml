@@ -71,7 +71,7 @@
 							<br /> <br />
 								@if (User.Identity.IsAuthenticated)
 								{
-									<a href="@Url.Action("CheckoutConfirmation", "Cart")" class="btn btn-primary">Mua hàng</a>
+									<a href="@Url.Action("OrderConfirmation", "Cart")" class="btn btn-primary">Mua hàng</a>
 								}
 								else
 								{

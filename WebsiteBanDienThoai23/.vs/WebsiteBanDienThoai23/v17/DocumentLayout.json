@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\cart\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\cart\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\cart\\listcarts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\cart\\listcarts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\cart\\ordersuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\cart\\ordersuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|d:\\documents\\im_ou_k21\\232\\ltcsdl_dbdev\\btl\\webbandienthoai\\websitebandienthoai23\\websitebandienthoai23.web\\views\\home\\address.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EADF8EC8-9B6C-464E-ACB7-E5A335D6E0D7}|WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj|solutionrelative:websitebandienthoai23.web\\views\\home\\address.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -22,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +46,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListCarts.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Cart\\ListCarts.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\Cart\\ListCarts.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Cart\\ListCarts.cshtml",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\Cart\\ListCarts.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAEkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T09:12:39.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderSuccess.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Cart\\OrderSuccess.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\Cart\\OrderSuccess.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Cart\\OrderSuccess.cshtml",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\Cart\\OrderSuccess.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T09:12:00.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "OrderConfirmation.cshtml",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Cart\\OrderConfirmation.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\Cart\\OrderConfirmation.cshtml",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Cart\\OrderConfirmation.cshtml",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\Cart\\OrderConfirmation.cshtml",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAswFIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T09:12:15.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Controllers\\CartController.cs",
+              "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Controllers\\CartController.cs",
+              "ViewState": "AQIAABsBAAAAAAAAAAAUwDoBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T09:07:50.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
@@ -38,25 +106,24 @@
               "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAGQAAAAAAAAAAAAswHYAAACIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T06:24:46.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T06:24:46.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Address.cshtml",
               "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Home\\Address.cshtml",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Views\\Home\\Address.cshtml",
               "ToolTip": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Views\\Home\\Address.cshtml",
               "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Views\\Home\\Address.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAFgAAACAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAACAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-29T06:24:11.469Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Documents\\IM_OU_K21\\232\\LTCSDL_DBDEV\\BTL\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "WebsiteBanDienThoai23.Web\\Controllers\\HomeController.cs",
@@ -64,8 +131,7 @@
               "RelativeToolTip": "WebsiteBanDienThoai23.Web\\Controllers\\HomeController.cs",
               "ViewState": "AQIAABoAAAAAAAAAAAAgwCkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T06:21:24.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T06:21:24.051Z"
             }
           ]
         }

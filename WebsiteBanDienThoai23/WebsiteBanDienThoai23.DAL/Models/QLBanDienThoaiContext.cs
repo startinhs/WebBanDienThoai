@@ -51,12 +51,6 @@ namespace WebsiteBanDienThoai23.DAL.Models
 
                 entity.Property(e => e.MaKh).HasColumnName("MaKH");
 
-                entity.Property(e => e.NgayBatDau).HasColumnType("datetime");
-
-                entity.Property(e => e.NgayKetThuc).HasColumnType("datetime");
-
-                entity.Property(e => e.TinhTrangBh).HasColumnName("TinhTrangBH");
-
                 entity.HasOne(d => d.MaKhNavigation)
                     .WithMany(p => p.BaoHanhs)
                     .HasForeignKey(d => d.MaKh)
@@ -77,9 +71,9 @@ namespace WebsiteBanDienThoai23.DAL.Models
                     .HasColumnName("MaSP")
                     .IsFixedLength(true);
 
-                entity.Property(e => e.Imel)
-                    .HasMaxLength(10)
-                    .IsUnicode(false);
+                entity.Property(e => e.NgayBatDau).HasColumnType("datetime");
+
+                entity.Property(e => e.NgayKetThuc).HasColumnType("datetime");
 
                 entity.HasOne(d => d.MaBhNavigation)
                     .WithMany(p => p.ChiTietBaoHanhs)
@@ -309,11 +303,6 @@ namespace WebsiteBanDienThoai23.DAL.Models
 
                 entity.Property(e => e.Hinh)
                     .HasMaxLength(150)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Imel)
-                    .IsRequired()
-                    .HasMaxLength(20)
                     .IsUnicode(false);
 
                 entity.Property(e => e.MaLoai)

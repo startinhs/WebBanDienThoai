@@ -25,7 +25,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             var totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
             var itemsOnCurrentPage = lstSanPham.Skip((page - 1) * pageSize).Take(pageSize).ToList();
 
-            var danhSachLoaiSP = await _context.LoaiSps.ToListAsync(); // Truy vấn danh sách các loại sản phẩm từ cơ sở dữ liệu
+            var danhSachLoaiSP = await _context.LoaiSps.ToListAsync();
 
             var viewModel = new SanPhamModel
             {
@@ -33,7 +33,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                 TotalItems = totalItems,
                 TotalPages = totalPages,
                 CurrentPage = page,
-                DanhSachLoaiSP = danhSachLoaiSP // Truyền danh sách loại sản phẩm vào view model
+                DanhSachLoaiSP = danhSachLoaiSP
             };
 
             return View(viewModel);
@@ -50,13 +50,13 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             var totalItems = lstSanPham.Count();
             var itemsOnCurrentPage = lstSanPham.ToList();
 
-            var danhSachLoaiSP = await _context.LoaiSps.ToListAsync(); // Truy vấn danh sách các loại sản phẩm từ cơ sở dữ liệu
+            var danhSachLoaiSP = await _context.LoaiSps.ToListAsync();
 
             var viewModel = new SanPhamModel
             {
                 Items = itemsOnCurrentPage,
                 TotalItems = totalItems,
-                DanhSachLoaiSP = danhSachLoaiSP // Truyền danh sách loại sản phẩm vào view model
+                DanhSachLoaiSP = danhSachLoaiSP
             };
 
             return View("Index", viewModel);
@@ -69,13 +69,13 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             var totalItems = lstSanPham.Count();
             var itemsOnCurrentPage = lstSanPham.ToList();
 
-            var danhSachLoaiSP = await _context.LoaiSps.ToListAsync(); // Truy vấn danh sách các loại sản phẩm từ cơ sở dữ liệu
+            var danhSachLoaiSP = await _context.LoaiSps.ToListAsync();
 
             var viewModel = new SanPhamModel
             {
                 Items = itemsOnCurrentPage,
                 TotalItems = totalItems,
-                DanhSachLoaiSP = danhSachLoaiSP // Truyền danh sách loại sản phẩm vào view model
+                DanhSachLoaiSP = danhSachLoaiSP
             };
 
             return View("Index", viewModel);
@@ -85,8 +85,6 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         {
             var lstSanPham = _context.SanPhams.AsQueryable();
             lstSanPham = lstSanPham.Where(n => n.MayCu == true);
-
-            // Áp dụng bộ lọc dựa trên các giá trị của checkbox
             if (pintrau)
             {
                 lstSanPham = lstSanPham.Where(n => n.Pin > 3000);
@@ -102,7 +100,6 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                 lstSanPham = lstSanPham.Where(n => n._5g == 1);
             }
 
-            // Lấy danh sách sản phẩm kết quả
             var items = await lstSanPham.ToListAsync();
             var danhSachLoaiSP = await _context.LoaiSps.ToListAsync();
 
@@ -149,7 +146,6 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
         private int? GetUserId()
         {
-            // Lấy user ID từ session
             var userIdString = HttpContext.Session.GetString("UserId");
 
             if (int.TryParse(userIdString, out int userId))
@@ -161,13 +157,12 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         }
 
         [HttpPost]
-        [Authorize] // Chỉ cho phép người dùng đã đăng nhập
+        [Authorize]
         public ActionResult SubmitReview(string MaSp, int SoSao, string BinhLuan)
         {
             int? userId = GetUserId();
             if (userId == null)
             {
-                // Nếu người dùng chưa đăng nhập, chuyển hướng đến trang đăng nhập
                 return RedirectToAction("DangNhap", "Account");
             }
 
@@ -175,13 +170,11 @@ namespace WebsiteBanDienThoai23.Web.Controllers
 
             if (existingReview != null)
             {
-                // Cập nhật đánh giá hiện có
                 existingReview.SoSao = SoSao;
                 existingReview.BinhLuan = BinhLuan;
             }
             else
             {
-                // Tạo đánh giá mới
                 var review = new DanhGia
                 {
                     MaSp = MaSp,
@@ -193,8 +186,6 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             }
 
             _context.SaveChanges();
-
-            // Chuyển hướng hoặc hiển thị thông báo thành công
             return RedirectToAction("Details", new { id = MaSp });
         }
     }

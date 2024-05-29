@@ -34,7 +34,6 @@ namespace WebsiteBanDienThoai23.DAL.Models
         public string HeDieuHanh { get; set; }
         public short? CameraSau { get; set; }
         public short? CameraTruoc { get; set; }
-        public string Imel { get; set; }
         public decimal GiamGia { get; set; }
         public string MaLoai { get; set; }
         public bool? MayCu { get; set; }

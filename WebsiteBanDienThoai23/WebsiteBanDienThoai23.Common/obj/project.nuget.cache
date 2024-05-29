@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kAnJ2GJqfqrefY36HTdoCBqlIik6NrDddMz0YnmratVBtq3XSloaC4IfrKTzEgPAxv6/a331/EOlK/b56dtsyQ==",
+  "dgSpecHash": "NTOHqKFQsrEaN9cn5epq7/7uvM0+ROXii+3rghCdwlGDr1aJH8t8jVUSyLqKVYibtDrHULPk64vVua4dmRo4tA==",
   "success": true,
-  "projectFilePath": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj",
+  "projectFilePath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Common\\WebsiteBanDienThoai23.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nguye\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nguye\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

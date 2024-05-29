@@ -45,8 +45,8 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             if (model.HoTen == null || model.Email == null || model.DiaChi == null || model.Sdt == null || model.TenTaiKhoan == null || model.MatKhau == null)
             {
                 ViewBag.ThieuThongTin = "Vui lòng điều đầy đủ thông tin!";
-				return View();
-            }                
+                return View();
+            }
             if (ModelState.IsValid)
             {
                 var checkEmail = _context.NguoiDungs.FirstOrDefault(x => x.Email == model.Email);
@@ -301,7 +301,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                 ViewBag.ThieuThongTin = "Vui lòng điều đầy đủ thông tin!";
                 return View();
             }
-                
+
             if (ModelState.IsValid)
             {
                 var userId = GetUserId();
@@ -323,7 +323,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                     }
                     else
                     {
-                        ViewBag.MatKhauCu("MatKhauCu", "Mật khẩu cũ không đúng.");
+                        ViewBag.MatKhauCu= "Mật khẩu hiện tại không đúng!";
                         return View();
                     }
                 }
@@ -339,6 +339,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> DangXuat()
         {
             HttpContext.Session.Remove("CartModel");
@@ -362,7 +363,7 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             {
                 ViewBag.ThieuThongTin = "Vui lòng điều đầy đủ thông tin!";
                 return View();
-            } 
+            }
             if (ModelState.IsValid)
             {
                 var userId = GetUserId();

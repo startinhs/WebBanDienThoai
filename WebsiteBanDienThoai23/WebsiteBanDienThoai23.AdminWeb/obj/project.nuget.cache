@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xrZsS7qqoUq+kUEA9xu76uBYv2Juz9WLLhIXoJd6vYVt0IbN06c6PO2WuPHxXWYz1U/GnEIHCMfNqo3hlboWMw==",
+  "dgSpecHash": "f5X4AEF0rzCcTQtY79UlyAHQ/pERLPujGsxIfxmF/DpvQ/yIm7qBqeodmApxAA01C7BmGoDwdFX2XqLTYNwung==",
   "success": true,
-  "projectFilePath": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj",
+  "projectFilePath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.AdminWeb\\WebsiteBanDienThoai23.AdminWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nguye\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",
     "C:\\Users\\nguye\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

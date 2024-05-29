@@ -31,7 +31,7 @@
 							{
 								<div class="col-12">
 									@Html.Label("Email:", null, new { @class = "form-label" })
-									@Html.TextBox("Email", null, new { @class = "form-control", @id = "Email", @type = "email", @required = "required", @placeholder = "Nhập email đã đăng ký"/* , @autocomplete = "off" */ })
+									@Html.TextBox("Email", null, new { @class = "form-control", @id = "Email", @type = "email", @required = "required", @placeholder = "Nhập email đã đăng ký" })
 									@if (ViewBag.FailedRecovery != null)
 									{
 										<span class="badge badge-danger" style="color:red">@ViewBag.FailedRecovery</span>

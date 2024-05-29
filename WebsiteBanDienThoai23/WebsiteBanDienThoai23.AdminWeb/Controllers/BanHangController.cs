@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -13,11 +15,40 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
     {
         private readonly QLBanDienThoaiContext _context = new QLBanDienThoaiContext();
         // GET: BanHang
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> ListOrders()
         {
-            var qLBanDienThoaiContext = _context.HoaDons.Include(h => h.MaKhNavigation).Include(h => h.MaNvNavigation);
-            return View(await qLBanDienThoaiContext.ToListAsync());
+            var  orders = _context.HoaDons
+                .Include(h => h.MaKhNavigation)
+                .Include(h => h.MaNvNavigation)
+                .OrderByDescending(h => h.NgayDatHang);
+
+            return View(await orders.ToListAsync());
         }
+
+        public async Task<IActionResult> OrderDetails(string MaHd)
+        {
+            var orderDetails = await _context.ChiTietHoaDons
+                .Include(c => c.MaSpNavigation)
+                .Where(c => c.MaHd == MaHd) 
+                .OrderByDescending(c => c.MaHd) 
+                .ToListAsync();
+
+            return View(orderDetails);
+        }
+
+        public async Task<IActionResult> Search(string key)
+        {
+            var lstHoaDon = _context.HoaDons.AsQueryable();
+            if (!string.IsNullOrEmpty(key))
+            {
+                lstHoaDon = lstHoaDon.Where(hd => hd.MaHd.Contains(key));
+            }
+            var lstSearch = await lstHoaDon.ToListAsync();
+
+            return View("ListOrders", lstSearch);
+        }
+
+
 
         // GET: BanHang/Details/5
         public async Task<IActionResult> Details(string id)
@@ -47,9 +78,6 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             return View();
         }
 
-        // POST: BanHang/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("MaHd,MaKh,MaNv,NgayDatHang,DiaChiGiaoHang,TongGiaTri,TrangThaiTt,TrangThaiDh,NgayNhanHang")] HoaDon hoaDon)
@@ -58,13 +86,24 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             {
                 _context.Add(hoaDon);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(ListOrders));
             }
             ViewData["MaKh"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaKh);
             ViewData["MaNv"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaNv);
             return View(hoaDon);
         }
 
+        private int? GetUserId()
+        {
+            var userIdString = HttpContext.Session.GetString("UserId");
+
+            if (int.TryParse(userIdString, out int userId))
+            {
+                return userId;
+            }
+
+            return null;
+        }
         // GET: BanHang/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
@@ -78,14 +117,27 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             {
                 return NotFound();
             }
-            ViewData["MaKh"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaKh);
-            ViewData["MaNv"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaNv);
+
+            var NhanVienLapDon = await _context.NguoiDungs.FindAsync(GetUserId());
+            ViewBag.MaNhanVienLapDon = NhanVienLapDon.UserId;
+            hoaDon.MaNv = ViewBag.MaNhanVienLapDon;
+
+            ViewData["TrangThaiTt"] = new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Chưa thanh toán", Value = "false", Selected = hoaDon.TrangThaiTt == false },
+                new SelectListItem { Text = "Đã thanh toán", Value = "true", Selected = hoaDon.TrangThaiTt == true },
+            }, "Value", "Text");
+
+            ViewData["TrangThaiDh"] = new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Đang xử lý", Value = "0", Selected = hoaDon.TrangThaiDh == 0 },
+                new SelectListItem { Text = "Đang giao hàng", Value = "1", Selected = hoaDon.TrangThaiDh == 1 },
+                new SelectListItem { Text = "Đã giao hàng", Value = "2", Selected = hoaDon.TrangThaiDh == 2 }
+            }, "Value", "Text");
+
             return View(hoaDon);
         }
 
-        // POST: BanHang/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("MaHd,MaKh,MaNv,NgayDatHang,DiaChiGiaoHang,TongGiaTri,TrangThaiTt,TrangThaiDh,NgayNhanHang")] HoaDon hoaDon)
@@ -101,6 +153,37 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
                 {
                     _context.Update(hoaDon);
                     await _context.SaveChangesAsync();
+
+                    if (hoaDon.TrangThaiTt == true && hoaDon.TrangThaiDh == 2)
+                    {
+                        var baoHanh = new BaoHanh
+                        {
+                            MaKh = hoaDon.MaKh,
+                        };
+                        _context.BaoHanhs.Add(baoHanh);
+                        await _context.SaveChangesAsync();
+
+                        var chiTietHoaDons = await _context.ChiTietHoaDons
+                            .Where(c => c.MaHd == hoaDon.MaHd)
+                            .ToListAsync();
+
+                        foreach (var chiTiet in chiTietHoaDons)
+                        {
+                            var sanPham = await _context.SanPhams.FindAsync(chiTiet.MaSp);
+                            if (sanPham != null)
+                            {
+                                var chiTietBaoHanh = new ChiTietBaoHanh
+                                {
+                                    MaBh = baoHanh.MaBh,
+                                    MaSp = chiTiet.MaSp,
+                                    NgayBatDau = hoaDon.NgayNhanHang,
+                                    NgayKetThuc = hoaDon.NgayNhanHang.Value.AddYears((int)sanPham.ThoiGianBh) 
+                                };
+                                _context.ChiTietBaoHanhs.Add(chiTietBaoHanh);
+                            }
+                        }
+                        await _context.SaveChangesAsync();
+                    }
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -113,14 +196,14 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(ListOrders));
             }
             ViewData["MaKh"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaKh);
             ViewData["MaNv"] = new SelectList(_context.NguoiDungs, "UserId", "UserId", hoaDon.MaNv);
             return View(hoaDon);
         }
 
-        // GET: BanHang/Delete/5
+        [HttpPost]
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -140,16 +223,22 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             return View(hoaDon);
         }
 
-        // POST: BanHang/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+        [HttpPost]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var hoaDon = await _context.HoaDons.FindAsync(id);
+            var hoaDon = await _context.HoaDons.Include(h => h.ChiTietHoaDons).FirstOrDefaultAsync(h => h.MaHd == id);
+            if (hoaDon == null)
+            {
+                return NotFound();
+            }
+
+            _context.ChiTietHoaDons.RemoveRange(hoaDon.ChiTietHoaDons);
             _context.HoaDons.Remove(hoaDon);
+
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(ListOrders));
         }
+
 
         private bool HoaDonExists(string id)
         {

@@ -50,10 +50,11 @@ namespace WebsiteBanDienThoai23.BLL
                 HeDieuHanh = productReq.HeDieuHanh,
                 CameraSau = productReq.CameraSau,
                 CameraTruoc = productReq.CameraTruoc,
-                Imel = productReq.Imel,
                 GiamGia = productReq.GiamGia,
-                MaLoai = productReq.MaLoai
-            };
+                MaLoai = productReq.MaLoai,
+                MayCu = productReq.MayCu
+
+        };
 
             if (!_rep.IsMaLoaiExists(product.MaLoai))
             {
@@ -163,9 +164,9 @@ namespace WebsiteBanDienThoai23.BLL
                 product.HeDieuHanh = productReq.HeDieuHanh;
                 product.CameraSau = productReq.CameraSau;
                 product.CameraTruoc = productReq.CameraTruoc;
-                product.Imel = productReq.Imel;
                 product.GiamGia = productReq.GiamGia;
                 product.MaLoai = productReq.MaLoai;
+                product.MayCu = productReq.MayCu;
                 if (!sanPhamRep_Admin.IsMaLoaiExists(productReq.MaLoai))
                 {
                     res.SetError("Mã loại sản phẩm không tồn tại.");
@@ -203,6 +204,6 @@ namespace WebsiteBanDienThoai23.BLL
 
 
         }
-	}
+    }
 }
 

@@ -1,83 +1,54 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebsiteBanDienThoai23.BLL;
+using WebsiteBanDienThoai23.Common.Req;
+using WebsiteBanDienThoai23.Common.Rsp;
 
 namespace WebsiteBanDienThoai23.AdminWeb.Controllers
 {
-    public class BaoHanhController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class BaoHanhController : ControllerBase
     {
-        // GET: BaoHanhController
-        public ActionResult Index()
+        private BaoHanhSvc_Admin baoHanhSpSvc_Admin;
+        public BaoHanhController()
         {
-            return View();
+            baoHanhSpSvc_Admin = new BaoHanhSvc_Admin();
         }
-
-        // GET: BaoHanhController/Details/5
-        public ActionResult Details(int id)
+        [HttpGet("Get-BaoHanh-By-MaBH")]
+        public IActionResult GetBaoHanhByMaLoai([FromQuery] int id)
         {
-            return View();
+            var res = new SingleRsp();
+            res = baoHanhSpSvc_Admin.Read(id);
+            return Ok(res);
         }
-
-        // GET: BaoHanhController/Create
-        public ActionResult Create()
+        [HttpGet("Get-All-BaoHanh")]
+        public IActionResult GetAllBaoHanh()
         {
-            return View();
+            var res = new SingleRsp();
+            res = baoHanhSpSvc_Admin.GetAllGuarantee();
+            return Ok(res);
         }
-
-        // POST: BaoHanhController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        [HttpPost("Create-BaoHanh")]
+        public IActionResult CreateBaoHanh([FromBody] BaoHanhReq guaReq)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var res = new SingleRsp();
+            res = baoHanhSpSvc_Admin.CreateGuarantee(guaReq);
+            return Ok(res);
         }
-
-        // GET: BaoHanhController/Edit/5
-        public ActionResult Edit(int id)
+        [HttpPut("Update-BaoHanh-By-MaBH")]
+        public IActionResult UpdateBaoHanh([FromBody] BaoHanhReq guaReq)
         {
-            return View();
+            var res = new SingleRsp();
+            res = baoHanhSpSvc_Admin.UpdateGuarantee(guaReq);
+            return Ok(res);
         }
-
-        // POST: BaoHanhController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        [HttpDelete("Remove-BaoHanh-By-MaBH")]
+        public IActionResult RemoveBaoHanh([FromBody] SimpleReq simpleReq)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: BaoHanhController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: BaoHanhController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            var res = new SingleRsp();
+            res = baoHanhSpSvc_Admin.RemoveGuarantee(simpleReq.Id);
+            return Ok(res);
         }
     }
 }

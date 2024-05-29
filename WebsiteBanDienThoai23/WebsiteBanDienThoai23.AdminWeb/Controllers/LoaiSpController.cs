@@ -52,10 +52,16 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
             res = loaiSpSvc_Admin.RemoveCategory(simpleReq.Keyword);
             return Ok(res);
         }
-		[HttpPut("ThongKe-SL-Sp-TonKho")]
-		public IActionResult ThongKeSP()
+		[HttpGet("ThongKe-SL-SpMoi-TheoLSP")]
+		public IActionResult TKMayMoi()
 		{
-            var res = loaiSpSvc_Admin.thongKe();
+			var res = loaiSpSvc_Admin.ThongKeMM();
+			return Ok(res);
+		}
+		[HttpGet("ThongKe-SL-SpCu-TheoLSP")]
+		public IActionResult TKMayCu()
+		{
+			var res = loaiSpSvc_Admin.ThongKeMC();
 			return Ok(res);
 		}
 	}

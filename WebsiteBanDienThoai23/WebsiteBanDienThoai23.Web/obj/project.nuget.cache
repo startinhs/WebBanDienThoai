@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qnpawgaEC5snAw4N6hPF17RCgQyAI9n0TI0RBsabqbCIIM4Yh5rxd31Phg4JMwKuYT57ZxQnuS2GFR0woqrodg==",
+  "dgSpecHash": "GuiIlQTofOa+sVVCsYGwyBdQU25BSZ6yYpJVBKe6f9Cc8p/ZGvujgIWFDyO6rH9txPhveByq50F0WgKDSIKarQ==",
   "success": true,
-  "projectFilePath": "D:\\LTCSDL\\School\\Nháp\\WebBanDienThoai-main\\WebBanDienThoai-main\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj",
+  "projectFilePath": "D:\\LTCSDL\\School\\DoAnWebAPI\\WebBanDienThoai\\WebsiteBanDienThoai23\\WebsiteBanDienThoai23.Web\\WebsiteBanDienThoai23.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nguye\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",
     "C:\\Users\\nguye\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",

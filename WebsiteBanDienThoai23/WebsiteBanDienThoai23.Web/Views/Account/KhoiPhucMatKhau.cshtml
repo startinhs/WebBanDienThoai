@@ -35,7 +35,7 @@
 								</div>
 								<div class="col-12">
 									@Html.Label("Mật khẩu mới:", null, new { @class = "form-label" })
-									@Html.Password("MatKhau", null, new { @class = "form-control", @id = "yourPassword", @required = "required", @placeholder = "Nhập mật khẩu mới của bạn", /* @minlength = 6, */ @autocomplete = "off" })
+									@Html.Password("MatKhau", null, new { @class = "form-control", @id = "yourPassword", @required = "required", @placeholder = "Nhập mật khẩu mới của bạn", @minlength = 6 /* @autocomplete = "off" */ })
 									@if (ViewBag.Password != null)
 									{
 										<span class="badge badge-danger" style="color:red">@ViewBag.Password</span>

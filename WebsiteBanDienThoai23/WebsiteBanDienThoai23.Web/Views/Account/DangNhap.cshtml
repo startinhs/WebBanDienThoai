@@ -41,7 +41,8 @@
                                         </div>
                                         <div class="col-12">
                                             @Html.Label("Mật khẩu:", null, new { @class = "form-label" })
-                                            @Html.Password("MatKhau", null, new { @class = "form-control", @id = "yourPassword", @required = "required", @placeholder = "Nhập mật khẩu của bạn" })                                            @if (ViewBag.UserPassError != null)
+                                            @Html.Password("MatKhau", null, new { @class = "form-control", @id = "yourPassword", @required = "required", @placeholder = "Nhập mật khẩu của bạn" })                                            
+                                            @if (ViewBag.UserPassError != null)
                                             {
                                                 <span class="badge badge-danger" style="color:red">@ViewBag.UserPassError</span>
                                             }

@@ -27,19 +27,19 @@
                                 @using (Html.BeginForm("DoiMatKhau", "Account", FormMethod.Post, new { @class = "row g-3 needs-validation", @novalidate = "novalidate" }))
                                 {
                                     <div class="col-12">
-                                        @Html.Label("Mật khẩu cũ:", null, new { @class = "form-label" })
-                                        @Html.TextBox("MatKhauCu", null, new { @class = "form-control", @id = "yourUsername", @required = "required", @placeholder = "Nhập mật khẩu hiện tại" })
+                                        @Html.Label("Mật khẩu hiện tại:", null, new { @class = "form-label" })
+                                        @Html.Password("MatKhauCu", null, new { @class = "form-control", @id = "yourUsername", @required = "required", @placeholder = "Nhập mật khẩu hiện tại" })
                                         @if (ViewBag.MatKhauCu != null)
                                         {
-                                            <span class="badge badge-danger" style="color:red">@ViewBag.UserNameError</span>
+                                            <span class="badge badge-danger" style="color:red">@ViewBag.MatKhauCu</span>
                                         }
                                     </div>
                                     <div class="col-12">
-                                        @Html.Label("Mật khẩu:", null, new { @class = "form-label" })
+                                        @Html.Label("Mật khẩu mới:", null, new { @class = "form-label" })
                                         @Html.Password("MatKhauMoi", null, new { @class = "form-control", @id = "yourPassword", @required = "required", @placeholder = "Nhập mật khẩu mới" })
                                         @if (ViewBag.MatKhauMoi != null)
                                         {
-                                            <span class="badge badge-danger" style="color:red">@ViewBag.UserPassError</span>
+                                            <span class="badge badge-danger" style="color:red">@ViewBag.MatKhauMoi</span>
                                         }
                                     </div>
                                     <div class="col-12">

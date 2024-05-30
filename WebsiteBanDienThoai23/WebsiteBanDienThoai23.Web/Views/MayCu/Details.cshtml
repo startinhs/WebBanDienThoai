@@ -209,7 +209,7 @@
                                             }
                                             else
                                             {
-                                                <p>Bạn cần <a href="@Url.Action("DangNhap", "Account")">đăng nhập</a> để đánh giá sản phẩm.</p>
+                                                <p>Bạn cần <a href="@Url.Action("DangNhap", "Account", new { ReturnUrl = Url.Action("Details", "DienThoai", new { id = Model.ItemDetails.MaSp }) })">đăng nhập</a> để đánh giá sản phẩm.</p>
                                             }
                                             <br /> <br />
                                             <h4>Các đánh giá</h4>

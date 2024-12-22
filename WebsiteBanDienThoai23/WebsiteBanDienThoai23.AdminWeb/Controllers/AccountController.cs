@@ -33,6 +33,13 @@ namespace WebsiteBanDienThoai23.Web.Controllers
             return View();
         }
 
+        [HttpGet]
+        public async Task<IActionResult> DangXuat()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            HttpContext.Session.Remove("UserId");
+            return RedirectToAction("DangNhap", "Account");
+        }
         [HttpPost]
         public async Task<IActionResult> DangNhap(DangNhap model, string? ReturnUrl)
         {
@@ -89,14 +96,6 @@ namespace WebsiteBanDienThoai23.Web.Controllers
                     return View();
                 }
             }
-            return RedirectToAction("DangNhap", "Account");
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> DangXuat()
-        {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            HttpContext.Session.Remove("UserId");
             return RedirectToAction("DangNhap", "Account");
         }
     }

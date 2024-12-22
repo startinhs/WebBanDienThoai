@@ -15,25 +15,11 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
         {
             chiTietBaoHanhSpSvc_Admin = new ChiTietBaoHanhSvc_Admin();
         }
-        [HttpGet("Get-ChiTietBaoHanh-By-MaBH")]
-        public IActionResult GetChiTietBaoHanhByMaLoai([FromQuery] int id)
-        {
-            var res = new SingleRsp();
-            res = chiTietBaoHanhSpSvc_Admin.Read(id);
-            return Ok(res);
-        }
         [HttpGet("Get-All-ChiTietBaoHanh")]
         public IActionResult GetAllChiTietBaoHanh()
         {
             var res = new SingleRsp();
             res = chiTietBaoHanhSpSvc_Admin.GetAllGuarantee();
-            return Ok(res);
-        }
-        [HttpPost("Create-ChiTietBaoHanh")]
-        public IActionResult CreateChiTietBaoHanh([FromBody] ChiTietBaoHanhReq guaReq)
-        {
-            var res = new SingleRsp();
-            res = chiTietBaoHanhSpSvc_Admin.CreateGuarantee(guaReq);
             return Ok(res);
         }
         [HttpPut("Update-ChiTietBaoHanh-By-MaBH")]
@@ -48,6 +34,20 @@ namespace WebsiteBanDienThoai23.AdminWeb.Controllers
         {
             var res = new SingleRsp();
             res = chiTietBaoHanhSpSvc_Admin.RemoveGuarantee(simpleReq.Id);
+            return Ok(res);
+        }
+        [HttpPost("Create-ChiTietBaoHanh")]
+        public IActionResult CreateChiTietBaoHanh([FromBody] ChiTietBaoHanhReq guaReq)
+        {
+            var res = new SingleRsp();
+            res = chiTietBaoHanhSpSvc_Admin.CreateGuarantee(guaReq);
+            return Ok(res);
+        }
+        [HttpGet("Get-ChiTietBaoHanh-By-MaBH")]
+        public IActionResult GetChiTietBaoHanhByMaLoai([FromQuery] int id)
+        {
+            var res = new SingleRsp();
+            res = chiTietBaoHanhSpSvc_Admin.Read(id);
             return Ok(res);
         }
     }
